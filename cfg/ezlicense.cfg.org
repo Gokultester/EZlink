@@ -1,0 +1,100 @@
+        SERVERID        9985142de090
+
+        INSTROUTETYPE_START_DEF
+                CBS
+                NONCBS
+                EXTNTWK
+        END_DEF
+
+        INST_START_DEF
+                NRD    CBS
+                GB     CBS
+                PBLV   CBS
+                PBT    CBS
+                PMT    CBS
+                PRABHU    CBS
+                PBL     CBS
+                PT    CBS
+                NPN    EXTNTWK
+        END_DEF
+
+        NRD_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+         GB_START_DEF
+                BINCHECKREQ     Yes
+                MAXBIN          10
+                BRANCHCHECKREQ  Yes
+                MAXBRANCH       10
+                ATMCHECKREQ     Yes
+                MAXATM          3
+        END_DEF
+        PBLV_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        PBT_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        PMT_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        PRABHU_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        PBL_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        PT_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        NPN_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+

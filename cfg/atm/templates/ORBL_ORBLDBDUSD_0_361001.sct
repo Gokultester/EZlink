@@ -1,0 +1,9 @@
+$FF $SI @ @ $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC013.jpg      $ESC \
+$A	$SI F J
+$B	$SI I J
+$C	$SI L J
+$D	$SI O J
+$F	$SI O @ 
+$G	$SI O @
+$H	$SI L @
+$I	$SI I @

@@ -1,0 +1,331 @@
+#Opkey_IndirectState	TxnCode		Amount		CurrencyCode	Receipt Needed/Not	New/Continue/Old Txn	Language flag
+
+#PIN Verification
+
+        AAAAA_0         940000          000000              840                 1                    1 2
+#Fast Cash USD with receipt Current account USD
+	ABIAB_0		362000		000000		    840			1		     1  2
+	ABIABA_0	012000          002000              840                 0                    0  2
+	ABHAB_0         362000          000000              840                 1                    1  2
+        ABHABA_0        012000          005000              840                 0                    0  2
+	ABGAB_0         362000          000000              840                 1                    1  2
+        ABGABA_0        012000          010000              840                 0                    0  2
+	ABFAB_0         362000          000000              840                 1                    1  2
+        ABFABA_0        012000          020000              840                 0                    0  2
+	ABAAB_0         362000          000000              840                 1                    1  2
+        ABAABA_0        012000          040000              840                 0                    0  2
+	ABBAB_0         362000          000000              840                 1                    1  2
+        ABBABA_0        012000          050000              840                 0                    0  2
+#Fast Cash USD without receipt Current account USD
+	ABIAC_0         362000          000000              840                 0                    1  2
+        ABIACA_0        012000          002000              840                 0                    0  2
+        ABHAC_0         362000          000000              840                 0                    1  2
+        ABHACA_0        012000          005000              840                 0                    0  2
+        ABGAC_0         362000          000000              840                 0                    1  2
+        ABGACA_0        012000          010000              840                 0                    0  2
+        ABFAC_0         362000          000000              840                 0                    1  2
+        ABFACA_0        012000          020000              840                 0                    0  2
+        ABAAC_0         362000          000000              840                 0                    1  2
+        ABAACA_0        012000          040000              840                 0                    0  2
+        ABBAC_0         362000          000000              840                 0                    1  2
+        ABBACA_0        012000          050000              840                 0                    0  2
+#Fast cash LRD with receipt current account LRD
+	ACIAB_0         362000          000000              430                 1                    1  2
+        ACIABA_0        012000          020000              430                 0                    0  2
+        ACHAB_0         362000          000000              430                 1                    1  2
+        ACHABA_0        012000          050000              430                 0                    0  2
+        ACGAB_0         362000          000000              430                 1                    1  2
+        ACGABA_0        012000          500000              430                 0                    0  2
+        ACFAB_0         362000          000000              430                 1                    1  2
+        ACFABA_0        012000          1000000              430                 0                    0  2
+        ACAAB_0         362000          000000              430                 1                    1  2
+        ACAABA_0        012000          2000000              430                 0                    0  2
+#        ACBAB_0         362000          000000              430                 1                    1  2
+#        ACBABA_0        012000          050000              430                 0                    0  2
+#fast cash LRD without receipt current account LRD
+	ACIAC_0         362000          000000              430                 0                    1  2
+        ACIACA_0        012000          020000              430                 0                    0  2
+        ACHAC_0         362000          000000              430                 0                    1  2
+        ACHACA_0        012000          050000              430                 0                    0  2
+        ACGAC_0         362000          000000              430                 0                    1  2
+        ACGACA_0        012000          500000              430                 0                    0  2
+        ACFAC_0         362000          000000              430                 0                    1  2
+        ACFACA_0        012000          1000000              430                 0                    0  2
+        ACAAC_0         362000          000000              430                 0                    1  2
+        ACAACA_0        012000          2000000              430                 0                    0  2
+#        ACBAC_0         362000          000000              430                 0                    1  2
+#        ACBACA_0        012000          050000              430                 0                    0  2
+
+
+
+#Fast Cash USD with receipt Savings account USD
+        ABIBB_0         361000          000000              840                 1                    1  2
+        ABIBBA_0        011000          002000              840                 0                    0  2
+        ABHBB_0         361000          000000              840                 1                    1  2
+        ABHBBA_0        011000          005000              840                 0                    0  2
+        ABGBB_0         361000          000000              840                 1                    1  2
+        ABGBBA_0        011000          010000              840                 0                    0  2
+        ABFBB_0         361000          000000              840                 1                    1  2
+        ABFBBA_0        011000          020000              840                 0                    0  2
+        ABABB_0         361000          000000              840                 1                    1  2
+        ABABBA_0        011000          040000              840                 0                    0  2
+        ABBBB_0         361000          000000              840                 1                    1  2
+        ABBBBA_0        011000          050000              840                 0                    0  2
+#Fast Cash USD without receipt Savings account USD
+        ABIBC_0         361000          000000              840                 0                    1  2
+        ABIBCA_0        011000          002000              840                 0                    0  2
+        ABHBC_0         361000          000000              840                 0                    1  2
+        ABHBCA_0        011000          005000              840                 0                    0  2
+        ABGBC_0         361000          000000              840                 0                    1  2
+        ABGBCA_0        011000          010000              840                 0                    0  2
+        ABFBC_0         361000          000000              840                 0                    1  2
+        ABFBCA_0        011000          020000              840                 0                    0  2
+        ABABC_0         361000          000000              840                 0                    1  2
+        ABABCA_0        011000          040000              840                 0                    0  2
+        ABBBC_0         361000          000000              840                 0                    1  2
+        ABBBCA_0        011000          050000              840                 0                    0  2
+
+#Fast cash LRD with receipt savings account LRD
+        ACIBB_0         361000          000000              430                 1                    1  2
+        ACIBBA_0        011000          020000              430                 0                    0  2
+        ACHBB_0         361000          000000              430                 1                    1  2
+        ACHBBA_0        011000          050000              430                 0                    0  2
+        ACGBB_0         361000          000000              430                 1                    1  2
+        ACGBBA_0        011000          500000              430                 0                    0  2
+        ACFBB_0         361000          000000              430                 1                    1  2
+        ACFBBA_0        011000          1000000              430                 0                    0  2
+        ACABB_0         361000          000000              430                 1                    1  2
+        ACABBA_0        011000          2000000              430                 0                    0  2
+#        ACBBB_0         361000          000000              430                 1                    1  2
+#        ACBBBA_0        011000          050000              430                 0                    0  2
+#fast cash LRD without receipt savings account LRD
+        ACIBC_0         361000          000000              430                 0                    1  2
+        ACIBCA_0        011000          020000              430                 0                    0  2
+        ACHBC_0         361000          000000              430                 0                    1  2
+        ACHBCA_0        011000          050000              430                 0                    0  2
+        ACGBC_0         361000          000000              430                 0                    1  2
+        ACGBCA_0        011000          500000              430                 0                    0  2
+        ACFBC_0         361000          000000              430                 0                    1  2
+        ACFBCA_0        011000          1000000              430                 0                    0  2
+        ACABC_0         361000          000000              430                 0                    1  2
+        ACABCA_0        011000          2000000              430                 0                    0  2
+#        ACBBC_0         361000          000000              430                 0                    1  2
+#        ACBBCA_0        011000          050000              430                 0                    0  2
+#Cash Withdrawal LRD - Current account
+	ACCAB_0		362000		000000		    430			1		     1	2
+	ACCABA_0	012000		000000		    430			0		     0	2
+#Cash Withdrawal LRD without receipt
+	ACCAC_0		362000		000000		    430			0		     1 	2
+	ACCACA_0	012000          000000		    430			0		     0  2
+
+#Cash Withdrawal LRD - Savings account
+        ACCBB_0         362000          000000              430                 1                    1  2
+        ACCBBA_0        012000          000000              430                 0                    0  2
+#Cash Withdrawal LRD without receipt
+        ACCBC_0         362000          000000              430                 0                    1  2
+        ACCBCA_0        012000          000000              430                 0                    0  2
+
+#Cash Withdrawal USD current account
+	ABCAB_0		362000		000000		    840			1		     1	2
+	ABCABA_0	012000		000000		    840			0		     0  2
+#Cash Withdrawal USD current account without receipt
+	ABCAC_0         362000          000000              840                 0                    1  2
+        ABCACA_0        012000          000000              840                 0                    0  2
+#Cash Withdrawal USD Savings account
+	ABCBB_0         361000          000000              840                 1                    1  2
+        ABCBBA_0        011000          000000              840                 0                    0  2
+#Cash withdrawal USD Savings account without receipt
+	ABCBC_0         361000          000000              840                 0                    1  2
+        ABCBCA_0        011000          000000              840                 0                    0  2
+
+#Balance Enquiry LRD Current Account
+	BCAB_0		362000		000000		    430			1		     1	2
+	BCABA_0		302000		000000		    430			1		     0	2
+	
+	BCAC_0          362000          000000              430                 0                    1  2
+        BCACA_0         302000          000000              430                 0                    0  2
+	
+	BCBB_0          361000          000000              430                 1                    1  2
+        BCBBA_0         301000          000000              430                 1                    0  2
+
+	BCBC_0          361000          000000              430                 0                    1  2
+        BCBCA_0         301000          000000              430                 0                    0  2
+	
+#Balance Enquiry USD
+	
+	BBAB_0          362000          000000              840                 1                    1  2
+        BBABA_0         302000          000000              840                 1                    0  2
+
+        BBAC_0          362000          000000              840                 0                    1  2
+        BBACA_0         302000          000000              840                 0                    0  2
+
+        BBBB_0          361000          000000              840                 1                    1  2
+        BBBBA_0         301000          000000              840                 1                    0  2
+
+        BBBC_0          361000          000000              840                 0                    1  2
+        BBBCA_0         301000          000000              840                 0                    0  2
+
+#Mini statement LRD Current Account
+        CCAB_0          362000          000000              430                 1                    1  2
+        CCABA_0         382000          000000              430                 1                    0  2
+
+        CCAC_0          362000          000000              430                 0                    1  2
+        CCACA_0         382000          000000              430                 0                    0  2
+
+        CCBB_0          361000          000000              430                 1                    1  2
+        CCBBA_0         381000          000000              430                 1                    0  2
+
+        CCBC_0          361000          000000              430                 0                    1  2
+        CCBCA_0         381000          000000              430                 0                    0  2
+
+#Mini statement USD
+
+        CBAB_0          362000          000000              840                 1                    1  2
+        CBABA_0         382000          000000              840                 1                    0  2
+
+        CBAC_0          362000          000000              840                 0                    1  2
+        CBACA_0         382000          000000              840                 0                    0  2
+
+        CBBB_0          361000          000000              840                 1                    1  2
+        CBBBA_0         381000          000000              840                 1                    0  2
+
+        CBBC_0          361000          000000              840                 0                    1  2
+        CBBCA_0         381000          000000              840                 0                    0  2
+#Mini Statement 
+#	CCAC_0		362003		000000		    430			1		     1	2
+#	CCACA_0		382000		000000		    430			1		     0	2
+#Mini Statement USD
+#        CBBB_0          361003          000000              840                 1                    1  2
+#        CBBBA_0         381000          000000              840                 1                    0  2
+#Cheque Book Request LRD
+	GCAAB_0          362001          000000              430                 1                    1  2
+        GCAABA_0         912001          000000              430                 1                    0  2
+	GCABB_0          362002          000000              430                 1                    1  2
+        GCABBA_0         912002          000000              430                 1                    0  2
+	GCBAB_0          361001          000000              430                 1                    1  2
+        GCBABA_0         911001          000000              430                 1                    0  2
+        GCBBB_0          361002          000000              430                 1                    1  2
+        GCBBBA_0         911002          000000              430                 1                    0  2
+	
+	GCAAC_0          362001          000000              430                 0                    1  2
+        GCAACA_0         912001          000000              430                 0                    0  2
+        GCABC_0          362002          000000              430                 0                    1  2
+        GCABCA_0         912002          000000              430                 0                    0  2
+        GCBAC_0          361001          000000              430                 0                    1  2
+        GCBACA_0         911001          000000              430                 0                    0  2
+        GCBBC_0          361002          000000              430                 0                    1  2
+        GCBBCA_0         911002          000000              430                 0                    0  2
+
+	GBAAB_0          362001          000000              840                 1                    1  2
+        GBAABA_0         912001          000000              840                 1                    0  2
+        GBABB_0          362002          000000              840                 1                    1  2
+        GBABBA_0         912002          000000              840                 1                    0  2
+        GBBAB_0          361001          000000              840                 1                    1  2
+        GBBABA_0         911001          000000              840                 1                    0  2
+        GBBBB_0          361002          000000              840                 1                    1  2
+        GBBBBA_0         911002          000000              840                 1                    0  2
+
+        GBAAC_0          362001          000000              840                 0                    1  2
+        GBAACA_0         912001          000000              840                 0                    0  2
+        GBABC_0          362002          000000              840                 0                    1  2
+        GBABCA_0         912002          000000              840                 0                    0  2
+        GBBAC_0          361001          000000              840                 0                    1  2
+        GBBACA_0         911001          000000              840                 0                    0  2
+        GBBBC_0          361002          000000              840                 0                    1  2
+        GBBBCA_0         911002          000000              840                 0                    0  2
+
+#Cheque book request USD
+#	GBAAB_0         362001          000000              840                 1                    1  2
+#        GBAABA_0        912001          000000              840                 1                    0  2
+#PIN Change
+	I_0		940001		000000		    936			1		     1
+	IA_0		940002		000000		    936			1		     1
+	IAA_0		940003		000000		    936			1		     1
+
+#Fund transfer LRD Current Account	
+	IACA_0		362007		000000		    430			1		     1	2
+	IACAA_0		410000		000000		    430			0		     0	2
+	IACAAA_0        402000          000000              430                 0                    0  2
+#Fund transfer USD Current Account
+        IABA_0          362007          000000              840                 1                    1  2
+        IABAA_0         410000          000000              840                 0                    0  2
+        IABAAA_0        402000          000000              840                 0                    0  2
+
+
+#Deposit by Cheque
+	HAAC_0          362004          000000              936                 1                    1
+        HAACA_0         202000          000000              936                 1                    0
+        HAAD_0          362004          000000              936                 0                    1
+        HAADA_0         202000          000000              936                 0                    0
+
+        HBAC_0          361004          000000              936                 1                    1
+        HBACA_0         201000          000000              936                 1                    0
+        HBAD_0          361004          000000              936                 0                    1
+        HBADA_0         201000          000000              936                 0                    0
+
+        HCAC_0          363004          000000              936                 1                    1
+        HCACA_0         203000          000000              936                 1                    0
+        HCAD_0          363004          000000              936                 0                    1
+        HCADA_0         203000          000000              936                 0                    0
+
+#Deposit by Cash
+
+        DA_0            362004          000000              936                 1                    1
+        DAA_0	        202000          000000              936                 1                    0
+
+        DB_0            361004          000000              936                 1                    1
+        DBA_0           201000          000000              936                 1                    0
+
+	GABC_0          362004          000000              936                 1                    1
+        GABCA_0         202001          000000              936                 1                    0
+        GABD_0          362004          000000              936                 0                    1
+        GABDA_0         202001          000000              936                 0                    0
+
+        GBBC_0          361004          000000              936                 1                    1
+        GBBCA_0         201001          000000              936                 1                    0
+        GBBD_0          361004          000000              936                 0                    1
+        GBBDA_0         201001          000000              936                 0                    0
+
+        GCBC_0          363004          000000              936                 1                    1
+        GCBCA_0         203001          000000              936                 1                    0
+        GCBD_0          363004          000000              936                 0                    1
+        GCBDA_0         203001          000000              936                 0                    0
+
+#Cardless Transasction - NMobile
+        A_0             710000          000000              936                 1                    1
+	AA_0            720000          000000              936                 1                    1
+        AAC_0           010000          000000              936                 1                    1
+
+#Airtime Top Up
+        FAAB_0           361009          000000              936                 1                    1
+        FAABA_0          501001          000000              936                 1                    0
+
+#Prepaid Balance Enquiry
+        BCBB_2           300000          000000              936                 1                    1
+        BDBB_2           300000          000000              936                 0                    1
+
+#Prepaid Cash Withdrawal
+        ACBB_2          010000          000000              936                 1                    1
+        ADBB_2          010000          000000              936                 0                    1
+
+#Prepaid PIN Change
+        C_2             940001          000000              936                 1                    1
+        CA_2            940002          000000              936                 1                    1
+        CAA_2           940003          000000              936                 1                    1
+
+#GHIPSS
+	BBCA_3          301000          000000              936                 1                    1
+        BBDA_3          301000          000000              936                 0                    1
+#SupervisorCard
+#PIN Verification
+        AA_7    990011          000000              524                 0                    1
+#Force PIN Change
+        AAA_7   990012          000000              524                 0                    1
+        AAAA_7  990013          000000              524                 0                    1
+
+#Print Host Totals
+        B_7             990021          000000              524                 1                    1
+#Start New Cycle
+        D_7             990022          000000              524                 1                    1
+#Stop New Cycle
+        C_7             990023          000000              524                 1                    1

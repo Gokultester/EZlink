@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$LF
+	PIN $SPACE KEY $SPACE ERROR  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	 LOW $SPACE CASH $SPACE IN $SPACE ATM
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt
+

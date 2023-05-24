@@ -1,0 +1,11 @@
+ATM_SCREEN_START_DEF
+	000	$SI @ @ $ESC O 000 $ESC P 000 0 								
+
+	001	$SI @ @ $ESC O 001 $ESC P 001 								
+
+	010	$SI @ @ $ESC M03 $ESC O 010 $ESC P 010 0 $ESC D 005 $ESC O 240 $ESC P 240 0 $ESC D 005 $SO 010 								
+
+	072	$SI @ @ $ESC O 072 $ESC P 072 0 $ESC H 001 $SI C 3 $HT $SI J 3 								
+
+	
+END_DEF

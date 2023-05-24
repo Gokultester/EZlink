@@ -1,0 +1,9 @@
+$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon238.jpg $ESC \
+$A	$SI F J
+$B	$SI I J
+$C	$SI L J
+$D	$SI O 9
+$F	$SI O C 
+$G	$SI O @
+$H	$SI L @
+$I	$SI I @

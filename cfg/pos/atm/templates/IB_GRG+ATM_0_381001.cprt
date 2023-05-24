@@ -1,0 +1,19 @@
+	$INCLUDE-hpscb_header.prt
+	FROM $SPACE A/C $SPACE : $SPACE $FROM_ACC[3,] ******* $FROM_ACCT[10,13,]
+	$LF
+	$LF
+	$SPACE $SPACE DATE  $SPACE $SPACE $SPACE $SPACE TIME $SPACE $SPACE $SPACE C/D $SPACE $SPACE 
+	$SPACE $SPACE AMOUNT
+	$LF
+	$STMT_5
+	$LF
+	$STMT_4
+	$LF
+	$STMT_3
+	$LF
+	$STMT_2
+	$LF
+	$STMT_1
+	$LF
+        $LF
+	$INCLUDE-hpscb_tailer.prt

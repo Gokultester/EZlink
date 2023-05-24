@@ -1,0 +1,9 @@
+	$INCLUDE-hpscb_header.prt
+        $LF
+	TRANS $SPACE AMOUNT $SPACE : $SPACE $AMOUNT $SPACE LAK
+        $LF
+        FEE $SPACE : $SPACE $FEE $SPACE LAK
+        $LF
+        $LF
+        $INCLUDE-hpscb_tailer.prt
+

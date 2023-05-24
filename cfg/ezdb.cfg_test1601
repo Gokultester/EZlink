@@ -1,0 +1,41 @@
+EZDB_START_DEF
+	
+	#db_username	bpesa_switch_live
+	#db_password	bpesa_switch_live
+	db_username	switch	
+	db_password	switch
+	db_dbname	orcl
+
+END_DEF
+
+DBCONNECTION_START_DEF
+
+	EzDeviceMgr		Static
+	EzSecurityMgr		Static
+	EzATMController		Static
+	EzNetworkMgr		Static
+	EzEchoMgr		Static
+	EzTxnLogger		Static
+	EzSafReader		Static
+	EzSafWriter		Static
+	EzAuthMgr		Static
+
+END_DEF
+
+EZMMS_START_DEF
+
+        db_username    mms
+        db_password    mms
+        db_dbname      orcl
+
+END_DEF
+
+EZPREPAID_START_DEF
+
+        db_username    	prepaid_recon
+        db_password     prepaid_recon
+        db_dbname       orcl
+
+END_DEF
+
+

@@ -1,0 +1,6 @@
+	
+	$INCLUDE-hpscb_header.jprt	
+	$LF
+	AMOUNT $SPACE $ACQCURRDESC $SPACE $AMOUNT
+	$LF
+	$INCLUDE-hpscb_tailer.jprt

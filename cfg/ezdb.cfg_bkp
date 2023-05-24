@@ -1,0 +1,90 @@
+EZDB_START_DEF
+
+
+	EncryptUserName	Yes
+	EncryptPwd	Yes
+	EncryptDBName   Yes
+
+
+	db_username	6C786ABCF4486586C83304B2B383AB07	
+	db_password	6C786ABCF4486586C83304B2B383AB07
+	db_dbname	31F9D7D15E318FCD
+	
+	#db_username	orblswitchdemo
+	#db_password	orblswitchdemo
+	#db_dbname	orcl12
+
+END_DEF
+
+
+DBCONNECTION_START_DEF
+
+	EzDeviceMgr		Static
+	EzSecurityMgr		Static
+	EzATMController		Static
+	EzNetworkMgr		Static
+	EzEchoMgr		Static
+	EzTxnLogger		Static
+	EzSafReader		Static
+	EzSafWriter		Static
+	EzAuthMgr		Static
+
+END_DEF
+
+EZMMS_START_DEF
+
+        EncryptUserName Yes
+        EncryptPwd      Yes
+	EncryptDBName   Yes
+
+
+        db_username    0129FA266F4D95A5
+        db_password    AFD5BF8F299D78A1
+        db_dbname      F21CA1ADBE71A2FA
+	
+        #db_username    prepaid_azizi
+        #db_password    prepaid_azizi
+        #db_dbname      orcl12
+
+END_DEF
+
+EZDEBIT_START_DEF
+
+     	 EncryptUserName Yes
+         EncryptPwd      Yes
+         EncryptDBName   Yes
+
+
+         db_username    693D3461868476AF0A220F04828321B5
+         db_password    693D3461868476AF0A220F04828321B5
+         db_dbname      31F9D7D15E318FCD
+
+
+        #db_username    debitliveorient
+        #db_password    debitliveorient
+        #db_dbname      orcl12
+END_DEF
+
+EZPREPAID_START_DEF
+
+	EncryptUserName Yes
+	EncryptPwd      Yes
+	EncryptDBName   Yes
+
+	db_username    A378CEAE7B9F1B3D2039478633A66F7A
+	db_password    56D2E10902DFF0D7595AF7BBCEA29E48
+	db_dbname      F21CA1ADBE71A2FA
+
+        #db_username    prepaid_uat
+        #db_password    prepaid_uat
+
+        #db_username    aziziswitchpreepaid
+        #db_password    aziziswitchpreepaid
+        #db_dbname      orcl12
+
+	#db_username    prepaid_azizi
+        #db_password    prepaid_azizi
+        #db_dbname      orcl12
+
+
+END_DEF

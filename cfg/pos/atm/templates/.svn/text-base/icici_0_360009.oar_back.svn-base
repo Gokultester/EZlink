@@ -1,0 +1,28 @@
+OAR_START_DEF		
+
+	VAR_START_DEF
+
+		A	$VAR		1	
+		B	$VAR		2
+		C	$VAR		3
+		D	$VAR		4
+		F				
+		G			
+		H	$NEXT		
+		I	$PREVIOUS
+
+		TOTALVAR 4
+
+	END_DEF
+
+	CONTROL_START_DEF
+	
+		CANCEL		1  
+		NUMERICKEYS	0
+		DISPLAYFLAG	0
+
+	END_DEF	
+	
+	OAR_TIMEOUT	030
+
+END_DEF	

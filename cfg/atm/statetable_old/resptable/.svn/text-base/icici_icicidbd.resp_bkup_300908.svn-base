@@ -1,0 +1,56 @@
+GOOD_RESPONSE_START_DEF
+
+#TxnCode_IndirectState		StateNo		ScreenNo
+010001_0			011		050	
+
+#Fast Cash
+10001_0  			006		221	            
+
+#Cash Withdrawl
+360000_0  025   053     
+360001_0  026   053     
+10000_0  006   221             
+10002_0  045   054            
+
+#Balance Enquiry
+360009_0  025   255     			            
+360012_0  028   053                
+300000_0  028   255     
+300001_0  028   255     
+
+#Mini Statement
+360013_0  030   053                 
+380000_0  045   053               
+
+#Cheque Book Request
+360011_0  032   053               
+910000_0  045   053     
+910001_0  045   053     
+
+#Statement Request
+360010_0  048   053    
+920000_0  045   053     
+920001_0  045   053     
+
+#Pin Change
+941000_0  039   053     
+940101_0  042   053     
+
+940104_0  045   053                 
+
+#Fund Transfer
+360005_0  034   053               
+360006_0  036   053             
+400000_0  045   053        
+
+END_DEF
+
+BAD_RESPONSE_START_DEF
+
+#Response_IndirectState		StateNo		ScreeNo
+14_0				011		051	
+5_0				124		000	
+
+END_DEF
+
+

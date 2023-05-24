@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	CHEQUE $SPACE REPRESENTED 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

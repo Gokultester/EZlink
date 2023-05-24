@@ -1,0 +1,19 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$STMT_1
+	$LF
+	$STMT_2
+	$LF
+	$STMT_3
+	$LF
+	$STMT_4
+	$LF
+	$STMT_5
+	$LF
+	YOUR $SPACE AVL $SPACE BALANCE
+	$LF
+	$AVAIL_BALANCE
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

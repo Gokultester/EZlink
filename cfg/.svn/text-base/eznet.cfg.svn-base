@@ -1,0 +1,69 @@
+DRIVER_START_DEF
+	ATM0001
+#	ATM0002
+#	ATM0003
+	HOST0001
+	GUI001
+END_DEF
+
+ATM0001_START_DEF
+	Protocol  TCPIP
+	ConnectionType	accept
+	IpAddress 140.0.0.57
+	PortNo		6001
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	yes
+END_DEF
+
+
+ATM0002_START_DEF
+	Protocol  TCPIP
+	ConnectionType	accept
+	IpAddress 140.0.0.57
+	PortNo		6002
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	yes
+END_DEF
+
+ATM0003_START_DEF
+	Protocol  TCPIP
+	ConnectionType	accept
+	IpAddress 140.0.0.57
+	PortNo		6003
+	DestChannel	EzTritonStd
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	yes
+END_DEF
+
+HOST0001_START_DEF
+	Protocol  TCPIP
+	ConnectionType	make	
+	IpAddress 140.0.0.57
+	PortNo		7000
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	yes
+END_DEF
+
+GUI001_START_DEF
+	Protocol  TCPIP
+	ConnectionType	accept
+	IpAddress 140.0.0.57
+	PortNo		8001
+	DestChannel	EzGUIcontroller
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	yes
+END_DEF
+

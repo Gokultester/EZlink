@@ -1,0 +1,119 @@
+ATM_SCREEN_START_DEF
+
+000     $SI @ @ $ESC O 000  $ESC P 000 0
+
+001     $SI @ @ $ESC O 001  $ESC P 001 0
+
+002     $SI @ @ $ESC O 002  $ESC P 002 0
+
+003
+
+004
+
+005
+
+006
+
+007
+
+008
+
+009
+
+010     $SI @ @ $ESC M03 $ESC O 010 $ESC P 010 0 $ESC D 009 $ESC O 501 $ESC P 501 0  $ESC D 009 $SO 010
+011     $SI @ @ $ESC O 011 $ESC P 011 0
+
+012     $SI @ @ $ESC O 012 $ESC P 012 0 $ESC H 001 $SI C 3 $HT $SI J 3
+
+013     $SI @ @ $ESC O 013 $ESC P 013 0
+
+014     $SI @ @ $ESC O 014 $ESC P 014 0
+
+015     $SI @ @ $ESC O 015 $ESC P 015 0
+
+016     $SI @ @ $ESC O 016 $ESC P 016 0
+
+017     $SI @ @ $ESC O 017 $ESC P 017 0
+
+018     $SI @ @ $ESC O 018 $ESC P 018 0
+
+019     $SI @ @ $ESC O 019 $ESC P 019 0
+
+020     $SI @ @ $ESC O 030 $ESC P 020 0 $ESC H 168 $SI J J
+
+021     $SI @ @ $ESC O 021 $ESC P 021 0
+
+022     $SI @ @ $ESC O 022 $ESC P 022 0
+
+023     $SI @ @ $ESC O 023 $ESC P 023 0  $ESC H 001 $SI C 3
+
+024     $SI @ @ $ESC O 024 $ESC P 024 0  $ESC H 001 $SI C 3
+
+025     $SI @ @ $ESC O 025 $ESC P 025 0
+
+026     $SI @ @ $ESC O 026 $ESC P 026 0
+
+027     $SI @ @ $ESC O 027 $ESC P 027 0
+
+028     $SI @ @ $ESC O 028 $ESC P 028 0
+
+029     $SI @ @ $ESC O 029 $ESC P 029 0
+
+030     $SI @ @ $ESC O 030 $ESC P 030 0
+
+031     $SI @ @ $ESC O 031 $ESC P 031 0
+
+032     $SI @ @ $ESC O 032 $ESC P 032 0
+
+033     $SI @ @ $ESC O 033 $ESC P 033 0
+
+034     $SI @ @ $ESC O 034 $ESC P 034 0
+
+035     $SI @ @ $ESC O 035 $ESC P 035 0
+
+036     $SI @ @ $ESC O 036 $ESC P 036 0
+
+037     $SI @ @ $ESC O 037 $ESC P 037 0
+
+038     $SI @ @ $ESC O 038 $ESC P 038 0  $ESC H 001 $SI C 3 $HT $SI J 3
+
+039     $SI @ @ $ESC O 039 $ESC P 039 0
+
+040     $SI @ @ $ESC O 040 $ESC P 040 0
+
+041     $SI @ @ $ESC O 041 $ESC P 041 0
+
+042     $SI @ @ $ESC O 042 $ESC P 042 0
+
+043     $SI @ @ $ESC O 043 $ESC P 043 0
+
+044     $SI @ @ $ESC O 044 $ESC P 044 0
+
+045     $SI @ @ $ESC O 045 $ESC P 045 0
+
+046     $SI @ @ $ESC O 046 $ESC P 046 0
+
+047     $SI @ @ $ESC O 047 $ESC P 047 0
+
+048     $SI @ @ $ESC O 048 $ESC P 048 0
+
+049     $SI @ @ $ESC O 049 $ESC P 049 0
+
+050     $SI @ @ $ESC O 050 $ESC P 050 0
+
+051     $SI @ @ $ESC O 200 $ESC P 200 0
+
+052     $SI @ @ $ESC O 052 $ESC P 052 0
+
+053
+
+054     $SI @ @ $ESC 0 054 $ESC P 054 0
+
+072     $SI @ @ $ESC 0 200 $ESC P 200 0
+
+501     $SI @ @ $ESC O 501 $ESC P 501 0
+
+055     $SI J J
+
+END_DEF
+

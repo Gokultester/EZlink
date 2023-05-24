@@ -1,0 +1,29 @@
+ATM_SCREEN_START_DEF
+	000	$FF $ESC PEC:\S4PICT\ICON000.pcx $ESC \								
+
+	004	$SI @ @ $SI H L 								
+
+	010	$FF $ESC PEC:\S4PICT\ICON002.pcx $ESC \								
+
+	012	$FF $ESC PEC:\S4PICT\ICON002.pcx $ESC \ $ESC [21;80m $SI @ @ $SI H M
+
+	013	$FF $ESC PEC:\S4PICT\ICON013.pcx $ESC \ $ESC [21;80m $SI @ @ $SI H M
+
+	015	 $FF $ESC PEC:\S4PICT\ICON022.pcx $ESC \								
+
+	016	 $FF $ESC PEC:\S4PICT\ICON016.pcx $ESC \ $ESC [21;80m $SI @ @ $SI H M
+
+	016	 $FF $ESC PEC:\S4PICT\ICON016.pcx $ESC \ $ESC [21;80m $SI @ @ $SI H M
+
+	017	$FF $ESC PEC:\S4PICT\ICON017.pcx $ESC \ $ESC [21;80m $SI @ @ $SI H M
+
+	020	 $FF $ESC PEC:\S4PICT\ICON016.pcx $ESC \								
+
+	020	 $FF $ESC PEC:\S4PICT\ICON016.pcx $ESC \								
+
+	025	$FF $ESC PEC:\S4PICT\ICON025.pcx $ESC \								
+
+	072	 $FF $ESC PEC:\S4PICT\ICON072.pcx $ESC \ $ESC [21;80m
+
+	
+END_DEF

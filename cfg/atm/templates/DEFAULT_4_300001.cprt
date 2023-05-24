@@ -1,0 +1,8 @@
+	$INCLUDE-prepaid_header.prt
+	$LF
+	YOUR $SPACE AVAILABLE $SPACE BALANCE
+	$LF
+	$AVAIL_BALANCE
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

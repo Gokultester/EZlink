@@ -1,0 +1,7 @@
+$FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon038.jpg $ESC \ $ESC [27;80m $SI J 0
+$SI I B $STMT_5
+$SI J B $STMT_4
+$SI K B $STMT_3
+$SI L B $STMT_2
+$SI M B $STMT_1
+

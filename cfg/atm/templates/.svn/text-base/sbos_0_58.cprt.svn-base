@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	TRANSACTION $SPACE NOT $SPACE PREMITTED $SPACE ON $SPACE THIS $SPACE TERMINAL 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

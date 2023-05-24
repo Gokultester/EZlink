@@ -1,0 +1,9 @@
+	$INCLUDE-hpscb_header.prt
+	FROM $SPACE A/C $SPACE : $SPACE $FROM_ACC[3,] ******* $FROM_ACCT[10,13,]
+	$LF
+	$LF
+	AVAIL $SPACE BALANCE $SPACE : $SPACE 
+	$AVAIL_BALANCE $SPACE $ISSCURRDESC
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

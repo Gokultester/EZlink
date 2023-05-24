@@ -1,0 +1,21 @@
+EZDB_START_DEF
+	
+	db_username 	eezlink
+	db_password	eezlink
+	db_dbname	ezdb
+
+END_DEF
+
+DBCONNECTION_START_DEF
+
+	EzDeviceMgr		Static
+	EzSecurityMgr		Static
+	EzATMController		Static
+	EzNetworkMgr		Static
+	EzEchoMgr		Static
+	EzTxnLogger		Static
+	EzSafReader		Static
+	EzSafWriter		Static
+	EzAuthMgr		Static
+
+END_DEF

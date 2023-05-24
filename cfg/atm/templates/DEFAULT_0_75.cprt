@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	EXCEEDS $SPACE PIN $SPACE RETRY $SPACE COUNT $SPACE CONTACT $SPACE CARD $SPACE ISSUER  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

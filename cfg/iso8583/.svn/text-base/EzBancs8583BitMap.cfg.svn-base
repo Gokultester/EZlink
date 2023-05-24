@@ -1,0 +1,269 @@
+
+FIELDDESC_START_DEF
+
+#bitno		fixed/binary		type		minlen		maxlen		IMF
+1			fixed				b			16			16	
+2			llvar				n			16			19	
+3			fixed				n			6			6	
+4			fixed				n			12			12	
+7			fixed				d			12			12	
+11			fixed				n			6			6	
+12			fixed				n			6			6	
+13			fixed				d			6			6	
+17			fixed				d			6			6	
+18			fixed				n			4			4	
+32			llvar				an			1			11	
+35			llvar				an			1			40	
+37			fixed				an			12			12	
+38			fixed				n			6			6
+39			fixed				an			2			2
+41			fixed				an			16			16
+43			fixed				an			40			40
+54			lllvar				an			1			120
+60			llvar				an			1			20
+61			llvar				an			1			20
+62			llvar				an			1			20
+63			llvar				an			1			20
+64			llvar				an			1			20
+65			fixed				n			6			6
+66			llvar				an			1			50
+67			llvar				an			1			20
+70			fixed				n			3			3
+71			lllvar				an			1			999
+72			lllvar				an			1			999
+80			llvar				an			1			20
+81			llvar				an			1			99
+90			llvar				an			1			20
+95			fixed				an			56			56
+102			llvar				an			1			32	
+102			llvar				an			1			32
+127			llvar				an			1			999
+
+
+END_DEF
+
+MSGTYPE_START_DEF
+
+	0200
+	0210
+	0420
+	0430
+	0800
+	0810
+
+END_DEF
+	
+
+
+
+0800_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		1			*				*			on		secondary_bitmap
+2		12			*				*			on		local_date
+4		32			*				*			on		Acquirer Network id
+5		70			*				*			on		Netcode
+
+END_DEF
+
+0810_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		1			*				*			on		secondary_bitmap
+2		12			*				*			on		local_date
+4		32			*				*			on		Acquirer Network id
+5		39			*				*			on		Response Code
+6		70			*				*			on		Netcode
+
+END_DEF
+
+				
+0200_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		1			*				*			on		secondary_bitmap
+2		2			*				*			on		cardholder_number
+3		3			*				*			on		processing_code		
+4		4			*				*			on		amount		
+5		4			40				*			on		amount		
+6		7			*				*			on		txn_date_time			
+7		11			*				*			on		trace_num
+#8		12			*				*			on		local_time
+#9		13			*				*			on		local_date
+10		17			*				*			on		capture_date
+11		18			*				*			on		merchant
+12		32			*				*			on		acquirer_institution_code
+13		37			*				*			off		refnum
+14		38			*				*			off		authcode
+15		39			*				*			off		respcode
+16		41			*				*			on		terminal_id
+17		43			*				*			on		terminal_location
+18		54			*				*			off		additional_amount
+19		60			*				*			on		From_branch_code
+20		61			*				*			on		issuer_product_code
+21		62			*				*			off		To_branch_code
+22		63			*				*			off		To_product_Code
+23		64			*				*			off		chequeNo
+24		65			*				*			off		chequedate
+25		66			*				*			off 	payeename
+26		67			*				*			on		acqbranchbode	
+27		70			*				*			off		netbode
+28		71			*				*			off		HostInformation
+29		72			*				*			off		HostInformation
+30		80			*				*			off		networkid
+31		81			*				*			off		reservedfield
+32		90			*				*			off		originaldata
+33		95			*				*			off		Replaceamount
+34		102			*				*			on		fromacno
+35		103			40				*			on		toacno
+36		127			*				*			off		minis/mdata
+
+	
+
+END_DEF
+
+0210_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		1			*				*			on		secondary_bitmap
+2		2			*				*			on		cardholder_number
+3		3			*				*			on		processing_code		
+4		4			1				*			on		amount		
+5		4			40				*			on		amount		
+6		7			*				*			on		txn_date_time			
+7		11			*				*			on		trace_num
+8		12			*				*			on		local_time
+8		13			*				*			on		local_date
+8		17			*				*			on		capture_date
+9		18			*				*			on		merchant
+10		32			*				*			on		acqurier_institution_code
+11		35			*				*			off		track2
+12		37			*				*			off		refnum
+13		38			*				*			off		authcode
+14		39			*				*			on		respcode
+15		41			*				*			on		terminal_id
+16		43			*				*			on		terminal_location
+17		54			*				*			on		additional_amount
+18		60			*				*			on		From_branch_code
+19		61			*				*			on		issuer_product_code
+20		62			*				*			off		To_branch_code
+21		63			*				*			off		To_product_Code
+22		64			*				*			off		chequeNo
+23		65			*				*			off		chequedate
+24		66			*				*			off 	payeename
+25		67			*				*			on		acqbranchcode	
+26		70			*				*			off		netbode
+27		71			*				*			off		HostInformation
+28		72			*				*			off		HostInformation
+29		80			*				*			off		networkid
+30		81			*				*			off		reservedfield
+31		90			*				*			off		originaldata
+32		95			*				*			off		Replaceamount
+33		102			*				*			on		fromacno
+34		103			40				*			on		toacno
+35		127			38				*			on		minis/mdata
+
+END_DEF
+
+
+0420_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		1			*				*			on		secondary_bitmap
+2		2			*				*			on		cardholder_number
+3		3			*				*			on		processing_code		
+4		4			1				*			on		amount		
+5		4			40				*			on		amount		
+6		7			*				*			on		txn_date_time			
+7		11			*				*			on		trace_num
+8		12			*				*			on		local_time
+9		13			*				*			on		loacl_date
+10		17			*				*			on		capture_date
+11		18			*				*			on		merchant
+12		32			*				*			on		acquirer_institution_code
+13		35			*				*			off		track2
+14		37			*				*			off		refnum
+15		38			*				*			off		authcode
+16		39			*				*			off		respcode
+17		41			*				*			on		terminal_id
+18		43			*				*			on		terminal_location
+19		54			*				*			off		additional_amount
+20		60			*				*			on		From_branch_code
+21		61			*				*			on		issuer_product_code
+22		62			*				*			off		To_branch_code
+23		63			*				*			off		To_product_Code
+24		64			*				*			off		chequeNo
+25		65			*				*			off		chequedate
+26		66			*				*			off 	payeename
+27		67			*				*			on		acqbranchbode	
+28		70			*				*			off		netbode8
+29		71			*				*			off		HostInformation
+30		72			*				*			off		HostInformation
+31		80			*				*			off		networkid
+32		81			*				*			off		reservedfield
+33		90			*				*			on		originaldata
+34		95			*				102			on		Replaceamount
+30		102			*				*			on		fromacno
+35		103			40				*			on		toacno
+32		127			*				*			off		minis/mdata
+
+	
+
+END_DEF
+
+
+0430_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		1			*				*			on		secondary_bitmap
+2		2			*				*			on		cardholder_number
+3		3			*				*			on		processing_code		
+3		4			01				*			on		amount		
+3		4			40				*			on		amount		
+4		7			*				*			on		txn_date_time			
+5		11			*				*			on		trace_num
+5		12			*				*			on		local_time
+5		13			*				*			on		local_date
+7		17			*				*			on		capture_date
+8		18			*				*			on		merchant
+8		32			*				*			on		acqurier_institution_code
+9		35			*				*			off		track2
+10		37			*				*			off		refnum
+11		38			*				*			off		authcode
+12		39			*				*			on		respcode
+13		41			*				*			on		terminal_id
+14		43			*				*			on		terminal_location
+15		54			*				*			on		additional_amount
+16		60			*				*			on		From_branch_code
+16		61			*				*			on		issuer_product_code
+17		62			*				*			off		To_branch_code
+18		63			*				*			off		To_product_Code
+19		64			*				*			off		chequeNo
+20		65			*				*			off		chequedate
+21		66			*				*			off 	payeename
+22		67			*				*			on		acqbranchbode	
+23		70			*				*			off		netbode
+24		71			*				*			off		HostInformation
+25		72			*				*			off		HostInformation
+26		80			*				*			off		networkid
+27		81			*				*			off		reservedfield
+28		90			*				*			on		originaldata
+29		95			*				102			on		Replaceamount
+30		102			*				*			on		fromacno
+31		103			40				*			on		toacno
+32		127			*				*			off		minis/mdata
+
+	
+
+END_DEF
+				
+
+			
+	
+		

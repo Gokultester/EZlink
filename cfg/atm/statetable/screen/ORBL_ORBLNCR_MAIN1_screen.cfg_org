@@ -1,0 +1,382 @@
+ATM_SCREEN_START_DEF                                                
+#Reversed Screen                                                    
+        000     $FF $ESC P2144 $ESC \             
+        C00     $FF $ESC P2144 $ESC \             
+        001     $FF $ESC P2099 $ESC \             
+        C01     $FF $ESC P2099 $ESC \             
+        002     $FF $ESC P2088 $ESC \             
+        C02     $FF $ESC P2088 $ESC \             
+	003     $FF $ESC P2096 $ESC \
+	C03     $FF $ESC P2096 $ESC \
+	004 	$FF $SI H M UGX ********0.00
+        C06     $FF $ESC P2099 $ESC \             
+        006     $FF $ESC P2099 $ESC \
+             
+
+#Welcome
+       	010    $FF $SO 011 $ESC [015z $SO 012 $ESC [015z $SO 013 $ESC [015z $SO 014 $ESC [015z
+	011    $FF $SI @ @ $ESC P2075 $ESC \                   
+	012    $FF $SI @ @ $ESC P2750 $ESC \ 
+	013    $FF $SI @ @ $ESC P2751 $ESC \                    
+	014    $FF $SI @ @ $ESC P2133 $ESC \ $SO 010
+#Muli Language        
+	016     $FF $SI @ @ $ESC P2074 $ESC \                   
+
+#Empty Screen
+	018
+
+#PIN Entry                                                                                     
+	#ON-US
+        025     $FF $SI @ @ $ESC P2135 $ESC \ $ESC [21;80m $SI H L              
+        358     $FF $SI @ @ $ESC P2468 $ESC \ $ESC [21;80m $SI H L
+        625     $FF $SI @ @ $ESC P2735 $ESC \ $ESC [21;80m $SI H L              
+
+	#OFF-US
+        180     $FF $SI @ @ $ESC P2119 $ESC \ $ESC [21;80m $SI H L 
+
+#ICC Application Selction	
+	045 $FF 045 EN $SI B A PLEASE SELECT PRODUCT / ACCOUNT:
+	046 $SI F N &&S&&RJ**************** &&E
+	047 $SI I N &&S&&RJ**************** &&E
+	048 $SI L N &&S&&RJ**************** &&E
+	049 $SI O N &&S&&RJ**************** &&E
+	050 $SI O : MORE 
+	051 $SI O @ BACK
+	052 $FF 052 EN $SI E K TIMED OUT! $SI G H PLEASE TAKE CARD
+	053 && S && C D ****************&&E
+	054 $FF 054 EN $SI A D SORRY CANNOT ACCESS YOUR $SI B E CHOSEN PRODUCT/ACCOUNT $SI D B PLEASE SELECT AN ALTERNATIVE
+	055 && S && C D ****************&&E
+
+#ON-US Main Txn Selection                                                                             
+        024     $FF $SI @ @ $ESC P2136 $ESC \                                        
+        357     $FF $SI @ @ $ESC P2469 $ESC \                                        
+        624     $FF $SI @ @ $ESC P2736 $ESC \
+     
+#OFF-US Main Txn Selection
+	181     $FF $SI @ @ $ESC P2120 $ESC \	                           
+
+#Fast Cash Selection                                                                           
+        029     $FF $SI @ @ $ESC P2014 $ESC \                                
+        361     $FF $SI @ @ $ESC P2347 $ESC \                                
+        629     $FF $SI @ @ $ESC P2614 $ESC \                                
+
+#Account Selection                                                                             
+        023     $FF $SI @ @ $ESC P2137 $ESC \ 
+	356     $FF $SI @ @ $ESC P2370 $ESC \                                 
+	623     $FF $SI @ @ $ESC P2737 $ESC \                                 
+        
+	192     $FF $SI @ @ $ESC P2137 $ESC \                                
+        193     $FF $SI @ @ $ESC P2193 $ESC \                                
+        194     $FF $SI @ @ $ESC P2194 $ESC \                                
+                                      
+#Printer Selection                                                                             
+        026     $FF $SI @ @ $ESC P2019 $ESC \                                
+        359     $FF $SI @ @ $ESC P2352 $ESC \
+        626     $FF $SI @ @ $ESC P2619 $ESC \
+
+        037     $FF $SI @ @ $ESC P2019 $ESC \                                
+
+#Amount Entry                                                                                  
+        027     $FF $SI @ @ $ESC P2020 $ESC \ $ESC [21;80m $SI F L                        
+	360     $FF $SI @ @ $ESC P2353 $ESC \ $ESC [21;80m $SI F L                        
+	627     $FF $SI @ @ $ESC P2620 $ESC \ $ESC [21;80m $SI F L                        
+
+#Transaction Request                                                                           
+        028     $FF $SI @ @ $ESC P2076 $ESC \                                
+        361     $FF $SI @ @ $ESC P2409 $ESC \                                
+        628     $FF $SI @ @ $ESC P2676 $ESC \                                
+
+        015     $FF $SI @ @ $ESC P2076 $ESC \                                
+
+
+
+#PIN Change - New PIN                                                                          
+	021 	$FF $SI @ @ $ESC P2027 $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+	354 	$FF $SI @ @ $ESC P2360 $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+	621 	$FF $SI @ @ $ESC P2627 $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+
+#PIN Change - Confirm PIN                                                                      
+	022 	$FF $SI @ @ $ESC P2028 $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI J N
+	355 	$FF $SI @ @ $ESC P2361 $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+	622 	$FF $SI @ @ $ESC P2628 $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+
+#PIN Change - Confirm PIN Failed Re-Enter
+        060     $FF  $SI @@ $ESC P2029 $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI M L
+        393     $FF  $SI @@ $ESC P2362 $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI M L
+        660     $FF  $SI @@ $ESC P2629 $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI M L
+
+
+#Deposit
+
+	056 $FF  $ESC P2033 $ESC \
+	389 $FF  $ESC P2366 $ESC \
+	656 $FF  $ESC P2633 $ESC \
+	
+	057 $FF  $ESC P2010 $ESC \
+	390 $FF  $ESC P2343 $ESC \
+	657 $FF  $ESC P2610 $ESC \
+
+	058 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC P2036 $ESC \ $SI G H
+	391 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC P2369 $ESC \ $SI G H
+	658 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC P2636 $ESC \ $SI G H
+
+#BNA Deposit Related Screens
+	#056 $FF 056 EN $SI B A PLEASE $SPACE ENTER $SPACE NOTES:
+        #056     $FF $SI @ @ $ESC P2056 $ESC \                                        
+	#057 $FF 057 EN $SI B A PLEASE $SPACE REMOVE $SPACE NOTES:
+        #057     $FF $SI @ @ $ESC P2057 $ESC \                                        
+	#058 $FF 058 EN $SI B A CONFIRM $SPACE NOTES:
+        #058     $FF $SI @ @ $ESC P2058 $ESC \                                        
+	#059 $FF 059 EN $SI B A HARDWARE $SPACE ERROR
+         
+# Fund Transfer
+        031     $FF $SI @ @ $ESC P2031 $ESC \                                
+        231     $FF $SI @ @ $ESC P2231 $ESC \                                
+        032     $FF $SI @ @ $ESC P2032 $ESC \                                
+        232     $FF $SI @ @ $ESC P2232 $ESC \                                
+        039     $FF $SI @ @ $ESC P2039 $ESC \                                
+        239     $FF $SI @ @ $ESC P2239 $ESC \                                
+        040     $FF $SI @ @ $ESC P2040 $ESC \                                
+        240     $FF $SI @ @ $ESC P2240 $ESC \  
+
+#Bill Pay & Mobile Topup
+        033     $FF $SI @ @ $ESC P2033 $ESC \
+
+#Enter Mobile Screen
+        041     $FF $SI @ @ $ESC P2046 $ESC \ $ESC [21;80m  $SI F L                               
+        042     $FF $SI @ @ $ESC P2047 $ESC \ $ESC [21;80m  $SI F L                               
+        043     $FF $SI @ @ $ESC P2048 $ESC \ $ESC [21;80m  $SI F L                               
+	
+        188     $FF $SI @ @ $ESC P2188 $ESC \ $ESC [21;80m  $SI F L
+                              
+#Dynamic Dispense and Amount Failure
+	#All Cassets are empty
+        111     $FF $SI @ @ $ESC P2081 $ESC \ $SI D C LOW $SPACE CASH $SPACE IN $SPACE ATM
+
+	#Per Transcation Limit Exceeds
+	112     $FF $SI @ @ $ESC P2023 $ESC \
+	
+	#InValid AMOUNT Entered
+	
+	#B & C - Empty-302
+        113     $FF  $SI @@ $ESC [80m $ESC [20m $ESC P2020 $ESC \ $SI E B ENTER $SPACE MULTIPLE $SPACE OF $SPACE 20000 $SPACE UGX
+	#A - Empty-303
+	114 	$FF  $SI @@ $ESC [80m $ESC [20m $ESC P2020 $ESC \ $SI E B ENTER  $SPACE BELOW $SPACE 400000 $SPACE UGX
+	#A & C - Empty-304
+	115	$SI @@ $ESC [80m $ESC [20m $ESC P2020 $ESC \ $SI E B ENTER $SPACE MULTIPLE $SPACE OF $SPACE 10000 $SPACE UGX
+	#A & B - Empty - 305
+	116	$FF  $SI @@ $ESC [80m $ESC [20m $ESC P2020 $ESC \ $SI E B ENTER $SPACE BELOW $SPACE 200000 $SPACE UGX
+        
+
+#Close Screen for Good Response
+        061     $FF $SI @ @ $ESC P2105 $ESC \ 
+        394     $FF $SI @ @ $ESC P2438 $ESC \ 
+        661     $FF $SI @ @ $ESC P2605 $ESC \ 
+        062     $FF $SO 064 $ESC [020z $SO 065 $ESC [020z $SO 061
+        063     $SO 064 $SO 065
+        064     $FF $SI @@ $ESC P2073 $ESC \
+        065     $FF $ESC [80m $ESC [20m $SI @@ $ESC (1 $ESC P2104 $ESC \
+        066     $FF $SI @ @ $ESC P2031 $ESC \
+        067     $FF $SI @ @ $ESC P2067 $ESC \ 
+        068     $FF $SI @ @ $ESC P2068 $ESC \
+        069     $FF $SI @ @ $ESC P2069 $ESC \
+        070     $FF $SI @ @ $ESC P2070 $ESC \
+
+#Good Response Continue
+        071     $FF  $SI @@ $ESC [80m $ESC [20m $ESC P2143 $ESC \ $SO 030
+        404     $FF  $SI @@ $ESC [80m $ESC [20m $ESC P2476 $ESC \ $SO 030
+        671     $FF  $SI @@ $ESC [80m $ESC [20m $ESC P2643 $ESC \ $SO 030
+        072     $FF $SI @ @ $ESC P2065 $ESC \
+        405     $FF $SI @ @ $ESC P2398 $ESC \
+        672     $FF $SI @ @ $ESC P2665 $ESC \
+        073     $FF $SI @ @ $ESC P2073 $ESC \
+        406     $FF $SI @ @ $ESC P2406 $ESC \
+        673     $FF $SI @ @ $ESC P2673 $ESC \
+        074     $FF $SI @ @ $ESC P2074 $ESC \
+        407     $FF $SI @ @ $ESC P2407 $ESC \
+        674     $FF $SI @ @ $ESC P2674 $ESC \
+        075     $FF $SI @ @ $ESC P2075 $ESC \
+        408     $FF $SI @ @ $ESC P2408 $ESC \
+        675     $FF $SI @ @ $ESC P2675 $ESC \
+        076     $FF $SI @ @ $ESC P2076 $ESC \
+        409     $FF $SI @ @ $ESC P2409 $ESC \
+        676     $FF $SI @ @ $ESC P2676 $ESC \
+        077     $FF $SI @ @ $ESC P2144 $ESC \
+        410     $FF $SI @ @ $ESC P2477 $ESC \
+        677     $FF $SI @ @ $ESC P2644 $ESC \
+
+#Close Screen for Bad Response
+        080     $FF $SI @ @ $ESC P2080 $ESC \
+        081     $FF $SI @ @ $ESC P2081 $ESC \
+        082     $FF $SI @ @ $ESC P2082 $ESC \
+        083     $FF $SI @ @ $ESC P2083 $ESC \
+        084     $FF $SI @ @ $ESC P2084 $ESC \
+        085     $FF $SI @ @ $ESC P2085 $ESC \
+        086     $FF $SI @ @ $ESC P2086 $ESC \
+        087     $FF $SI @ @ $ESC P2087 $ESC \
+        088     $FF $SI @ @ $ESC P2088 $ESC \
+        089     $FF $SI @ @ $ESC P2089 $ESC \
+        090     $FF $SI @ @ $ESC P2090 $ESC \
+        091     $FF $SI @ @ $ESC P2091 $ESC \
+        092     $FF $SI @ @ $ESC P2092 $ESC \
+        093     $FF $SI @ @ $ESC P2093 $ESC \
+        094     $FF $SI @ @ $ESC P2094 $ESC \
+        095     $FF $SI @ @ $ESC P2095 $ESC \
+        096     $FF $SI @ @ $ESC P2096 $ESC \
+        097     $FF $SI @ @ $ESC P2097 $ESC \
+        098     $FF $SI @ @ $ESC P2098 $ESC \
+        099     $FF $SI @ @ $ESC P2099 $ESC \
+        100     $FF $SI @ @ $ESC P2100 $ESC \
+        102     $FF $SI @ @ $ESC P2102 $ESC \
+        103     $FF $SI @ @ $ESC P2103 $ESC \
+        104     $FF $SI @ @ $ESC P2104 $ESC \
+        105     $FF $SI @ @ $ESC P2105 $ESC \
+#Individual card frequency  limit exceeded
+        106     $FF  $SI @@ $ESC P2102 $ESC \ $SI BCYOUR $SPACE WITHDRAWAL $SPACE FREQUENCY $SI CILIMIT $SPACE EXCEEDED
+#Individual card transaction limit exceeded
+        107     $FF  $SI @@ $ESC P2102 $ESC \ $SI BGYOUR $SPACE PER $SPACE DAY $SPACE TRANSACTION $SI CILIMIT $SPACE EXCEEDED
+#Old Pin & New Pin Are Same
+        108     $FF $SI @ @ $ESC P2105 $ESC \ $SI D D OLD $SPACE PIN $SPACE & $SPACE  PIN $SPACE ARE $SPACE SAME
+#Invalid Card
+        109     $FF $SI @ @ $ESC P2078 $ESC \
+        442     $FF $SI @ @ $ESC P2411 $ESC \
+        709     $FF $SI @ @ $ESC P2678 $ESC \
+#Expired Card
+        110     $FF $SI @ @ $ESC P2083 $ESC \
+        443     $FF $SI @ @ $ESC P2416 $ESC \
+        710     $FF $SI @ @ $ESC P2683 $ESC \
+
+#Card Maintenance Bad Response
+	130     $FF $SI @ @ $ESC P2105 $ESC \ $SI D A YOUR $SPACE CARD $SPACE UNDER $SPACE  MAINTENANCE 
+	131     $FF $SI @ @ $ESC P2105 $ESC \ $SI D A YOUR $SPACE CARD $SPACE HAS $SPACE BEEN $SPACE CANCELLED
+	132     $FF $SI @ @ $ESC P2097 $ESC \
+	465     $FF $SI @ @ $ESC P2430 $ESC \
+	732     $FF $SI @ @ $ESC P2697 $ESC \
+	133     $FF $SI @ @ $ESC P2105 $ESC \ $SI D C YOUR $SPACE CARD $SPACE NOT $SPACE ACTIVATED
+	136     $FF $SI @ @ $ESC P2091 $ESC \
+	469     $FF $SI @ @ $ESC P2424 $ESC \
+	736     $FF $SI @ @ $ESC P2691 $ESC \
+	137     $FF $SI @ @ $ESC P2090 $ESC \
+	470     $FF $SI @ @ $ESC P2423 $ESC \
+	737     $FF $SI @ @ $ESC P2690 $ESC \
+	138     $FF $SI @ @ $ESC P2138 $ESC \
+	471     $FF $SI @ @ $ESC P2471 $ESC \
+	738     $FF $SI @ @ $ESC P2738 $ESC \
+	139     $FF $SI @ @ $ESC P2139 $ESC \
+	472     $FF $SI @ @ $ESC P2472 $ESC \
+	739     $FF $SI @ @ $ESC P2739 $ESC \
+	142     $FF $SI @ @ $ESC P2112 $ESC \
+	475     $FF $SI @ @ $ESC P2445 $ESC \
+	742     $FF $SI @ @ $ESC P2712 $ESC \
+	143     $FF $SI @ @ $ESC P2088 $ESC \
+	476     $FF $SI @ @ $ESC P2421 $ESC \
+	743     $FF $SI @ @ $ESC P2688 $ESC \
+	144     $FF $SI @ @ $ESC P2018 $ESC \
+	477     $FF $SI @ @ $ESC P2351 $ESC \
+	744     $FF $SI @ @ $ESC P2618 $ESC \
+        145     $FF $SI @ @ $ESC P2015 $ESC \
+        478     $FF $SI @ @ $ESC P2348 $ESC \
+        745     $FF $SI @ @ $ESC P2615 $ESC \
+
+	
+#Supervisior Screens
+	155 $FF  $SI @@ $ESC P2102 $ESC \ $SO 156 $ESC [27m $ESC [80m $ESC (1 $SI ADSELECT STD CASH FUNCTION $SI I J PRINT HOST TOTALS $SI L J START NEW CYCLE  $SI O J STOP CYCLE
+	156 $ESC [80m $ESC (1 $ESC [27m $SI C@TO VOID TRANSACTION PRESS CANCEL
+	157     $FF $SI @ @ $ESC P2157 $ESC \
+	158     $FF $SI @ @ $ESC P2158 $ESC \
+	159     $FF $SI @ @ $ESC P2159 $ESC \ $ESC [21;80m $SI F L
+	160     $FF $SI @ @ $ESC P2160 $ESC \
+	161     $FF $SI @ @ $ESC P2161 $ESC \ $ESC [21;80m $SI F L
+	162     $FF $SI @ @ $ESC P2162 $ESC \ $ESC [21;80m $SI F L
+	163     $FF $SI @ @ $ESC P2163 $ESC \
+	164     $FF $SI @ @ $ESC P2164 $ESC \
+	165     $FF $SI @ @ $ESC P2165 $ESC \
+	166     $FF $SI @ @ $ESC P2166 $ESC \
+	167     $FF $SI @ @ $ESC P2167 $ESC \
+	171     $FF $SI @ @ $ESC P2171 $ESC \
+	172     $FF $SI @ @ $ESC P2172 $ESC \
+	173     $FF $SI @ @ $ESC P2173 $ESC \
+	174     $FF $SI @ @ $ESC P2174 $ESC \
+	175     $FF $SI @ @ $ESC P2175 $ESC \
+	176     $FF $SI @ @ $ESC P2176 $ESC \
+	177     $FF $SI @ @ $ESC P2177 $ESC \
+	188     $FF $SI @ @ $ESC P2188 $ESC \
+	189     $FF $SI @ @ $ESC P2189 $ESC \
+	190     $FF $SI @ @ $ESC P2190 $ESC \
+	178     $FF $SI @ @ $ESC P2178 $ESC \
+	179     $FF $SI @ @ $ESC P2179 $ESC \
+        
+        281     $FF $SI @ @ $ESC P2281 $ESC \
+        282     $FF $SI @ @ $ESC P2282 $ESC \
+        283     $FF $SI @ @ $ESC P2283 $ESC \
+        284     $FF $SI @ @ $ESC P2284 $ESC \
+        285     $FF $SI @ @ $ESC P2285 $ESC \
+        286     $FF $SI @ @ $ESC P2286 $ESC \
+        287     $FF $SI @ @ $ESC P2287 $ESC \
+        288     $FF $SI @ @ $ESC P2288 $ESC \
+        289     $FF $SI @ @ $ESC P2289 $ESC \
+        290     $FF $SI @ @ $ESC P2290 $ESC \
+        291     $FF $SI @ @ $ESC P2291 $ESC \
+        292     $FF $SI @ @ $ESC P2292 $ESC \
+        293     $FF $SI @ @ $ESC P2293 $ESC \
+        294     $FF $SI @ @ $ESC P2294 $ESC \
+        295     $FF $SI @ @ $ESC P2295 $ESC \
+        296     $FF $SI @ @ $ESC P2296 $ESC \
+        297     $FF $SI @ @ $ESC P2297 $ESC \
+        298     $FF $SI @ @ $ESC P2298 $ESC \
+        299     $FF $SI @ @ $ESC P2299 $ESC \
+        300     $FF $SI @ @ $ESC P2300 $ESC \
+        301     $FF $SI @ @ $ESC P2301 $ESC \
+        302     $FF $SI @ @ $ESC P2302 $ESC \
+        303     $FF $SI @ @ $ESC P2303 $ESC \
+        304     $FF $SI @ @ $ESC P2304 $ESC \
+        305     $FF $SI @ @ $ESC P2305 $ESC \
+        306     $FF $SI @ @ $ESC P2306 $ESC \
+        307     $FF $SI @ @ $ESC P2307 $ESC \
+        308     $FF $SI @ @ $ESC P2308 $ESC \
+        309     $FF $SI @ @ $ESC P2309 $ESC \
+        310     $FF $SI @ @ $ESC P2310 $ESC \
+	311     $FF $SI @ @ $ESC P2311 $ESC \
+	312     $FF $SI @ @ $ESC P2312 $ESC \
+	313     $FF $SI @ @ $ESC P2313 $ESC \
+	314     $FF $SI @ @ $ESC P2314 $ESC \
+	315     $FF $SI @ @ $ESC P2315 $ESC \
+	316     $FF $SI @ @ $ESC P2316 $ESC \
+	317     $FF $SI @ @ $ESC P2317 $ESC \
+	318     $FF $SI @ @ $ESC P2318 $ESC \
+	319     $FF $SI @ @ $ESC P2319 $ESC \
+	320     $FF $SI @ @ $ESC P2320 $ESC \
+	322     $FF $SI @ @ $ESC P2322 $ESC \
+	323     $FF $SI @ @ $ESC P2323 $ESC \
+	324     $FF $SI @ @ $ESC P2324 $ESC \
+	325     $FF $SI @ @ $ESC P2325 $ESC \
+	326     $FF $SI @ @ $ESC P2326 $ESC \
+	327     $FF $SI @ @ $ESC P2327 $ESC \
+	329     $FF $SI @ @ $ESC P2329 $ESC \
+	330     $FF $SI @ @ $ESC P2330 $ESC \
+	331     $FF $SI @ @ $ESC P2331 $ESC \
+	332     $FF $SI @ @ $ESC P2332 $ESC \
+	333     $FF $SI @ @ $ESC P2333 $ESC \
+	334     $FF $SI @ @ $ESC P2334 $ESC \
+	336     $FF $SI @ @ $ESC P2336 $ESC \
+	337     $FF $SI @ @ $ESC P2337 $ESC \
+	338     $FF $SI @ @ $ESC P2338 $ESC \
+	339     $FF $SI @ @ $ESC P2339 $ESC \
+#OAR Account Display Screen
+        038     $FF $ESC P2038 $ESC \
+        371     $FF $ESC P2371 $ESC \
+        638     $FF $ESC P2638 $ESC \
+#Default Good Response screen	
+        801     $FF $ESC P2105 $ESC \
+        802     $FF $ESC P2081 $ESC \
+	
+
+#Empty Screen
+
+END_DEF
+
+ATM_RESERVEDSCREEN_START_DEF
+        OAR             038
+        EMPTYSCR        030
+END_DEF
+

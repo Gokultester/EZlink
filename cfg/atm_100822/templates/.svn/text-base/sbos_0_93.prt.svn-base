@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$LF
+	INVALID $SPACE ACQUIRER  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

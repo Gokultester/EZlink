@@ -1,0 +1,23 @@
+TXNMSG_START_DEF
+	#DEVIVETYPE 	#MSGTYPE		#FIELD					FIELDTYPE		NULL/NOTNULL	MINLENGTH	MAXLENGTH	MANDATORY
+									chn						floating		n				16			19			y
+									pcode					numeric			n				5			6			y
+									amount					floating		n				6			15			y
+									trandate				numeric			y				6			6			y
+									trantime				numeric			y				6			6			y
+									localdate				numeric			y				6			6			y
+									localtime				numeric			y				6			6			y
+									traceno					numeric			y				6			6			y
+									capturedate				numeric			y				6			6			y
+									merchantid				numeric			y				6			6			y
+									acquirer_id				alphanumeric	n				6			12			y
+									track2					numeric			n				40			40			y
+									terminal_id				alphanumeric 	y				6			6			y
+									terminal_location		alphanumeric	y				6			6			y
+									issuer_branch			numeric			y				6			6			y
+									issuer_ product_code	numeric			y				6			6			y
+									acquirer_branch			numeric			y				6			6			y
+									frm_account				numeric         y               6           6           y
+									to_account				numeric         y               6           6           y
+
+END_DEF

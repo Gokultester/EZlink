@@ -1,0 +1,13 @@
+STATE_INFO_START_DEF
+#Admin
+#Operator
+#cash deposit / cash withdrawal / bal & mini stmt / more
+        100     E       002     050     100     101     111     111     113     001
+        
+	101     G       012     051     100     110     110     105     104     002
+
+#Default Close State
+        800     J       800     000     800     800     000     000     000     001
+
+END_DEF
+

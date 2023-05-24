@@ -1,0 +1,15 @@
+for j in `ipcs -m | grep $USER | tr -s " " " " | cut -d" " -f 2`
+do
+	echo "Removing Shared memory "$j
+	ipcrm -m $j
+done
+for k in `ipcs -q | grep $USER | tr -s " " " " | cut -d" " -f 2`
+do
+	echo "Removing Message Queue "$k
+	ipcrm -q $k
+done
+for l in `ipcs -s | grep $USER | tr -s " " " " | cut -d" " -f 2`
+do
+	echo "Removing Semaphore "$l
+	ipcrm -s $l
+done

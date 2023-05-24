@@ -1,0 +1,119 @@
+TXNMAP_START_DEF
+
+#Opkey_IndirectState    TxnCode         Amount          CurrencyCode    Receipt Needed/Not      New/Continue/Old Txn    MstType Bitmap
+#User Transactions
+#Sale
+        31_0            000000          000000          356                     1                       1               200     3038058020c01004 SALE
+#Sale
+        31_1            000000          000000          356                     1                       1               200     3038058020c01004 SALE
+#Balance
+        32_0            300000          000000          356                     1                       1               200     3038058020c01004 BALANCE-INQUIRY
+#Balance
+        32_1            300000          000000          356                     1                       1               200     3038058020c01004 BALANCE-INQUIRY
+
+#Pre-Auth
+	312_0            000001          000000          356                     1                       1               100     3038058020c01004 PRE-AUTH
+#Sales Completion
+	313_0            000002          000000          356                     1                       1               220     3038058020c01004 SALE-COMPLETION
+#Pre-Auth
+	312_1            000001          000000          356                     1                       1               100     3038058020c01004 PRE-AUTH
+#Sales Completion
+	313_1            000002          000000          356                     1                       1               220     3038058020c01004 SALE-COMPLETION
+
+#TRANSFER
+	343_0             400001          000000          356                     1                       1               200     3038058020c01006 TRANSFER
+#PINCHANGE
+	33_0             940000          000000          356                     1                       1               200     3038058020c03806 PIN-CHANGE
+#PINCHANGE
+	33_1             940000          000000          356                     1                       1               200     3038058020c03806 PIN-CHANGE
+#Cash
+        341_0             010002          000000          356                     1                       1               200     3038058020c01004 CASH-OUT
+#Cash
+        341_1             010002          000000          356                     1                       1               200     3038058020c01004 CASH-OUT
+
+#Admin Transactions
+#VOID-SALE
+        11_0             020000          000000          356                     1                       0               200     3038058028c01004 VOID-SALE
+#REFUND
+        12_0             200000          000000          356                     1                       0               200     3038058028c01004 REFUND
+#REFUND-VOID
+#        13_0             220000          000000          356                     1                       0               200     3038058028c01004 VOID-REFUND
+#VOID-SALE
+        11_1             020000          000000          356                     1                       0               200     3038058028c01004 VOID-SALE
+#REFUND
+        12_1             200000          000000          356                     1                       0               200     3038058028c01004 REFUND
+#REFUND-VOID
+ #       13_1             220000          000000          356                     1                       0               200     3038058028c01004 VOID-REFUND
+#BankAccount transfer auth
+        13_0             360000          000000          356                     1                       0               100     3038058020c01004  AUTH-BANK-TRANSFER
+#BankAccount transfer
+	131_0             400002          000000          356                     1                       1               200     3038058020c01006 BANK-TRANSFER
+#BankAccount transfer auth
+        13_1             360000          000000          356                     1                       0               100     3038058020c01004  AUTH-BANK-TRANSFER
+#BankAccount transfer
+	131_1             400002          000000          356                     1                       1               200     3038058020c01006 BANK-TRANSFER
+
+
+#Operator Transactions
+#ACTIVATION
+	#342_0		 390000		000000		356			1			1		100	3038058020c03006 CARD-ACTIVATION
+	342_0		 390000		000000		356			1			1		100	3038058020c00006 CARD-ACTIVATION
+	342_1		 390000		000000		356			1			1		100	3038058020c00006 CARD-ACTIVATION
+#TOPUP
+	23_0             820000          000000          356                     1                       1               200     3038058020c01004 CARD-LOAD
+#ACTIVATION
+	21_0		 390000		000000		356			1			1		100	3038058020c00006 CARD-ACTIVATION
+#TOPUP
+	23_1             820000          000000          356                     1                       1               200     3038058020c01004 CARD-LOAD
+
+#KYC-LEVEL
+	241_0            070000          000000          356                     1                       1               100     3038058020c00006 KYC-LEVEL
+
+#AIRTIME-AIRTEL
+	22111_0           830101          000000          356                     1                       1               200     3038058020c01006 AIRTIME-AIRTEL
+	22112_0           840101          000000          356                     1                       1               200     3038058020c00006 AIRTIME-AIRTEL
+#AIRTIME-VODACOM
+	22121_0           830102          000000          356                     1                       1               200     3038058020c01006 AIRTIME-VODACOM
+	22122_0           840102          000000          356                     1                       1               200     3038058020c00006 AIRTIME-VODACOM
+#AIRTIME-ZANTEL
+	22131_0           830103          000000          356                     1                       1               200     3038058020c01006 AIRTIME-ZANTEL
+	22132_0           840103          000000          356                     1                       1               200     3038058020c00006 AIRTIME-ZANTEL
+#AIRTIME-TIGO
+	221411_0           830104          000000          356                     1                       1               200     3038058020c01006 AIRTIME-TIGO
+	221412_0           840104          000000          356                     1                       1               200     3038058020c00006 AIRTIME-TIGO
+#AIRTIME-SASATEL
+	221421_0           830105          000000          356                     1                       1               200     3038058020c01006 AIRTIME-SASATEL
+	221422_0           840105          000000          356                     1                       1               200     3038058020c00006 AIRTIME-SASATEL
+
+#LUKU
+	22211_0           830201          000000          356                     1                       1               200     3038058020c01006 LUKU
+	22212_0           840201          000000          356                     1                       1               200     3038058020c00006 LUKU
+
+#DIGITAL TV- AZAM
+	22311_0           830301          000000          356                     1                       1               200     3038058020c01006 DIGITAL-TV-AZAM
+	22312_0           840301          000000          356                     1                       1               200     3038058020c00006 DIGITAL-TV-AZAM
+#DIGITAL TV- STARTIMES
+	22321_0           830302          000000          356                     1                       1               200     3038058020c01006 DIGITAL-TV-STARTIMES
+	22322_0           840302          000000          356                     1                       1               200     3038058020c00006 DIGITAL-TV-STARTIMES
+#DATA-AIRTEL
+	22411_0           830401          000000          356                     1                       1               200     3038058020c01006 DATA-AIRTEL
+	22412_0           840401          000000          356                     1                       1               200     3038058020c00006 DATA-AIRTEL
+#DATA-VODACOM
+	22421_0           830402          000000          356                     1                       1               200     3038058020c01006 DATA-VODACOM
+	22422_0           840402          000000          356                     1                       1               200     3038058020c00006 DATA-VODACOM
+#DATA-ZANTEL
+	22431_0           830403          000000          356                     1                       1               200     3038058020c01006 DATA-ZANTEL
+	22432_0           840403          000000          356                     1                       1               200     3038058020c00006 DATA-ZANTEL
+#DATA-TIGO
+	224411_0           830404          000000          356                     1                       1               200     3038058020c01006 DATA-TIGO
+	224412_0           840404          000000          356                     1                       1               200     3038058020c00006 DATA-TIGO
+#DATA-SASATEL
+	224421_0           830405          000000          356                     1                       1               200     3038058020c01006 DATA-SASATEL
+	224422_0           840405          000000          356                     1                       1               200     3038058020c00006 DATA-SASATEL
+#DATA-SMILE
+	224431_0           830406          000000          356                     1                       1               200     3038058020c01006 DATA-SMILE
+	224432_0           840406          000000          356                     1                       1               200     3038058020c00006 DATA-SMILE
+
+
+END_DEF
+

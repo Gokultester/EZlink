@@ -1,0 +1,6 @@
+	
+	$INCLUDE-orbldbd_header.jprt	
+	$LF
+	AMOUNT $SPACE UGX $SPACE $AMOUNT
+	$LF
+	$INCLUDE-orbldbd_tailer.jprt

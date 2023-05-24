@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$LF
+	ENTERED $SPACE AMOUNT $SPACE IS $SPACE INVALID
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

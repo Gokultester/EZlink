@@ -1,0 +1,5 @@
+336
+$FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon370.jpg $ESC \ $ESC [27;80m $SI J 0
+$SI F 4 $AMOUNT $SPACE $ISSCURRDESC
+$SI H 4 $TCRD
+$SI J 4 $NAME

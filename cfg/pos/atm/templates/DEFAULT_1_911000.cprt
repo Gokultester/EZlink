@@ -1,0 +1,8 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	YOUR $SPACE REQUEST $SPACE COMPLETED $SPACE SUCCESSFULLY
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt
+

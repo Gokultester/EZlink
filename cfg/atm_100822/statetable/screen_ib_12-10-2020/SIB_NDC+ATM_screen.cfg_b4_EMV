@@ -1,0 +1,178 @@
+ATM_SCREEN_START_DEF
+
+
+002     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon002.jpg $ESC \
+004     $SI K L LAK:*,***,**0
+005     $SI K L *,***,**0
+C01     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\iconc01.jpg $ESC \
+
+#Welcome
+010     $FF $SO 011 $ESC [030z $SO 012 $ESC [030z $SO 013 $ESC [030z $SO 014 $ESC [030z $SO 015 $ESC [030z $SO 016 $ESC [030z $SO 017 $ESC [030z $SO 018 $ESC [030z $SO 019 $ESC [030z $SO 020 $ESC [030z
+
+011     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon011.jpg $ESC \
+012     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon012.jpg $ESC \
+013     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon013.jpg $ESC \
+014     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon014.jpg $ESC \
+015     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon015.jpg $ESC \
+016     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon016.jpg $ESC \
+017     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon017.jpg $ESC \
+018     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon018.jpg $ESC \
+019     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon019.jpg $ESC \
+020     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon020.jpg $ESC \
+
+
+#Language Selection
+021     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon021.jpg $ESC \
+321     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon321.jpg $ESC \
+
+#PIN Entry
+022     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon022.jpg $ESC \ $ESC [27;80m $SI J 0
+322     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon322.jpg $ESC \ $ESC [27;80m $SI J 0
+
+#Incorrect PIN Re-entry
+040     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon040.jpg $ESC \ $ESC [27;80m $SI J 0
+340     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon340.jpg $ESC \ $ESC [27;80m $SI J 0
+
+#Main Txn Selection
+023     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon023.jpg $ESC \ 
+323     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon323.jpg $ESC \
+
+#Processing Screen
+024     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon024.jpg $ESC \ 
+324     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon324.jpg $ESC \ 
+
+#Pin Change
+025     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon025.jpg $ESC \ $ESC [27;80m $SI J 0
+325     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon325.jpg $ESC \ $ESC [27;80m $SI J 0
+
+026     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon026.jpg $ESC \ $ESC [27;80m $SI J 0
+326     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon326.jpg $ESC \ $ESC [27;80m $SI J 0
+
+027     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon027.jpg $ESC \ $ESC [27;80m $SI J 0
+327     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon327.jpg $ESC \ $ESC [27;80m $SI J 0
+
+#NewPIN and Reenter new pin mismatch
+042     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon042.jpg $ESC \ $ESC [27;80m $SI J 0
+342     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon342.jpg $ESC \ $ESC [27;80m $SI J 0
+
+#Receipt Selection
+028     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon028.jpg $ESC \ 
+328     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon328.jpg $ESC \ 
+
+#CW Fast-cash Screen
+029     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon029.jpg $ESC \ 
+329     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon329.jpg $ESC \ 
+
+#CW Success screen
+046     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon046.jpg $ESC \ 
+346     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon346.jpg $ESC \ 
+
+#Amount entry screen
+030     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon030.jpg $ESC \ $ESC [27;80m $SI J 0
+330     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon330.jpg $ESC \ $ESC [27;80m $SI J 0
+
+031     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon031.jpg $ESC \ $ESC [27;80m $SI J 0
+331     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon331.jpg $ESC \ $ESC [27;80m $SI J 0
+
+043     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon043.jpg $ESC \ $ESC [27;80m $SI J 0 $SI I O 20000 $SPACE LAK $SPACE $SPACE $SPACE 50000 LAK
+343     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon343.jpg $ESC \ $ESC [27;80m $SI J 0
+#OAR Screen
+037     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon037.jpg $ESC \ 
+337     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon337.jpg $ESC \ 
+
+#Other Transaction
+032     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon032.jpg $ESC \ 
+332     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon332.jpg $ESC \ 
+
+#Bank Info
+048     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon048.jpg $ESC \ 
+348     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon348.jpg $ESC \ 
+
+#Fund Transfer 
+033     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon033.jpg $ESC \ 
+333     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon333.jpg $ESC \ 
+	#Enter Account Number
+034     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon034.jpg $ESC \ $ESC [27;80m $SI J 0
+334     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon334.jpg $ESC \ $ESC [27;80m $SI J 0
+	#Enter Amount to be transferred
+044     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon044.jpg $ESC \ $ESC [27;80m $SI J 0
+344     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon344.jpg $ESC \ $ESC [27;80m $SI J 0
+	#Your Fund Transferred Successfully
+
+045     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon045.jpg $ESC \ 
+345     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon345.jpg $ESC \
+ 
+039     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon039.jpg $ESC \ 
+339     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon339.jpg $ESC \ 
+#Balance Inquiry
+
+035     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon035.jpg $ESC \ 
+335     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon335.jpg $ESC \ 
+
+#Ministatement
+
+038     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon038.jpg $ESC \ 
+338     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon338.jpg $ESC \ 
+
+#Interest Rate
+041     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon041.jpg $ESC \ 
+341     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon341.jpg $ESC \ 
+
+#Acquiring Txn Selection
+047     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon047.jpg $ESC \ 
+347     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon347.jpg $ESC \ 
+
+#Empty Screen
+
+036     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon036.jpg $ESC \ 
+336     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon336.jpg $ESC \ 
+
+#Bad Response Closed Screen [ 101 - 150 ]
+
+101     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon101.jpg $ESC \ 
+401     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon401.jpg $ESC \ 
+102     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon102.jpg $ESC \ 
+402     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon402.jpg $ESC \ 
+103     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon103.jpg $ESC \ 
+403     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon403.jpg $ESC \ 
+104     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon104.jpg $ESC \ 
+404     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon404.jpg $ESC \ 
+105     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon105.jpg $ESC \ 
+405     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon405.jpg $ESC \ 
+106     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon106.jpg $ESC \ 
+406     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon406.jpg $ESC \ 
+107     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon107.jpg $ESC \ 
+407     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon407.jpg $ESC \ 
+108     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon108.jpg $ESC \ 
+408     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon408.jpg $ESC \ 
+109     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon109.jpg $ESC \ 
+409     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon409.jpg $ESC \ 
+110     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon110.jpg $ESC \ 
+410     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon410.jpg $ESC \ 
+111     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon111.jpg $ESC \ 
+411     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon411.jpg $ESC \ 
+112     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon112.jpg $ESC \ 
+412     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon412.jpg $ESC \ 
+113     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon113.jpg $ESC \ 
+413     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon413.jpg $ESC \ 
+114     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon114.jpg $ESC \ 
+414     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon414.jpg $ESC \ 
+END_DEF
+
+#good Response Closed Screen [151 - 200 ]
+
+151     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon151.jpg $ESC \ 
+451     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon451.jpg $ESC \ 
+
+152     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon152.jpg $ESC \ 
+452     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon452.jpg $ESC \ 
+
+153     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon153.jpg $ESC \ 
+453     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon453.jpg $ESC \ 
+
+154     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon154.jpg $ESC \ 
+454     $FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\lo\icon454.jpg $ESC \ 
+ATM_RESERVEDSCREEN_START_DEF
+        OAR             037
+        EMPTYSCR        036
+END_DEF

@@ -1,0 +1,7 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	NO $SPACE CREDIT_ACCOUNT $SPACE FOR $SPACE THIS $SPACE CARD 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

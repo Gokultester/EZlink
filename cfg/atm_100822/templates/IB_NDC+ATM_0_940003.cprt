@@ -1,0 +1,5 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$SPACE $SPACE $SPACE YOUR $SPACE PIN $SPACE CHANGED $SPACE SUCCESSFULLY
+	$LF
+	$INCLUDE-hpscb_tailer.prt

@@ -1,0 +1,10 @@
+$FF $SI @ @ $ESC PEC:\S4PICT\ICON017.jpg $ESC \
+$A      $SI F 2
+$B      $SI I 2
+$C      $SI L 2
+$D      $SI O 9
+$F      $SI O C
+$G      $SI O @
+$H      $SI L @
+$I      $SI I @
+

@@ -1,0 +1,3 @@
+018
+$FF $SI @ @ $ESC PEC:\SCREENS\icon017.jpg $ESC \ $ESC [21;80m $SI J 0
+$SI G G $NAME

@@ -1,0 +1,16 @@
+#cleanipc
+clear
+
+#echo "*****************************************"
+#echo "Shared Memory & Message Queue are Cleared"
+#echo "*****************************************"
+
+echo "*****************************************"
+echo "     Starting EzLink Enterprise EFT switch"
+echo "*****************************************"
+
+echo "*****************************************"
+echo "           VERSION 5.1                   "
+echo "*****************************************"
+
+EzTaskMgr

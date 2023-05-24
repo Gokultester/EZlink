@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	UNBALE $SPACE TO $SPACE DISPENSE $SPACE CASH 
+	$LF
+	AMOUNT $SPACE REQUESTED $SPACE : $SPACE Rs. $SPACE $AMOUNT
+	$LF
+	$INCLUDE-hpscb_tailer.prt

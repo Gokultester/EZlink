@@ -1,0 +1,374 @@
+DRIVER_START_DEF
+	#FLEXATMPORT
+	FLEXPOSPORT
+	#ISWITCHPORT
+	#GUI001
+	#GUI002
+	#GUI003
+	#GUI004
+	#GUI005
+	#MAIN1
+	TEST_ATM
+	#PREPAIDFRONTEND_1
+	TESTPREPAID
+	#MOBILE
+	#PREPAIDFRONTEND_3
+	#VISASMS
+	#VISABASEI
+	#MDSPORT
+	MASPORT
+	#testing
+	#testmain
+	#MAIN_ATM1
+	#UBAPORT
+	#UPISMS
+	#UPIBASEI
+        MBARARA_ATM
+END_DEF
+
+UPISMS_START_DEF
+        Protocol  TCPIP
+        ConnectionType  make
+        IpAddress       10.207.129.43
+        PortNo          8001
+        #IpAddress       203.184.81.72
+        #PortNo          37551
+        DestChannel     EzCUPSMS8583
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+        PORTTYPE        NETWORK
+        INSTID          ORBL
+END_DEF
+
+UPIBASEI_START_DEF
+        Protocol  TCPIP
+        ConnectionType  make
+        IpAddress       10.207.129.43
+        PortNo          8002
+        #IpAddress       203.184.81.82
+        #PortNo          37552
+        DestChannel     EzUPIBASEI8583
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+        PORTTYPE        NETWORK
+        INSTID          ORBL
+END_DEF
+
+UBAPORT_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.160.169
+        PortNo          7001
+        #ConnectionType         make
+        #IpAddress       10.89.130.55
+        #PortNo         6005
+        DestChannel     EzUBA8583
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+        PORTTYPE        NETWORK
+        INSTID          ORBL
+END_DEF
+
+MDSPORT_START_DEF
+        Protocol  TCPIP
+        #ConnectionType 	accept
+        IpAddress       172.16.10.14
+        PortNo        	8307
+        ConnectionType 	make
+        #IpAddress       10.89.130.55
+        #PortNo        	6005
+        DestChannel 	EzMasterMDS
+        NConnections    1
+        HeaderType    	hex
+        HeaderLen       2
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+MASPORT_START_DEF
+        Protocol  TCPIP
+        #ConnectionType 	accept
+        IpAddress       172.16.10.14
+        PortNo        	6666
+
+        ConnectionType 	make
+        #IpAddress       10.207.129.37
+        #PortNo        	3113
+        
+	#ConnectionType 	make
+        #IpAddress       10.89.130.55
+        #PortNo        	6034
+        DestChannel 	EzMasterMAS
+        NConnections    1
+        HeaderType    	ascii
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+VISASMS_START_DEF
+        Protocol  	 TCPIP
+        #ConnectionType	accept
+        ConnectionType 	make
+        #IpAddress      10.207.160.169
+        #PortNo        	5001
+        IpAddress       209.65.32.59
+        PortNo          10201
+        DestChannel 	EzVisaSMS
+        NConnections    1
+        HeaderType    	hex
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+VISABASEI_START_DEF
+        Protocol  	TCPIP
+        ConnectionType	accept
+        #ConnectionType	 make
+        IpAddress       10.207.129.43
+        PortNo        	5002
+        #IpAddress       209.65.32.59 
+        #PortNo        	10200
+        DestChannel 	EzVisaBASEI
+        NConnections    1
+        HeaderType    	hex
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+ISWITCHPORT_START_DEF
+        Protocol  TCPIP
+        ConnectionType 	make
+        #IpAddress       10.1.15.101
+        #PortNo        	2006
+        #IpAddress       10.207.160.169
+        #PortNo        	5104
+	IpAddress       172.16.10.14
+        PortNo          2006
+        DestChannel 	EzInterSw8583
+        NConnections    1
+        HeaderType    	hex
+        HeaderLen       2
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+FLEXATMPORT_START_DEF
+        Protocol        TCPIP
+        ConnectionType 	make
+	IpAddress       172.16.10.14
+	PortNo          8900
+        DestChannel 	EzFlex8583 
+        NConnections    1
+        HeaderType    	ascii 
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+FLEXPOSPORT_START_DEF
+        Protocol  TCPIP
+        ConnectionType 	make
+        #IpAddress       10.207.160.181
+        IpAddress       172.16.10.14
+        PortNo        	8900
+        DestChannel 	EzFlex8583 
+        NConnections    1
+        HeaderType    	ascii 
+        HeaderLen       4
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	NETWORK
+	INSTID		ORBL
+END_DEF
+
+MAIN1_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.129.152
+        PortNo          6001
+        DestChannel     EzNDCDriver
+        NConnections    1
+        HeaderType      hex
+        HeaderLen       2
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	ATM
+	INSTID		ORBL
+END_DEF
+
+TEST_ATM_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.129.120
+        #PortNo          6005
+	PortNo		5002
+        DestChannel     EzNDCDriver
+        NConnections    1
+        HeaderType      hex
+        HeaderLen       2
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	ATM
+	INSTID		ORBL
+END_DEF
+
+
+GUI001_START_DEF
+	Protocol  TCPIP
+	ConnectionType	accept
+	IpAddress	10.207.160.169	
+	PortNo		11100
+	DestChannel	EzGUIController	
+	NConnections	1
+	HeaderType	ascii	
+	HeaderLen	4
+	EnableKeepalive	yes
+	PORTTYPE	PORT
+	INSTID		ORBL
+END_DEF
+
+
+GUI002_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.160.169
+        PortNo          11101
+        DestChannel     EzGUIController
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+	PORTTYPE	PORT
+	INSTID		ORBL
+END_DEF
+
+GUI003_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.160.169
+        PortNo          11102
+        DestChannel     EzGUIController
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+	PORTTYPE	PORT
+	INSTID		ORBL
+END_DEF
+
+
+GUI004_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.160.169
+        PortNo          11103
+        DestChannel     EzGUIController
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+	PORTTYPE	PORT
+	INSTID		ORBL
+END_DEF
+
+TESTPREPAID_START_DEF
+	Protocol	TCPIP
+	ConnectionType  accept	
+	IpAddress	172.16.10.14
+	#PortNo		8888
+	PortNo          1520
+	DestChannel	EzPREPAID8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+	DebugFlag	Yes
+	PORTTYPE	PORT
+	INSTID		ORBL
+END_DEF
+
+MOBILE_START_DEF
+	Protocol	TCPIP
+	ConnectionType  make	
+	#IpAddress	192.168.15.17
+	IpAddress	172.16.10.14
+	PortNo		12002
+	DestChannel	EzPREPAID8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+	#DebugFlag	Yes
+	#PORTTYPE	PORT
+	#INSTID		ORBL
+END_DEF
+
+PREPAIDFRONTEND_3_START_DEF
+	Protocol	TCPIP
+	ConnectionType  accept	
+	IpAddress	192.168.15.17
+	PortNo		12003
+	DestChannel	EzPREPAID8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+	DebugFlag	Yes
+	PORTTYPE	PORT
+	INSTID		ORBL
+END_DEF
+
+
+MAIN_ATM1_START_DEF
+	Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.129.152
+        PortNo          9898
+        DestChannel     EzNDCDriver
+        NConnections    1
+        HeaderType      hex
+        HeaderLen       2
+        EnableKeepalive yes
+        DebugFlag       Yes
+        PORTTYPE        ATM
+        INSTID          ORBL
+END_DEF
+MBARARA_ATM_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       10.207.190.21
+        PortNo          6025
+        DestChannel     EzNDCDriver
+        NConnections    1
+        HeaderType      hex
+        HeaderLen       2
+        EnableKeepalive yes
+        DebugFlag       Yes
+	PORTTYPE	ATM
+	INSTID		ORBL
+END_DEF
+

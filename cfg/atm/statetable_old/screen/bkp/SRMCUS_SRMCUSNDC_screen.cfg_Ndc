@@ -1,0 +1,250 @@
+ATM_SCREEN_START_DEF
+#Reversed Screen
+	000     $FF $ESC PEC:\S4PICT\ICON000.jpg $ESC \  
+	200     $FF $ESC PEC:\S4PICT\ICON200.jpg $ESC \  
+	400     $FF $ESC PEC:\S4PICT\ICON400.jpg $ESC \  
+	001     $FF $ESC PEC:\S4PICT\ICON002.jpg $ESC \
+	002     $FF $ESC PEC:\S4PICT\ICON001.jpg $ESC \
+	006     $FF $ESC PEC:\S4PICT\ICON001.jpg $ESC \
+
+	004	$SI J J RS. ********
+#Welcome
+	010     $FF $SO 800 $ESC [100z $SO 801 $ESC [100z $SO 802 $ESC [100z $SO 803 $ESC [100z
+
+#Language Selection	
+	011     $FF $ESC PEC:\S4PICT\ICON011.jpg $ESC \ 
+#Card Read Error 
+	012     $FF $SI @ @ $ESC PEC:\S4PICT\ICON012.jpg $ESC \ 
+	212     $FF $SI @ @ $ESC PEC:\S4PICT\ICON212.jpg $ESC \ 
+	412     $FF $SI @ @ $ESC PEC:\S4PICT\ICON412.jpg $ESC \ 
+#PIN Entry
+	013     $FF $SI @ @ $ESC PEC:\S4PICT\ICON013.jpg $ESC \ $ESC [10m $SI J 0 
+	213     $FF $SI @ @ $ESC PEC:\S4PICT\ICON213.jpg $ESC \ $ESC [10m $SI J 0  
+	413     $FF $SI @ @ $ESC PEC:\S4PICT\ICON413.jpg $ESC \ $ESC [10m $SI J 0  
+#Main Txn Selection
+	014     $FF $ESC PEC:\S4PICT\ICON014.jpg $ESC \
+	214     $FF $ESC PEC:\S4PICT\ICON214.jpg $ESC \ 
+	414     $FF $ESC PEC:\S4PICT\ICON414.jpg $ESC \ 
+#Fast Cash Selection
+	017     $FF $SI @ @ $ESC PEC:\S4PICT\ICON017.jpg $ESC \ 
+	217     $FF $SI @ @ $ESC PEC:\S4PICT\ICON217.jpg $ESC \ 
+	417     $FF $SI @ @ $ESC PEC:\S4PICT\ICON417.jpg $ESC \ 
+#Amount Entry
+	018     $FF $SI @ @ $ESC PEC:\S4PICT\ICON018.jpg $ESC \	$SI J 0 
+	218     $FF $SI @ @ $ESC PEC:\S4PICT\ICON218.jpg $ESC \	$SI J 0 
+	414     $FF $SI @ @ $ESC PEC:\S4PICT\ICON418.jpg $ESC \	$SI J 0 
+#Account Selection
+	019     $FF $SI @ @ $ESC PEC:\S4PICT\ICON019.jpg $ESC \ 
+	219     $FF $SI @ @ $ESC PEC:\S4PICT\ICON219.jpg $ESC \ 
+	419     $FF $SI @ @ $ESC PEC:\S4PICT\ICON419.jpg $ESC \ 
+#Printer Selection
+	021     $FF $SI @ @ $ESC PEC:\S4PICT\ICON021.jpg $ESC \ 
+	221     $FF $SI @ @ $ESC PEC:\S4PICT\ICON221.jpg $ESC \ 
+	421     $FF $SI @ @ $ESC PEC:\S4PICT\ICON421.jpg $ESC \ 
+#Transaction Request
+	022     $FF $SI @ @ $ESC PEC:\S4PICT\ICON022.jpg $ESC \ 
+	222     $FF $SI @ @ $ESC PEC:\S4PICT\ICON222.jpg $ESC \ 
+	422     $FF $SI @ @ $ESC PEC:\S4PICT\ICON422.jpg $ESC \ 
+
+
+#PIN Change - New PIN
+	024     $FF $SI @ @ $ESC PEC:\S4PICT\ICON024.jpg $ESC \	$ESC [10m $SI J 0 
+	224     $FF $SI @ @ $ESC PEC:\S4PICT\ICON224.jpg $ESC \	$ESC [10m $SI J 0 
+	424     $FF $SI @ @ $ESC PEC:\S4PICT\ICON424.jpg $ESC \	$ESC [10m $SI J 0 
+#PIN Change - Confirm PIN
+	025     $FF $SI @ @ $ESC PEC:\S4PICT\ICON025.jpg $ESC \	$ESC [10m $SI J 0 
+	225     $FF $SI @ @ $ESC PEC:\S4PICT\ICON225.jpg $ESC \	$ESC [10m $SI J 0 
+	425     $FF $SI @ @ $ESC PEC:\S4PICT\ICON425.jpg $ESC \	$ESC [10m $SI J 0 
+
+#Fund Transfer Selection	
+	026     $FF $SI @ @ $ESC PEC:\S4PICT\ICON026.jpg $ESC \ 
+	226     $FF $SI @ @ $ESC PEC:\S4PICT\ICON226.jpg $ESC \ 
+	426     $FF $SI @ @ $ESC PEC:\S4PICT\ICON426.jpg $ESC \ 
+
+	027     $FF $SI @ @ $ESC PEC:\S4PICT\ICON027.jpg $ESC \ 
+	227     $FF $SI @ @ $ESC PEC:\S4PICT\ICON227.jpg $ESC \ 
+	427     $FF $SI @ @ $ESC PEC:\S4PICT\ICON427.jpg $ESC \ 
+
+	031     $FF $SI @ @ $ESC PEC:\S4PICT\ICON031.jpg $ESC \ 
+	231     $FF $SI @ @ $ESC PEC:\S4PICT\ICON231.jpg $ESC \ 
+	431     $FF $SI @ @ $ESC PEC:\S4PICT\ICON431.jpg $ESC \ 
+#Close Screen for Good Response
+	071     $FF $SI @ @ $ESC PEC:\S4PICT\ICON071.jpg $ESC \ 
+	271     $FF $SI @ @ $ESC PEC:\S4PICT\ICON271.jpg $ESC \ 
+	471     $FF $SI @ @ $ESC PEC:\S4PICT\ICON471.jpg $ESC \ 
+	072     $FF $SI @ @ $ESC PEC:\S4PICT\ICON072.jpg $ESC \ 
+	272     $FF $SI @ @ $ESC PEC:\S4PICT\ICON272.jpg $ESC \ 
+	472     $FF $SI @ @ $ESC PEC:\S4PICT\ICON472.jpg $ESC \ 
+	075     $FF $SI @ @ $ESC PEC:\S4PICT\ICON075.jpg $ESC \ 
+	275     $FF $SI @ @ $ESC PEC:\S4PICT\ICON275.jpg $ESC \ 
+	475     $FF $SI @ @ $ESC PEC:\S4PICT\ICON475.jpg $ESC \ 
+	076     $FF $SI @ @ $ESC PEC:\S4PICT\ICON076.jpg $ESC \ 
+	276     $FF $SI @ @ $ESC PEC:\S4PICT\ICON276.jpg $ESC \ 
+	476     $FF $SI @ @ $ESC PEC:\S4PICT\ICON476.jpg $ESC \ 
+	077     $FF $SI @ @ $ESC PEC:\S4PICT\ICON077.jpg $ESC \ 
+	277     $FF $SI @ @ $ESC PEC:\S4PICT\ICON277.jpg $ESC \ 
+	477     $FF $SI @ @ $ESC PEC:\S4PICT\ICON477.jpg $ESC \ 
+	078     $FF $SI @ @ $ESC PEC:\S4PICT\ICON078.jpg $ESC \ 
+	278     $FF $SI @ @ $ESC PEC:\S4PICT\ICON278.jpg $ESC \ 
+	478     $FF $SI @ @ $ESC PEC:\S4PICT\ICON478.jpg $ESC \ 
+	
+	082     $FF $SI @ @ $ESC PEC:\S4PICT\ICON082.jpg $ESC \ 
+	282     $FF $SI @ @ $ESC PEC:\S4PICT\ICON282.jpg $ESC \ 
+	482     $FF $SI @ @ $ESC PEC:\S4PICT\ICON482.jpg $ESC \ 
+
+#Dynamic Dispense Screen 
+	061     $FF $SI @ @ $ESC PEC:\S4PICT\ICON222.jpg $ESC \ $ESC P0 222 \
+	361     $FF $SI @ @ $ESC PEC:\S4PICT\ICON223.jpg $ESC \ $ESC P0 223 \
+
+	062     $FF $SI @ @ $ESC PEC:\S4PICT\ICON373.jpg $ESC \ $ESC P0 373 \
+	362     $FF $SI @ @ $ESC PEC:\S4PICT\ICON673.jpg $ESC \ $ESC P0 673 \
+
+	063     $FF $SI @ @ $ESC PEC:\S4PICT\ICON218.jpg $ESC \ $ESC P0 218 \
+	363     $FF $SI @ @ $ESC PEC:\S4PICT\ICON219.jpg $ESC \ $ESC P0 219 \
+
+	064     $FF $SI @ @ $ESC PEC:\S4PICT\ICON224.jpg $ESC \ $ESC P0 224 \
+	364     $FF $SI @ @ $ESC PEC:\S4PICT\ICON225.jpg $ESC \ $ESC P0 225 \
+
+	065     $FF $SI @ @ $ESC PEC:\S4PICT\ICON373.jpg $ESC \ $ESC P0 373 \
+	365     $FF $SI @ @ $ESC PEC:\S4PICT\ICON673.jpg $ESC \ $ESC P0 673 \
+
+	066     $FF $SI @ @ $ESC PEC:\S4PICT\ICON220.jpg $ESC \ $ESC P0 220 \
+	366     $FF $SI @ @ $ESC PEC:\S4PICT\ICON221.jpg $ESC \ $ESC P0 221 \
+
+	067     $FF $SI @ @ $ESC PEC:\S4PICT\ICON373.jpg $ESC \ $ESC P0 373 \
+	367     $FF $SI @ @ $ESC PEC:\S4PICT\ICON673.jpg $ESC \ $ESC P0 673 \
+
+	068     $FF $SI @ @ $ESC PEC:\S4PICT\ICON228.jpg $ESC \ $ESC P0 228 \
+	368     $FF $SI @ @ $ESC PEC:\S4PICT\ICON229.jpg $ESC \ $ESC P0 229 \
+
+	069     $FF $SI @ @ $ESC PEC:\S4PICT\ICON230.jpg $ESC \ $ESC P0 230 \
+	369     $FF $SI @ @ $ESC PEC:\S4PICT\ICON231.jpg $ESC \ $ESC P0 231 \
+
+#Close Screen for Bad Response
+	101     $FF $SI @ @ $ESC PEC:\S4PICT\ICON101.jpg $ESC \
+	201     $FF $SI @ @ $ESC PEC:\S4PICT\ICON201.jpg $ESC \
+	401     $FF $SI @ @ $ESC PEC:\S4PICT\ICON401.jpg $ESC \
+	102     $FF $SI @ @ $ESC PEC:\S4PICT\ICON102.jpg $ESC \
+	202     $FF $SI @ @ $ESC PEC:\S4PICT\ICON202.jpg $ESC \
+	402     $FF $SI @ @ $ESC PEC:\S4PICT\ICON402.jpg $ESC \
+	103     $FF $SI @ @ $ESC PEC:\S4PICT\ICON103.jpg $ESC \
+	203     $FF $SI @ @ $ESC PEC:\S4PICT\ICON203.jpg $ESC \
+	403     $FF $SI @ @ $ESC PEC:\S4PICT\ICON403.jpg $ESC \
+	104     $FF $SI @ @ $ESC PEC:\S4PICT\ICON104.jpg $ESC \
+	204     $FF $SI @ @ $ESC PEC:\S4PICT\ICON204.jpg $ESC \
+	404     $FF $SI @ @ $ESC PEC:\S4PICT\ICON404.jpg $ESC \
+	105     $FF $SI @ @ $ESC PEC:\S4PICT\ICON105.jpg $ESC \
+	205     $FF $SI @ @ $ESC PEC:\S4PICT\ICON205.jpg $ESC \
+	405     $FF $SI @ @ $ESC PEC:\S4PICT\ICON405.jpg $ESC \
+	106     $FF $SI @ @ $ESC PEC:\S4PICT\ICON106.jpg $ESC \
+	206     $FF $SI @ @ $ESC PEC:\S4PICT\ICON206.jpg $ESC \
+	406     $FF $SI @ @ $ESC PEC:\S4PICT\ICON406.jpg $ESC \
+	107     $FF $SI @ @ $ESC PEC:\S4PICT\ICON107.jpg $ESC \
+	207     $FF $SI @ @ $ESC PEC:\S4PICT\ICON207.jpg $ESC \
+	407     $FF $SI @ @ $ESC PEC:\S4PICT\ICON407.jpg $ESC \
+	108     $FF $SI @ @ $ESC PEC:\S4PICT\ICON108.jpg $ESC \
+	208     $FF $SI @ @ $ESC PEC:\S4PICT\ICON208.jpg $ESC \
+	408     $FF $SI @ @ $ESC PEC:\S4PICT\ICON408.jpg $ESC \
+	109     $FF $SI @ @ $ESC PEC:\S4PICT\ICON109.jpg $ESC \
+	209     $FF $SI @ @ $ESC PEC:\S4PICT\ICON209.jpg $ESC \
+	409     $FF $SI @ @ $ESC PEC:\S4PICT\ICON409.jpg $ESC \
+	110     $FF $SI @ @ $ESC PEC:\S4PICT\ICON110.jpg $ESC \
+	210     $FF $SI @ @ $ESC PEC:\S4PICT\ICON210.jpg $ESC \
+	410     $FF $SI @ @ $ESC PEC:\S4PICT\ICON410.jpg $ESC \
+	111     $FF $SI @ @ $ESC PEC:\S4PICT\ICON111.jpg $ESC \
+	211     $FF $SI @ @ $ESC PEC:\S4PICT\ICON211.jpg $ESC \
+	411     $FF $SI @ @ $ESC PEC:\S4PICT\ICON411.jpg $ESC \
+	112     $FF $SI @ @ $ESC PEC:\S4PICT\ICON112.jpg $ESC \
+	212     $FF $SI @ @ $ESC PEC:\S4PICT\ICON212.jpg $ESC \
+	412     $FF $SI @ @ $ESC PEC:\S4PICT\ICON412.jpg $ESC \
+	113     $FF $SI @ @ $ESC PEC:\S4PICT\ICON113.jpg $ESC \
+	213     $FF $SI @ @ $ESC PEC:\S4PICT\ICON213.jpg $ESC \
+	413     $FF $SI @ @ $ESC PEC:\S4PICT\ICON413.jpg $ESC \
+	114     $FF $SI @ @ $ESC PEC:\S4PICT\ICON114.jpg $ESC \
+	214     $FF $SI @ @ $ESC PEC:\S4PICT\ICON214.jpg $ESC \
+	414     $FF $SI @ @ $ESC PEC:\S4PICT\ICON414.jpg $ESC \
+	115     $FF $SI @ @ $ESC PEC:\S4PICT\ICON115.jpg $ESC \
+	215     $FF $SI @ @ $ESC PEC:\S4PICT\ICON215.jpg $ESC \
+	415     $FF $SI @ @ $ESC PEC:\S4PICT\ICON415.jpg $ESC \
+	116     $FF $SI @ @ $ESC PEC:\S4PICT\ICON116.jpg $ESC \
+	216     $FF $SI @ @ $ESC PEC:\S4PICT\ICON216.jpg $ESC \
+	416     $FF $SI @ @ $ESC PEC:\S4PICT\ICON416.jpg $ESC \
+	117     $FF $SI @ @ $ESC PEC:\S4PICT\ICON117.jpg $ESC \
+	217     $FF $SI @ @ $ESC PEC:\S4PICT\ICON217.jpg $ESC \
+	417     $FF $SI @ @ $ESC PEC:\S4PICT\ICON417.jpg $ESC \
+	118     $FF $SI @ @ $ESC PEC:\S4PICT\ICON118.jpg $ESC \
+	218     $FF $SI @ @ $ESC PEC:\S4PICT\ICON218.jpg $ESC \
+	418     $FF $SI @ @ $ESC PEC:\S4PICT\ICON418.jpg $ESC \
+	119     $FF $SI @ @ $ESC PEC:\S4PICT\ICON119.jpg $ESC \
+	219     $FF $SI @ @ $ESC PEC:\S4PICT\ICON219.jpg $ESC \
+	419     $FF $SI @ @ $ESC PEC:\S4PICT\ICON419.jpg $ESC \
+	120     $FF $SI @ @ $ESC PEC:\S4PICT\ICON120.jpg $ESC \
+	220     $FF $SI @ @ $ESC PEC:\S4PICT\ICON220.jpg $ESC \
+	420     $FF $SI @ @ $ESC PEC:\S4PICT\ICON420.jpg $ESC \
+	121     $FF $SI @ @ $ESC PEC:\S4PICT\ICON121.jpg $ESC \
+	221     $FF $SI @ @ $ESC PEC:\S4PICT\ICON221.jpg $ESC \
+	421     $FF $SI @ @ $ESC PEC:\S4PICT\ICON421.jpg $ESC \
+	122     $FF $SI @ @ $ESC PEC:\S4PICT\ICON122.jpg $ESC \
+	222     $FF $SI @ @ $ESC PEC:\S4PICT\ICON222.jpg $ESC \
+	422     $FF $SI @ @ $ESC PEC:\S4PICT\ICON422.jpg $ESC \
+	123     $FF $SI @ @ $ESC PEC:\S4PICT\ICON123.jpg $ESC \
+	223     $FF $SI @ @ $ESC PEC:\S4PICT\ICON223.jpg $ESC \
+	423     $FF $SI @ @ $ESC PEC:\S4PICT\ICON423.jpg $ESC \
+	124     $FF $SI @ @ $ESC PEC:\S4PICT\ICON124.jpg $ESC \
+	224     $FF $SI @ @ $ESC PEC:\S4PICT\ICON224.jpg $ESC \
+	424     $FF $SI @ @ $ESC PEC:\S4PICT\ICON424.jpg $ESC \
+	125     $FF $SI @ @ $ESC PEC:\S4PICT\ICON125.jpg $ESC \
+	225     $FF $SI @ @ $ESC PEC:\S4PICT\ICON225.jpg $ESC \
+	425     $FF $SI @ @ $ESC PEC:\S4PICT\ICON425.jpg $ESC \
+	126     $FF $SI @ @ $ESC PEC:\S4PICT\ICON126.jpg $ESC \
+	226     $FF $SI @ @ $ESC PEC:\S4PICT\ICON226.jpg $ESC \
+	426     $FF $SI @ @ $ESC PEC:\S4PICT\ICON426.jpg $ESC \
+	127     $FF $SI @ @ $ESC PEC:\S4PICT\ICON127.jpg $ESC \
+	227     $FF $SI @ @ $ESC PEC:\S4PICT\ICON227.jpg $ESC \
+	427     $FF $SI @ @ $ESC PEC:\S4PICT\ICON427.jpg $ESC \
+	128     $FF $SI @ @ $ESC PEC:\S4PICT\ICON128.jpg $ESC \
+	228     $FF $SI @ @ $ESC PEC:\S4PICT\ICON228.jpg $ESC \
+	428     $FF $SI @ @ $ESC PEC:\S4PICT\ICON428.jpg $ESC \
+	129     $FF $SI @ @ $ESC PEC:\S4PICT\ICON129.jpg $ESC \
+	229     $FF $SI @ @ $ESC PEC:\S4PICT\ICON229.jpg $ESC \
+	429     $FF $SI @ @ $ESC PEC:\S4PICT\ICON429.jpg $ESC \
+	130     $FF $SI @ @ $ESC PEC:\S4PICT\ICON130.jpg $ESC \
+	230     $FF $SI @ @ $ESC PEC:\S4PICT\ICON230.jpg $ESC \
+	430     $FF $SI @ @ $ESC PEC:\S4PICT\ICON430.jpg $ESC \
+	131     $FF $SI @ @ $ESC PEC:\S4PICT\ICON131.jpg $ESC \
+	231     $FF $SI @ @ $ESC PEC:\S4PICT\ICON231.jpg $ESC \
+	431     $FF $SI @ @ $ESC PEC:\S4PICT\ICON431.jpg $ESC \
+	132     $FF $SI @ @ $ESC PEC:\S4PICT\ICON132.jpg $ESC \
+	232     $FF $SI @ @ $ESC PEC:\S4PICT\ICON232.jpg $ESC \
+	432     $FF $SI @ @ $ESC PEC:\S4PICT\ICON432.jpg $ESC \
+	133     $FF $SI @ @ $ESC PEC:\S4PICT\ICON133.jpg $ESC \
+	233     $FF $SI @ @ $ESC PEC:\S4PICT\ICON233.jpg $ESC \
+	433     $FF $SI @ @ $ESC PEC:\S4PICT\ICON433.jpg $ESC \
+	134     $FF $SI @ @ $ESC PEC:\S4PICT\ICON134.jpg $ESC \
+	234     $FF $SI @ @ $ESC PEC:\S4PICT\ICON234.jpg $ESC \
+	434     $FF $SI @ @ $ESC PEC:\S4PICT\ICON434.jpg $ESC \
+	135     $FF $SI @ @ $ESC PEC:\S4PICT\ICON135.jpg $ESC \
+	235     $FF $SI @ @ $ESC PEC:\S4PICT\ICON235.jpg $ESC \
+	435     $FF $SI @ @ $ESC PEC:\S4PICT\ICON435.jpg $ESC \
+	136     $FF $SI @ @ $ESC PEC:\S4PICT\ICON136.jpg $ESC \
+	236     $FF $SI @ @ $ESC PEC:\S4PICT\ICON236.jpg $ESC \
+	436     $FF $SI @ @ $ESC PEC:\S4PICT\ICON436.jpg $ESC \
+	137     $FF $SI @ @ $ESC PEC:\S4PICT\ICON137.jpg $ESC \
+	237     $FF $SI @ @ $ESC PEC:\S4PICT\ICON237.jpg $ESC \
+	437     $FF $SI @ @ $ESC PEC:\S4PICT\ICON437.jpg $ESC \
+	
+#OAR Account Display Screen
+	
+#Welcome Screen Squence Screen number 800 to 106 Total 804 Screens only.
+	800	$FF $ESC PEC:\S4PICT\ICON010.jpg $ESC \  
+	801	$FF $ESC PEC:\S4PICT\ICON210.jpg $ESC \ 
+	802	$FF $ESC PEC:\S4PICT\ICON410.jpg $ESC \ 
+	803	$FF $ESC PEC:\S4PICT\ICON041.jpg $ESC \ 
+	804	$FF $ESC PEC:\S4PICT\ICON241.jpg $ESC \ 
+	
+END_DEF
+
+ATM_RESERVEDSCREEN_START_DEF
+	OAR		101
+	EMPTYSCR	100
+END_DEF

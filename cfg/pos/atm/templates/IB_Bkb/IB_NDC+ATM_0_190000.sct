@@ -1,0 +1,6 @@
+$FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon153.jpg $ESC \ $ESC [27;80m $SI J 0
+$SI H N $RATE1
+$SI I N $RATE2
+$SI J N $RATE3
+$SI K N $RATE4
+

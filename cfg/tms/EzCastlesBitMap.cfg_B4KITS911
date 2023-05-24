@@ -1,0 +1,896 @@
+
+FIELDDESC_START_DEF
+
+#bitno		fixed/binary		type		minlen		maxlen		IMF
+1			fixed				b			16			16	
+2			llvar				n			16			19	
+3			fixed				n			6			6	
+4			fixed				n			12			12	
+7			fixed				d			12			12	
+11			fixed				n			6			6	
+12			fixed				n			6			6	
+13			fixed				d			6			6	
+17			fixed				d			6			6	
+18			fixed				n			4			4	
+22			fixed				n			4			4	
+24			fixed				n			4			4	
+25			fixed				n			4			4	
+32			llvar				an			1			11	
+35			llvar				an			1			40	
+37			fixed				an			12			12	
+38			fixed				n			6			6
+39			fixed				an			2			2
+41			fixed				an			16			16
+43			fixed				an			40			40
+54			lllvar				an			1			120
+60			llvar				an			1			20
+61			llvar				an			1			20
+62			llvar				an			1			20
+63			llvar				an			1			20
+64			llvar				an			1			20
+65			fixed				n			6			6
+66			llvar				an			1			50
+67			llvar				an			1			20
+70			fixed				n			3			3
+71			lllvar				an			1			999
+72			lllvar				an			1			999
+80			llvar				an			1			20
+81			llvar				an			1			99
+90			llvar				an			1			20
+95			fixed				an			56			56
+102			llvar				an			1			32	
+102			llvar				an			1			32
+127			llvar				an			1			999
+
+
+END_DEF
+
+MSGTYPE_START_DEF
+	0700
+	0710
+	0720
+	0730
+	0800
+	0810
+	0200
+	0100
+	0210
+	0110
+	0320
+	0330
+	0400
+	0410
+	0500
+	0510
+	0600
+	0610
+END_DEF
+
+0600_BITMAP_START_DEF
+1       Optional
+3       Mandatory
+11      Mandatory
+22      Optional
+24      Optional
+12      Optional
+13      Optional
+41      Mandatory
+42      Mandatory
+55      Optional
+64      Optional
+61      Optional
+70      Optional
+62      Optional
+63      Optional
+END_DEF
+
+0610_BITMAP_START_DEF
+1       Optional
+3       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+24      Mandatory
+39      Mandatory
+41      Mandatory
+42      Mandatory
+END_DEF
+
+0700_BITMAP_START_DEF
+3       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+60      Mandatory
+61      Mandatory
+END_DEF
+
+0710_BITMAP_START_DEF
+3       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+39	Mandatory
+60      Mandatory
+61      Mandatory
+END_DEF
+
+0720_BITMAP_START_DEF
+3       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+41      Optional
+42 	Optional     
+43     	Optional 
+60      Mandatory
+61      Optional
+END_DEF
+
+0730_BITMAP_START_DEF
+3       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+39      Mandatory
+60      Mandatory
+END_DEF
+
+0800_BITMAP_START_DEF
+1	Optional
+3	Mandatory
+11      Mandatory
+24      Optional
+12	Optional	
+13	Optional	
+41      Mandatory
+42      Mandatory
+59      Optional
+60      Optional
+61	Optional
+64	Optional	
+70	Optional	
+END_DEF
+
+0810_BITMAP_START_DEF
+1	Optional
+3	Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+24      Mandatory
+39      Mandatory
+41      Mandatory
+42      Mandatory
+61	Mandatory
+60	Mandatory
+END_DEF
+
+0200_BITMAP_START_DEF
+1       Optional
+2	Optional
+3       Mandatory
+4       Optional
+11      Mandatory
+12      Optional
+13    	Optional 
+22      Mandatory
+24      Mandatory
+25      Mandatory
+35      Optional
+37      Optional
+41      Mandatory
+42      Mandatory
+51     	Optional 
+52     	Optional 
+53     	Optional 
+55	Optional
+59	Optional
+60	Optional
+62     	Optional 
+63     	Optional 
+64      Optional
+END_DEF
+
+0210_BITMAP_START_DEF
+1       Optional
+2       Mandatory
+3       Mandatory
+4       Optional
+7       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+15      Mandatory
+18      Mandatory
+32      Mandatory
+37      Mandatory
+38      Optional
+39      Mandatory
+41      Mandatory
+49      Mandatory
+54      Optional
+60      Optional
+61      Optional
+62      Optional
+63      Optional
+64      Optional
+65	Optional
+67      Optional
+102     Mandatory
+103     Optional
+123     Optional
+124     Optional
+125     Optional
+126     Optional
+127     Optional
+
+END_DEF
+	
+0400_BITMAP_START_DEF
+1       Optional
+2	Optional
+3       Mandatory
+4       Optional
+11      Mandatory
+12      Optional
+13    	Optional 
+22      Mandatory
+24      Mandatory
+25      Mandatory
+35     	Optional 
+37      Optional
+41      Mandatory
+42      Mandatory
+51     	Optional 
+52     	Optional 
+53     	Optional 
+55	Optional
+60	Optional
+62     	Optional 
+63     	Optional 
+
+END_DEF
+
+0410_BITMAP_START_DEF
+1       Optional
+2       Mandatory
+3       Mandatory
+4       Optional
+7       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+15      Mandatory
+18      Mandatory
+32      Mandatory
+37      Mandatory
+39      Mandatory
+41      Mandatory
+49      Mandatory
+54      Optional
+60      Optional
+61      Optional
+62      Optional
+63      Optional
+67      Optional
+102     Mandatory
+103     Optional
+123     Optional
+124     Optional
+125     Optional
+126     Optional
+127     Optional
+
+END_DEF
+
+0100_BITMAP_START_DEF
+1       Optional
+3       Mandatory
+4       Optional
+11      Mandatory
+12      Optional
+13    	Optional 
+22      Mandatory
+24      Mandatory
+25      Mandatory
+35      Mandatory
+37      Optional
+41      Mandatory
+42      Mandatory
+51	Optional
+52     	Optional 
+55	Optional
+60	Optional
+62     	Optional 
+63     	Optional 
+
+END_DEF
+
+0110_BITMAP_START_DEF
+1       Optional
+2       Mandatory
+3       Mandatory
+4       Optional
+7       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+15      Mandatory
+18      Mandatory
+32      Mandatory
+37      Mandatory
+38      Optional
+39      Mandatory
+41      Mandatory
+49      Mandatory
+54      Optional
+60      Optional
+61      Optional
+62      Optional
+63      Optional
+67      Optional
+102     Mandatory
+103     Optional
+123     Optional
+124     Optional
+125     Optional
+126     Optional
+127     Optional
+
+END_DEF
+	
+0320_BITMAP_START_DEF
+1       Optional
+2       Mandatory
+3       Mandatory
+4       Optional
+11      Mandatory
+12      Optional
+13    	Optional 
+22      Mandatory
+24      Mandatory
+25      Mandatory
+35     	Optional 
+37      Optional
+39      Optional
+41      Mandatory
+42      Mandatory
+52     	Optional 
+62     	Optional 
+
+END_DEF
+
+0330_BITMAP_START_DEF
+1       Optional
+2       Mandatory
+3       Mandatory
+4       Optional
+7       Mandatory
+11      Mandatory
+12      Mandatory
+13      Mandatory
+15      Mandatory
+18      Mandatory
+32      Mandatory
+37      Mandatory
+39      Mandatory
+41      Mandatory
+49      Mandatory
+54      Optional
+60      Optional
+61      Optional
+62      Optional
+63      Optional
+67      Optional
+102     Mandatory
+103     Optional
+123     Optional
+124     Optional
+125     Optional
+126     Optional
+127     Optional
+
+END_DEF
+
+0500_BITMAP_START_DEF
+1       Optional
+3       Mandatory
+11      Mandatory
+24      Mandatory
+41      Mandatory
+42      Mandatory
+60      Mandatory
+61      Mandatory
+
+END_DEF
+
+0510_BITMAP_START_DEF
+1       Optional
+2       Mandatory
+3       Mandatory
+11      Mandatory
+39      Mandatory
+41      Mandatory
+42      Mandatory
+
+END_DEF
+
+0600_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1               1                                                                             on              secondary_bitmap
+2               3                                                                             on              TxnCode
+3               12                                                                            on              local_date
+4               11                                                                            on              TraceNo
+5               13                                                                            on              Localtime
+6               24                                                                            on              Network internation
+7               41                                                                            on              TerminalId
+8               42                                                                            on              MerchantId
+9               63                                                                            on              Netcode
+10              70                                                                            on              Netcode
+11              61                                                                            on              Netcode
+12              62                                                                            on              Netcode
+END_DEF
+
+0610_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1               1                       *                               *                       on              secondary_bitmap
+2               3                       *                               *                       on              TxnCode
+3               12                      *                               *                       on              local_date
+4               11                      *                               *                       on              TraceNo
+5               13                      *                               *                       on              Localtime
+6               39                      *                               *                       on              Response Code
+7               41                      *                               *                       on              TerminalId
+8               42                      *                               *                       on              MerchantId
+9               61                      *                               *                       on              Version
+END_DEF
+
+0700_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1       3               *               *       on              TxnCode
+2       11              *               *       on              TraceNo
+3       12              *               *       on              Local Time
+4       13              *               *       on              Local Date
+5       60              *               *       on              MachineId
+6       61              *               *       on              ConfigId
+
+END_DEF
+
+0710_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1       3               *               *       on              TxnCode
+2       11              *               *       on              TraceNo
+3       12              *               *       on              Local Time
+4       13              *               *       on              Local Date
+5       39              *               *       on             	ResponseCode 
+6       60              *               *       on              MachineId
+7       61              *               *       on             	ConfigId 
+
+END_DEF
+
+
+0720_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1       3               *               *       on              TxnCode
+2       11              *               *       on              TraceNo
+3       12              *               *       on              Local Time
+4       13              *               *       on              Local Date
+6       41              700001          *       on             	TerminalId 
+7       41              *          	*       off             TerminalId 
+8       42              700001          *       on             	MerchantId 
+9       42              *          	*       off             MerchantId 
+10      43              *               *       on             	TerminalLocation 
+11      43              *               *       off             TerminalLocation 
+12      60              *               *       on              RsvFld1
+13	61		*		*	on		RsvFld2
+14	62		700001		*	on		RsvFld2
+15	62		*		*	off		RsvFld2
+
+END_DEF
+
+0730_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1       3               *               *       on              TxnCode
+2       11              *               *       on              TraceNo
+3       12              *               *       on              Local Time
+4       13              *               *       on              Local Date
+5       39              *               *       on              RespCode
+9       60              *               *       on              RsvFld1
+
+END_DEF
+
+0800_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1		1			*				*			on		secondary_bitmap
+2               3                       *                               *                       on              TxnCode
+3               12                      *                               *                       on              local_date
+4               11                      *                               *                       on              TraceNo
+5               13                      *                               *                       on              Localtime
+6               24                      *                               *                       on              Network internation
+7               41                      *                               *                       on              TerminalId
+8               42                      *                               *                       on              MerchantId
+9		61			*				*			on		Version
+10		64			*				*			on		Netcode
+11		70			*				*			on		Netcode
+END_DEF
+
+0810_START_DEF
+
+#colno  bitno   processing_code response_code   off/on          description
+
+1	1			*				*			on		Secondary_bitmap
+2      	3                       *                               *                       on              TxnCode      
+3       11                      *                               *                       on              TraceNo
+4       24                      *                               *                       on              Network International Identifier
+5       39                      *                               *                       on              Response Code
+6       41                      *                               *                       on              TerminalId   
+7       42                      *                               *                       on              MerchantId   
+8       12                      *                               *                       on              LocalDate    
+9       13                      *                               *                       on              Localtime    
+10      61        		950000                  	*                       off             KEYINFO
+11      61        		950000                  	000                     on              KEYINFO
+12      24        		*                  		*                    	off             NII
+13	61			*				*			on		DOWNLAODINFO
+14	60			*				*			on		DOWNLAODINFO
+END_DEF
+
+
+				
+0200_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		22			*				*			on		pos_entry_mode	
+7		24			*				*			on		nii
+8		25			*				*			on		pos_con_code	
+8		37			*				*			on		refnum
+9		38			*				*			on		authcode
+10		39			*				*			on		respcode
+11		41			*				*			on		terminal_id
+12		42			*				*			on		terminal_location
+#12		55			*				*			on		additional_amount
+13		60			54				*			on		Rsfld 1
+14		63			40				*			on		Rsfld 1
+15              63                      80                              *                       on              Rsfld 1
+END_DEF
+
+0210_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		24			*				*			off	        NII	
+7		37			*				*			on		refnum
+8		38			*				*			off		authcode
+9		39			*				*			on		respcode
+10		41			*				*			on		terminal_id
+11		42			*				*			on		terminal_location
+12		65			37				*			on		mobile_no
+#12		55			*				*			on		additional_amount
+13              61                      83                              *                       on              Token_No
+14              60                      38                              *                       on              Token_No
+15		54			61				000			on		AvailableBalance
+16		54			82				000			on		AvailableBalance
+17		54			22				000			on		AvailableBalance
+18		60			61				*			on		Discount_drivername
+19		60			38				*			on		RsvFld1
+20		60			82				*			on		RsvFld1
+21		62			38				*			on		RsvFld3
+22		54			62				000			on		AvailableBalance
+23		54			02				000			on		AvailableBalance
+24		54			30				000			on		AvailableBalance
+25		48			33				000			on		Account Name
+26		62			40				000			on		MCRequest
+27		62			30				000			on		MCRequest
+28		62			38				000			on		MCRequest
+29		64			400011				000			on		AcNoName
+30		64			400013				000			on		AcNoName
+31		64			300000				000			on		AcNoName
+32		64			380000				000			on		AcNoName
+33		64			400012				000			on		AcNoName
+34		64			300005				000			on		AcNoName
+35		64			380005				000			on		AcNoName
+36		64			410005				000			on		AcNoName
+37		64			510005				000			on		AcNoName
+38              61                      36                              000                     on              Account_Number
+#33		38			30				000			on		AuthCode
+#33		38			38				000			on		AuthCode
+#33		38			40				000			on		AuthCode
+#18		54			30				000			on		AvailableBalance
+END_DEF
+
+0400_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		22			*				*			on		pos_entry_mode	
+7		24			*				*			on		nii
+8		25			*				*			on		pos_con_code	
+8		37			*				*			on		refnum
+9		38			*				*			on		authcode
+10		39			*				*			on		respcode
+11		41			*				*			on		terminal_id
+12		42			*				*			on		terminal_location
+#12		55			*				*			on		additional_amount
+13		60			54				*			on		Rsfld 1
+14		63			40				*			on		Rsfld 1
+END_DEF
+
+0410_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		24			*				*			off	        NII	
+7		37			*				*			on		refnum
+8		38			*				*			off		authcode
+9		39			*				*			on		respcode
+10		41			*				*			on		terminal_id
+11		42			*				*			on		terminal_location
+#12		55			*				*			on		additional_amount
+END_DEF
+
+0100_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		22			*				*			on		pos_entry_mode	
+7		24			*				*			on		nii
+8		25			*				*			on		pos_con_code	
+8		37			*				*			on		refnum
+9		38			*				*			on		authcode
+10		39			*				*			on		respcode
+11		41			*				*			on		terminal_id
+12		42			*				*			on		terminal_location
+#12		55			*				*			on		additional_amount
+13		60			54				*			on		Rsfld 1
+14		63			*				*			on		Rsfld 1
+15		51			*				*			on 		Pinbuf
+END_DEF
+
+0110_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		24			*				*			off	        NII	
+7		37			*				*			on		refnum
+8		38			*				*			off		authcode
+9		39			*				*			on		respcode
+10		41			*				*			on		terminal_id
+11		42			*				*			on		terminal_location
+12		61			36				*			on		accountnumber
+13		61			73				*			on		Due Amount
+14		54			30				*			on		Available Balance
+15		60			30				*			on		Client Name
+16		60			38				*			on		Client Name
+17		62			38				*			on		RsvFld3
+18		60			60				*			on		RsvFld3
+19		54			84				*			on		Available_balance
+20		60			84				*			on		Station_profile
+END_DEF
+
+
+0320_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		24			*				*			on		local_date
+7		37			*				*			on		refnum
+8		38			*				*			on		authcode
+9		39			*				*			on		respcode
+10		41			*				*			on		terminal_id
+11		42			*				*			on		terminal_location
+#12		55			*				*			on		additional_amount
+END_DEF
+
+0330_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		4			*				*			on		amount		
+3		11			*				*			on		trace_num
+4		12			*				*			on		local_time
+5		13			*				*			on		local_date
+6		24			*				*			off		NII	
+7		37			*				*			on		refnum
+8		38			*				*			off		authcode
+9		39			*				*			on		respcode
+10		41			*				*			on		terminal_id
+11		42			*				*			on		terminal_location
+#12		55			*				*			on		additional_amount
+END_DEF
+
+0500_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		11			*				*			on		trace_num
+3		24			*				*			on		trace_num
+5		41			*				*			on		terminal_id
+6		42			*				*			on		terminal_location
+7		60			*				*			on		additional_amount
+8		62			*				*			on		Totals
+END_DEF
+
+0510_START_DEF
+
+#colno	bitno	processing_code response_code 	off/on 		description
+
+1		3			*				*			on		processing_code		
+2		11			*				*			on		trace_num
+4		39			*				*			on		trace_num
+5		41			*				*			on		terminal_id
+6		42			*				*			on		terminal_location
+7		60			*				*			on		additional_amount
+END_DEF
+
+INBOUND_RESPCODEMAP_START_DEF
+
+1       0       0       Approved Transaction
+2       76      76      Invalid Account
+3       51      51      Insufficient Fund
+4       96      909     Do Not Honor
+
+END_DEF
+
+OUTBOUND_RESPCODEMAP_START_DEF
+
+1       0       0       Approved Transaction
+2	95	00	Settlement good response
+
+END_DEF
+
+INBOUND_MSGTYPEMAP_START_DEF
+
+1       0100    0200    Authorization Request
+2       0200    0200    Transaction Request
+3       0220    0220    Transaction Advice Request
+3       0400    0400    Reversal Request
+4       0420    0420    Reversal Advice Request
+5       0800    0800    Network Mgmt Request
+6       0810    1814    Echo Response
+
+END_DEF
+
+OUTBOUND_MSGTYPEMAP_START_DEF
+
+1       0200    1200    Transaction Request
+2       0210    1210    Transaction Response
+3       0420    1420    Reversal Request
+4       0421    1420    Repeat Reversal Request
+5       0430    1430    Reversal Response
+6       0800    1804    Echo Request
+7       0810    1814    Echo Response
+
+END_DEF
+
+INBOUND_NETCODEMAP_START_DEF
+1       $LOGON          001
+2       $LOGOFF         002
+3       $SIGNON         301
+4       $SIGNOFF        302
+5       $CUTOVER        303
+END_DEF
+
+OUTBOUND_NETCODEMAP_START_DEF
+1       $LOGON          001
+2       $LOGOFF         002
+3       $SIGNON         301
+4       $SIGNOFF        302
+5       $CUTOVER        303
+END_DEF
+
+
+INBOUND_TXNCODEMAP_START_DEF
+
+1       610000  000000  Purchase 
+2       620000  020000	Void 
+3       630000  030000	Refund
+4       640000  220000	VoidRefund
+5       650000  000001	PreAuthSale	
+6       660000  000002	PreAuthSaleCompletion	
+7       670000  020002	VoidPreAuthSaleCompletion
+8       940000  940001  PINCHANGE
+9       030000  030000  REFUND
+10	620101  020101  Void
+11	620102  020102  Void
+12	620203  020203  Void
+13	620201  020201  Void
+14	620301  020301  Void
+15	620302  020302  Void
+16	620303  020303  Void
+17	620401  020401  Void
+18	620402  020402  Void
+19	620403  020403  Void
+20	620404  020404  Void
+21	620501  020501  Void
+22	620502  020502  Void
+23	620503  020503  Void
+24	620504  020504  Void
+25	620505  020505  Void
+26	620506  020506  Void
+27	620601  020601  Void
+28	620701  020701  Void
+29      200000  200000  CashDeposit
+
+END_DEF
+
+OUTBOUND_TXNCODEMAP_START_DEF
+
+1       610000  000000  Purchase 
+2       620000  020000	Void 
+3       630000  200000	Refund 
+4       640000  220000	VoidRefund
+5       650000  000001	PreAuthSale	
+6       660000  000002	PreAuthSaleCompletion	
+7       670000  020002	VoidPreAuthSaleCompletion
+8	030000	030000  REFUND
+9       620701  020000  Void
+10      620101  020000  Void
+11      620102  020000  Void
+12      620203  020000  Void
+13      620201  020000  Void
+14      620301  020000  Void
+15      620302  020000  Void
+16      620303  020000  Void
+17      620401  020000  Void
+18      620402  020000  Void
+19      620403  020000  Void
+20      620404  020000  Void
+21      620501  020000  Void
+22      620502  020000  Void
+23      620503  020000  Void
+24      620504  020000  Void
+25      620505  020000  Void
+26      620506  020000  Void
+27      620601  020000  Void
+END_DEF

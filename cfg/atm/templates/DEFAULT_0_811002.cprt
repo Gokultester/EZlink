@@ -1,0 +1,15 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$STMT_1-1 
+	$LF
+	$STMT_2-1 
+	$LF
+	$STMT_3-1 
+	$LF
+	$STMT_4-1 
+	$LF
+	$STMT_9-1 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	THE $SPACE PIN $SPACE YOU $SPACE HAVE $SPACE ENTERED $SPACE IS $SPACE INCORRECT 
+	$LF
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

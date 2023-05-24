@@ -1,0 +1,30 @@
+	
+	$INCLUDE-syndicate_header.prt	
+	$LF
+	CARD $SPACE NO:
+	$LF
+	************
+	$CHN[13,15,]
+	$LF
+	$LF
+	$TRANSACTION
+	$LF
+	$AMOUNT
+	$LF
+	$LF
+	YOUR $SPACE AVL $SPACE BALANCE
+	$LF
+	$AVAIL_BALANCE
+	$LF
+	$LF
+	RESPONSE $SPACE CODE
+	$RESP_CODE
+	$LF
+	$LF
+	$LF
+	THANK $SPACE YOU $SPACE FOR 
+	$LF
+	USING
+	$LF
+	HMA $SPACE ATM
+	$LF

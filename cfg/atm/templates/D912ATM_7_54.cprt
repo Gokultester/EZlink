@@ -1,0 +1,29 @@
+	$ESC (
+        $LF
+        ***** $SPACE WELCOME $SPACE TO $SPACE $ACQINST $SPACE ATM $SPACE *****
+        $LF
+        TERMINAL $SPACE ID $SPACE $SPACE LOCATION
+        $LF
+        $DEVICE_ID $SPACE $SPACE $SPACE $DEVICE_LOCATION
+        $LF
+        DATE $SPACE $SPACE TIME
+        $LF
+        $DATE[/] $SPACE $TIME[:]
+        $LF
+	SUPERVISOR $SPACE CARD $SPACE NO:
+	$LF
+	$CHN
+	$LF
+	$LF
+	****** EXPIRED $SPACE CARD ******
+	$LF
+	RESPONSE $SPACE CODE $SPACE : $SPACE
+        $RESP_CODE
+        $LF
+        $LF
+        THANK $SPACE YOU $SPACE FOR
+        $LF
+        USING
+        $LF
+        $ACQINST $SPACE ATM
+        $LF

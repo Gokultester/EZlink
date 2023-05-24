@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	UNABLE $SPACE TO $SPACE PROCESS $SPACE THE $SPACE TRANCASTION 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

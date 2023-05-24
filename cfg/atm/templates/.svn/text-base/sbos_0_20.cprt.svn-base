@@ -1,0 +1,7 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	NO $SPACE FROMACCOUNT $SPACE FOR $SPACE THIS $SPACE CARD 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

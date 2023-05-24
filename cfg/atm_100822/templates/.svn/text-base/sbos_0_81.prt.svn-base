@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$LF
+	INVALID $SPACE PIN $SPACE BLOCK  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

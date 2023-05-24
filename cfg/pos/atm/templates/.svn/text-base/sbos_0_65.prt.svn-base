@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	EXCEEDS $SPACE DAILY $SPACE WITHDRAWAL $SPACE FREQUENCY $SPACE LIMIT  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

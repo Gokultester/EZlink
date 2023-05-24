@@ -1,0 +1,62 @@
+        SERVERID        55f1578ceae4
+
+        INSTROUTETYPE_START_DEF
+                CBS
+                NONCBS
+                EXTNTWK
+        END_DEF
+
+        INST_START_DEF
+                ORBL     FIN
+		INTSWT	EXTNTWK
+		VISA EXTNTWK
+		MASTER EXTNTWK
+		UBA	EXTNTWK
+        END_DEF
+
+        ORBL_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        INTSWT_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+
+        VISA_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        MASTER_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+
+        UBA_START_DEF
+                BINCHECKREQ     No
+                MAXBIN          10
+                BRANCHCHECKREQ  No
+                MAXBRANCH       10
+                ATMCHECKREQ     No
+                MAXATM          3
+        END_DEF
+

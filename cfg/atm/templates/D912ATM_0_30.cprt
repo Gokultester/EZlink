@@ -1,0 +1,7 @@
+	$INCLUDE-D912ATM_header.prt
+	$LF
+	$LF
+	MESSAGE $SPACE FORMAT $SPACE ERROR 
+	$LF
+	$LF
+	$INCLUDE-D912ATM_tailer.prt

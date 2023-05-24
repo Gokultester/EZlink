@@ -1,0 +1,7 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	YOUR $SPACE REQUEST $SPACE WILL $SPACE BE $SPACE PROCESSED
+	$LF
+	$INCLUDE-hpscb_tailer.prt
+

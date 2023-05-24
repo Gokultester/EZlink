@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	SELECTED $SPACE TRANSACTION $SPACE IS $SPACE NOT $SPACE ALLOWED 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

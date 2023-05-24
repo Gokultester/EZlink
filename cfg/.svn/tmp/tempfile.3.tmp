@@ -1,0 +1,25 @@
+EZDB_START_DEF
+	
+	db_username 	eezlink
+	db_password	eezlink
+<<<<<<< .mine
+	db_dbname	orcl
+=======
+	db_dbname	orcl_hari
+>>>>>>> .r531
+
+END_DEF
+
+DBCONNECTION_START_DEF
+
+	EzDeviceMgr		Static
+	EzSecurityMgr		Static
+	EzATMController		Static
+	EzNetworkMgr		Static
+	EzEchoMgr		Static
+	EzTxnLogger		Static
+	EzSafReader		Static
+	EzSafWriter		Static
+	EzAuthMgr		Static
+
+END_DEF

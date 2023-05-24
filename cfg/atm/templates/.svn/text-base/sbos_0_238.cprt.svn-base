@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	INSUFFICIENT $SPACE FUNDS $SPACE ON $SPACE YOUR $SPACE ACCOUNT 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

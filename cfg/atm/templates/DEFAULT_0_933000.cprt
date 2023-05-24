@@ -1,0 +1,8 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	YOUR $SPACE MOBILE $SPACE HAS $SPACE BEEN $SPACE REGISTERED
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt
+

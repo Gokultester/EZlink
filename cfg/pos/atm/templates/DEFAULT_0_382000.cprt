@@ -1,0 +1,52 @@
+	$INCLUDE-hpscb_header_ministatement.prt
+	$LF
+	FROM $SPACE A/C $SPACE : $SPACE $FROM_ACC[6,] ****** $FROM_ACCT[15,19,]
+        $LF
+	CARD $SPACE $SPACE NO $SPACE : $SPACE $CARD[6,] ****** $CHN[16,20,]
+        $LF
+        TRACE $SPACE NO $SPACE : $SPACE $REFNUM
+	$LF
+	TXN $SPACE TYPE $SPACE : $SPACE $TRANSACTION
+	$LF
+	CURRENCY $SPACE $SPACE : $SPACE $ACQCURRDESC
+	$LF
+	DATE $SPACE-2 DESC $SPACE-2 AMOUNT $SPACE-2 CR/DR 
+	$LF
+	$STMT_1-1 $SPACE WITHDRAW $SPACE $STMT_1-3 $SPACE D
+	$LF
+	$LF
+	$STMT_2-1 $SPACE WITHDRAW $SPACE $STMT_2-3 $SPACE D
+	$LF
+        $LF
+        $STMT_3-1 $SPACE WITHDRAW $SPACE $STMT_3-3 $SPACE D
+	$LF
+        $LF
+        $STMT_4-1 $SPACE WITHDRAW $SPACE $STMT_4-3 $SPACE D
+	$LF
+        $LF
+        $STMT_5-1 $SPACE WITHDRAW $SPACE $STMT_5-3 $SPACE D
+ 	$INCLUDE-hpscb_tailer_ministatement.prt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

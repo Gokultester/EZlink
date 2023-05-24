@@ -1,0 +1,9 @@
+$FF $SI @ @ $ESC PEC:\ssds\Dll\ICON038.pcx $ESC \
+$A	$SI H M
+$B	$SI J M
+$C	$SI L M
+$D	$SI N 9	 
+$F	$SI N B 
+$G	$SI O @
+$H	$SI L @
+$I	$SI I @

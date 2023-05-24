@@ -1,0 +1,23 @@
+TXNMAP_START_DEF
+
+#Opkey_IndirectState    TxnCode         Amount          CurrencyCode    Receipt Needed/Not      New/Continue/Old Txn    MstType Bitmap
+
+#Sale
+        11_0            000000          000000          356                     1                       0               200     3038058020c01004 SALE
+#Withdraw
+        211_0           11000           000000          356                     1                       0               200     3038058020c01004 WDL
+        212-0           12000           000000          356                     1                       0               200     3038058020c01004 WDL
+#cash deposit
+        231_0           201000          000000          356                     1                       0               200     3038058020c01004 DEPOSIT
+        232_0           202000          000000          356                     1                       0               200     3038058020c01004 DEPOSIT
+#Bal enq
+
+        221_0           301000          000000          356                     1                       0               200     3038058020c01004 BALINQ
+        222_0           302000          000000          356                     1                       0               200     3038058020c01004 BALINQ
+#Echo Msg
+	#11_0		920001		000000		356			1			0		800	2038010000C00000
+
+
+	11_0		920001		000000		356			1			0		800	A038010000C00000040000000000000000 ECHO
+END_DEF
+

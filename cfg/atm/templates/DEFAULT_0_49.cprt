@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	INVALID $SPACE MOBILE $SPACE NUMBER  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

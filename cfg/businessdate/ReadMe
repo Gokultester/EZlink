@@ -1,0 +1,6 @@
+
+ The files in this folder is to maintain the Business date even.
+
+ The file name will be networkid.dat eg: ARCO000001.dat ( INSTITUTIONID[4 digit] and BRANCHCODE[ 6 digit ])
+
+ The Date format is DDMMYY Eg: 091109

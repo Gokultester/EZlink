@@ -1,0 +1,148 @@
+ATM_STATE_START_DEF
+#Card Read
+        000     A       010     001     127     010     010     002     001     268
+        001     D       002     000     001     000     000     000     000     000
+#Language Selection
+        002     Y       021     201     202     004     255     000     012     003
+        003     Z       000     300     000     000     000     000     000     000
+#FIT Selection
+        004     K       005     101     255     255     255     255     255     400
+#Pin Entry
+        005     B       022     201     202     225     255     010     085     255
+
+#State 030 To 100 On-us Transaction Processing
+#Main Transaction Selection
+        030     Y       023     201     202     031     255     001     231     255
+        031     W       032     042     047     255     255     049     057     059
+#OPKEY                   A       B       C       D       F       G       H       I
+#Pin Change State 032 To 039 ( 040 & 041 Reserved )
+        #Enter Current PIN
+        032     D       033     255     002     000     000     000     000     000
+        033     B       025     201     202     255     255     010     085     225
+        #Enter New PIN
+        034     D       035     255     004     000     000     000     000     000
+        035     B       026     201     202     004     255     010     085     225
+        #Re-Enter New PIN
+        036     D       037     255     007     000     000     000     000     000
+        037     B       027     201     202     004     255     010     085     255
+        #New PIN & Re-Enter New PIN Are Not Same
+        038     D       039     255     000     001     000     000     000     000
+        039     B       042     201     202     255     255     010     085     255
+
+#Bank Info State 042 To 044 ( 045 & 046 Reserved )
+        042     E       048     201     202     255     255     043     044     005
+        #FX Rate Display
+        043     D       095     255     000     000     000     015     000     000
+        #Intrest Rate Display
+        044     D       095     255     000     000     048     000     000     000
+
+#Receipt Selection For Bal Inq State 047 & 048
+        047     D       048     255     000     006     000     000     000     000
+        048     E       028     201     202     255     255     085     085     004
+
+#Fund Transfer Selection State 049 To 054  ( 055 & 056 Reserved )
+        #Select Own Bank Or Other Bank
+        049     E       033     201     202     050     255     255     255     002
+#Own Bank Fund Transfer
+        #Enter To Account Number
+        050     H       034     201     202     255     255     051     050     001
+        #Enter Amount
+        051     F       044     201     202     255     255     052     051     005
+        #Receipt Selection
+        052     E       028     201     202     255     255     085     085     005
+        #Name Confirmation
+        053     D       054     255     000     000     009     000     000     000
+        054     E       036     201     202     255     255     093     202     005
+
+#Receipt Selection For Mini Statement State 057 & 058
+        057     D       058     255     001     006     000     000     000     000
+        058     E       028     201     202     255     255     085     085     003
+
+#Cash Withdrawal State 059 To 067 ( 068 To 075 Reserved )
+#FX Rate Display Request
+        059     D       090     255     000     000     098     095     000     000
+#Amount Selection ( CWD )
+        060     D       061     000     000     000     000     000     000     000
+        061     Y       029     201     202     062     255     002     231     255
+        062     W       065     065     063     255     255     065     065     065
+#Amount Entry ( CWD )
+        063     F       030     201     202     255     255     064     063     004
+        064     G       065     066     000     000     000     000     000     000
+        #Invalid Amount Re-Enter Amount
+        066     F       031     201     202     255     255     064     063     004
+        #Enter Multiples Of 20K, 50K
+        067     F       043     201     202     255     255     064     067     004
+#Select Print ( CWD )
+        065     E       028     201     202     255     255     085     085     004
+
+#Invalid PIN Re-Enter PIN
+        070     D       071     255     000     000     000     000     000     000
+        071     B       040     201     202     225     255     010     085     255
+
+
+#Setting ICC Data For Proparatory Card
+	085 	+	086 	095 	000     000     000     000     000     000
+	086 	/ 	000 	000 	000 	087 	000 	000 	000 	000
+	087 	Z 	088 	095 	300 	095 	095 	095 	095 	000
+	088 	? 	089 	001     001     030     040     000     000     000
+	089 	I 	024     201     001     007     001     001     129     090
+	090 	Z 	003 	000 	000 	016 	000 	000 	001 	000
+
+#Set Buffer & OAR Reply transaction
+        092     D       093     255     128     000     000     000     000     000
+        093     ;       086     095     000     000     000     000     000     000
+
+#Request For Magnetic Stripe Card
+        095     I       024     201     001     007     001     001     001     003
+
+
+
+#State 151 To 200 Success Response State
+#Bal Inq Success
+        #150     D       151     255     000     000     000     000     000     000
+        151     E       036     201     202     255     255     028     203     000
+#Mini Statment Success
+        152     E       036     201     202     255     255     028     203     000
+#Fund Transfer Success
+        153     E       045     201     202     255     255     028     203     000
+#Cash Withdrawal Success
+        154     E       036     201     202     255     255     028     203     000
+#Forex Rate Display
+        155     E       036     201     202     255     255     028     203     000
+#Intrest Rate Display
+        156     E       041     201     202     255     255     028     203     000
+#Forex Rate Display(CWD)
+        157     E       036     201     202     255     255     255     060     000
+#Success Close State 201 To 250
+        #Cancel
+        202     J       102     000     102     102     000     000     000     000
+        #Thanks Screen
+        #203     J       019     000     019     019     000     000     000     000
+        203     J       202     000     202     202     000     000     000     000
+        #PIN Change Success
+        204     J       152     000     152     152     000     000     000     000
+        #Forex Rate Display
+        205     J       036     000     036     036     000     000     000     000
+        #Intrest Rate Display
+        206     J       151     000     151     151     000     000     000     000
+
+
+#LAPS Success Close State
+#Cash Withdrawal Success
+        230     J       019     000     019     019     000     000     000     000
+
+#Failure Close State 256 To 300
+        256     J       103     000     103     103     000     000     000     000 #Out Of Service
+        257     J       104     000     104     104     000     000     000     000 #Unable To Process
+        258     J       105     000     105     105     000     000     000     000 #PIN Tries Exceeded
+        259     J       106     000     106     106     000     000     000     000 #Transaction Not Allowed
+        260     J       107     000     107     107     000     000     000     000 #Invalid Card
+        261     J       108     000     108     108     000     000     000     000 #Invalid Account
+        262     J       109     000     109     109     000     000     000     000 #Expired Card
+        263     J       110     000     110     110     000     000     000     000 #Issuer Down
+        264     J       151     000     151     151     000     000     000     000 #In-Sufficient Fund
+        265     J       151     000     151     151     000     000     000     000 #Frequency Limit Exceeded
+        266     J       151     000     151     151     000     000     000     000 #Amount Limit Exceeded
+        267     J       151     000     151     151     000     000     000     000 #Issuer Timeout
+        268     J       154     000     154     154     000     000     000     000 #Issuer Timeout
+END_DEF

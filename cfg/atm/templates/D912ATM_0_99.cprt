@@ -1,0 +1,9 @@
+
+	$INCLUDE-D912ATM_header.prt
+	$LF
+	$LF
+	$LF
+	DUPLICATE $SPACE TRANSACTION 
+	$LF
+	$LF
+	$INCLUDE-D912ATM_tailer.prt

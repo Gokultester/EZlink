@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$LF
+	ISSUER $SPACE TIME $SPACE OUT  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.jprt
+	$LF
+	$SPACE UNCERTAIN $SPACE DISPENCE
+	$LF
+	AMOUNT $SPACE REQUESTED $SPACE : $SPACE Rs. $SPACE $AMOUNT
+	$LF
+	$INCLUDE-hpscb_tailer.jprt

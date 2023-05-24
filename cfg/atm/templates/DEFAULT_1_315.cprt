@@ -1,0 +1,9 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	YOUR $SPACE NEW $SPACE PIN $SPACE HAS $SPACE NOT $SPACE BEEN $SPACE CHANGED 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt
+

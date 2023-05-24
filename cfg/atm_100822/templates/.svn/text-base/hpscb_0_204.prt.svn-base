@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	SELECTED $SPACE ACCOUNT $SPACE IS $SPACE INACTIVE  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

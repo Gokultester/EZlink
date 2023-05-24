@@ -1,0 +1,55 @@
+GROUP PRINTER_DATA
+        $LF
+        $SO 1
+        WELCOME $SPACE TO $SPACE HMA $SPACE ATM
+        $LF
+        $LF
+        ATM $SPACE ID:
+        $SO 1
+        $DEVICE_ID
+        $LF
+        $DEVICE_LOCATION
+	$LF
+	$LF
+	$SO 2
+	DATE
+	$SO 8 
+	TIME
+	$LF
+	$LF
+	$SO 2
+	$DATE
+	$SO 2 
+	$TIME
+	$LF
+	$LF
+	$SO 7
+	THANK $SPACE YOU $SPACE FOR
+	$LF
+	$SO 9 
+	USING
+	$LF
+	$SO 8 
+	HMA $SPACE ATM
+	$LF
+	$LF
+	$SO 1
+	CARD $SPACE NO:
+	$SO 1
+	$CHN
+	$LF
+	$LF
+	$SO 2
+	$TRANSACTION
+	$LF
+	$SO 3
+	$AMOUNT
+	$LF
+	$LF
+	$LF
+	$SO 1
+	RESPONSE $SPACE CODE
+	$SO 2
+	$RSP_CODE
+	$LF
+END GROUP

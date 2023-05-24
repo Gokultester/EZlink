@@ -1,0 +1,39 @@
+
+	CASSETTE_MAPPING_START_DEF
+	
+	#CassetteNo	DenominationId  DenominationAmount  CurrencyCode
+	
+	0		A		NIL			NIL
+	0		B		NIL			NIL
+	0		C		NIL			NIL
+	0		D		NIL			NIL
+	0		E		NIL			NIL
+	1		F		100			356
+	2		G		500			356
+	0		H		NIL			NIL
+	
+	END_DEF
+
+	DENOM_LOGIC_START_DEF
+	
+	#Amount_CurrencyCode	E 	F	G	H	
+	
+	100_356			00	01	00	00	
+	200_356			00	02	00	00			
+	300_356			00	03	00	00
+	400_356			00	04	00	00			
+	500_356			00	05	00	00			
+	600_356			00	06	00	00			
+	700_356			00	07	00	00			
+	800_356			00	08	00	00			
+	900_356			00	09	00	00		
+	1000_356		00	05	01	00		
+	1100_356		00	01	02	00			
+	1200_356		00	02	02	00			
+	1300_356		00	03	02	00			
+	1400_356		00	04	02	00		
+	1500_356		00	05	02	00			
+	1600_356		00	01	03	00			
+	1700_356		00	02	03	00			
+	
+	END_DEF

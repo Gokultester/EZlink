@@ -1,0 +1,16 @@
+	
+	$INCLUDE-hpscb_dbd_header.prt	
+	$LF
+	$AMOUNT
+	$LF
+	$LF
+	YOUR $SPACE AVAILABLE $SPACE BALANCE
+	$LF
+	$AVAIL_BALANCE
+	$LF
+	YOUR $SPACE LEDGER $SPACE BALANCE
+	$LF
+	$LEDGER_BALANCE
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

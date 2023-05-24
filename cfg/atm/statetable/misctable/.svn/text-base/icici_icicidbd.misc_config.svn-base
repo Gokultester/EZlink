@@ -1,0 +1,48 @@
+ATM_PARAM_START_DEF
+	reserved0	Cameraon
+	reserved1	000
+	reserved2	Voice On
+	reserved3	MMDD[YY]
+	reserved4	25
+	reserved5	8
+	reserved6	ISO Format
+	reserved7	Do not Transmit
+	reserved8	Do not Transmit
+	reserved9	Do not Transmit
+	reserved10	10
+	reserved11	3
+	reserved12	Do not Appened Info
+	reserved13	0
+	reserved14	0
+	reserved15	Do not Disable
+	reserved16	No Action
+	reserved17	Do not Send
+	reserved18	Do not Send
+	reserved19	4.0 Hz
+	reserved20	On Device
+	reserved21	No Send/No Set
+	reserved22	Do not Inform
+	reserved23	Include the PAN
+	reserved24	Do not echo Keyboard
+	reserved25	Do report Errors
+	reserved26	Do not simulate Entry
+	reserved27	D
+	timer0		30
+	timer1		30
+	timer2		30
+	timer3		30
+	timer4		30
+	timer5		30
+	timer6		160
+	timer7		30
+	timer8		30
+	timer9		30
+	timer10		30
+	timer11		204
+	timer12		30
+	timer13		30
+	timer14		30
+	timer15		170
+	timer16		30
+	timer17		T
+END_DEF

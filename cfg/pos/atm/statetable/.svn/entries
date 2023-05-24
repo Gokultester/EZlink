@@ -1,0 +1,43 @@
+9
+
+dir
+1001
+https://140.0.0.163:8443/svn/ezlinkenterprise/trunk/cfg/atm/statetable
+https://140.0.0.163:8443/svn/ezlinkenterprise
+
+
+
+2009-07-27T06:20:22.453125Z
+999
+mohanraj
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+104ba20e-4558-a943-8ed0-6b5aba07b674
+
+screen
+dir
+
+state
+dir
+
+resptable
+dir
+
+misctable
+dir
+
+opkey
+dir
+

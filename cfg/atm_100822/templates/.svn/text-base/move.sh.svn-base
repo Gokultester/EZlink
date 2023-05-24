@@ -1,0 +1,12 @@
+for i in *
+do
+	NewFName1=`echo $i | cut -d'.' -f1`		
+	NewFName2=`echo $i | cut -d'.' -f2`
+	if [ $NewFName2 = "prt" ]
+	then
+		echo "NewFName1 = $NewFName1 NewFName2 = $NewFName2"
+		FName=`echo "$NewFName1.c$NewFName2"`
+		echo "FName = $FName"
+		mv $i $FName
+	fi
+done

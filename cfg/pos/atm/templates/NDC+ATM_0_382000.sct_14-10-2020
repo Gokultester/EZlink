@@ -1,0 +1,8 @@
+017
+$FF $SI @ @ $ESC PEC:\SCREENS\icon017.jpg $ESC \
+$SI I B $STMT_1
+$SI J B $STMT_2
+$SI K B $STMT_3
+$SI L B $STMT_4
+$SI M B $STMT_5
+

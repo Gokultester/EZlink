@@ -1,0 +1,8 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	ENTERED $SPACE AMOUNT $SPACE IS $SPACE TOO $SPACE LARGE  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

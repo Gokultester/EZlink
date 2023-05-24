@@ -1,0 +1,10 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	EXCEED $SPACE LIMIT  $SPACE 
+	$LF
+	TRY $SPACE LESS $SPACE THAN $SPACE RS.15000 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

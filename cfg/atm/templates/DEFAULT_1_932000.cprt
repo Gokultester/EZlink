@@ -1,0 +1,8 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	YOUR $SPACE CHEQUE $SPACE HAS $SPACE BEEN $SPACE CLEARED
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt
+

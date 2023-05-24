@@ -1,0 +1,6 @@
+$FF $SI @ @ $ESC P2117 $ESC \
+$SI H F $SPACE $1 
+$SI I F $SPACE $3
+$SI J F $SPACE $4
+$SI K F $SPACE $5	
+

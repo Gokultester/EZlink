@@ -1,0 +1,12 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	$LF
+	UNABLE $SPACE TO $SPACE PROCESS $SPACE THE $SPACE TRANCASTION 
+	$LF
+	$LF
+	INVALID $SPACE MERCHANT  
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

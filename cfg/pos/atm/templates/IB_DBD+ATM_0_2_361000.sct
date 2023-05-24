@@ -1,0 +1,9 @@
+$FF $SI @ @ $ESC PEC:\Program $SPACE Files\NCR $SPACE APTRA\Advance $SPACE NDC\Media\CGS\en\icon037.jpg $ESC \ $ESC [27;80m
+$A	$SI H 3
+$B	$SI K 3
+$C	$SI N 3
+$D	$SI O 9
+$F	$SI O C 
+$G	$SI O @
+$H	$SI L @
+$I	$SI I @

@@ -1,0 +1,26 @@
+
+DEBUGLEVEL_START_DEF
+
+	EzTaskMgr			DEBUG_TEST
+	EzChannelMgr			DEBUG_TEST
+	EzCommMgr			DEBUG_TEST
+	EzMsgRouter			DEBUG_TEST
+	EzEventMgr			DEBUG_TEST
+	EzDeviceMgr			DEBUG_TEST
+	EzNDCDriver			DEBUG_TEST
+	EzSecurityMgr			DEBUG_TEST
+	EzSecurityDriver		DEBUG_TEST
+	EzHost8583			DEBUG_TEST
+	EzD912Driver			DEBUG_TEST
+	EzATMController			DEBUG_TEST
+	EzGUIController			DEBUG_TEST
+	EzTritonStd			DEBUG_TEST
+	EzNetworkMgr			DEBUG_TEST
+	EzEchoMgr			DEBUG_TEST
+	EzAuthMgr			DEBUG_TEST
+	EzTxnMgr			DEBUG_TEST
+	EzTxnLogger			DEBUG_TEST
+	EzSafReader			DEBUG_TEST
+	EzSafWriter			DEBUG_TEST
+	
+END_DEF

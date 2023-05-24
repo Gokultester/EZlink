@@ -1,0 +1,12 @@
+
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$AMOUNT
+	$LF
+	$LF
+	YOUR $SPACE AVAILABLE $SPACE BALANCE
+	$LF
+	$AVAIL_BALANCE
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

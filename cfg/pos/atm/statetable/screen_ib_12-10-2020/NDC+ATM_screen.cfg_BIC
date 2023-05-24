@@ -1,0 +1,374 @@
+ATM_SCREEN_START_DEF                                                
+#Reversed Screen                                                   
+	#Reversed Screen
+
+        #011  $ESC [21;80m $SI @ @ $SI SAMPLE $SPACE MUCB $SPACE ADVERTISEMENT $SPACE  $SPACE  $SPACE $SI E A $SPACE  $SPACE TEST $SPACE  $SPACE  $SI F A TEST $SPACE TEST $SPACE  $SPACE 
+
+	#013 $ESC [21;80m $SI @ @ $SI D A EARN $SPACE 9.75% $SPACE INTEREST $SPACE P.A. $SPACE ON $SPACE $SI E A FIXED $SPACE DEPOSIT $SPACE FOR $SPACE 12-23 $SPACE MONTHS. $SI F A SENIOR $SPACE CITIZENS $SPACE 10.25% $SPACE P.A 	
+
+        #012 $SI K A CONTACT $SPACE LOWER $SPACE PAREL $SPACE BRANCH $SI L A (INDIABULLS $SPACE 3RD $SPACE FLOOR, $SPACE TOWER $SPACE B) $SI M A AT $SPACE 43020608 $SI K A BRANCH $SPACE TIMINGS: $SPACE 10 $SPACE AM $SPACE TO $SPACE 6 $SPACE PM
+
+        000     $FF $ESC PEC:\PROTOPAS\bitmaps_test\image000.jpg $ESC \             
+        C00     $FF $ESC PEicon000.jpg $ESC \             
+        200     $FF $ESC PEC:\PROTOPAS\bitmaps_test\icon200.jpg $ESC \             
+        001     $FF $ESC PEC:\PROTOPAS\bitmaps_test\image001.jpg $ESC \             
+        C01     $FF $ESC PEC:\PROTOPAS\bitmaps_test\image001.jpg $ESC \             
+        002     $FF $ESC PEC:\PROTOPAS\bitmaps_test\image002.jpg $ESC \             
+        C02     $FF $ESC PEC:\PROTOPAS\bitmaps_test\image002.jpg $ESC \             
+	#004 	$SI F L LAK.********
+	#004 	$SI F L LAK:***0,000
+	004 	$SI F L LAK:*,***,**0
+        006     $FF $ESC PEicon101.jpg $ESC \             
+        206     $FF $ESC PEicon206.jpg $ESC \
+             
+
+#Welcome
+      	010     $FF $SO 013 $ESC [050z $SO 012 $ESC [050z
+        013     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon013.jpg $ESC \
+        012     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon012.jpg $ESC \
+	#012     $FF $SI @ @ $ESC PEicon012.jpg $ESC \
+
+#Muli Language        
+	016     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon016.jpg $ESC \      
+	216     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon216.jpg $ESC \      
+#Empty Screen             
+	017     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon017.jpg $ESC \ 	
+	217     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon217.jpg $ESC \ 	
+#PIN Entry                                                                                     
+        020     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon020.jpg $ESC \ $ESC [27;80m $SI F L              
+        220     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon220.jpg $ESC \ $ESC [27;80m $SI F L              
+        #180     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon180.jpg $ESC \ $ESC [21;80m $SI F L              
+#Main Txn Selection                                                                             
+        024     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon024.jpg $ESC \                                        
+        019	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon019.jpg $ESC \                                        
+        025	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon025.jpg $ESC \
+	181     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon181.jpg $ESC \                                        
+        224     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon224.jpg $ESC \                                        
+        219     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon219.jpg $ESC \                                        
+        225     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon225.jpg $ESC \                                        
+        381     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon381.jpg $ESC \                                        
+#Fast Cash Selection                                                                           
+        029     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon029.jpg $ESC \                                
+        229     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon229.jpg $ESC \                                
+#Account Selection                                                                             
+        023     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon023.jpg $ESC \                                
+	182	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon182.jpg $ESC \
+        223     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon223.jpg $ESC \                                
+        382     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon382.jpg $ESC \                                
+#Printer Selection                                                                             
+        026     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon026.jpg $ESC \                                
+        226     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon226.jpg $ESC \                                
+#Amount Entry                                                                                  
+        027     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon027.jpg $ESC \ $ESC [27;80m $SI F L                        
+        227     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon227.jpg $ESC \ $ESC [27;80m $SI F L                        
+#when 100 notes are empty
+        121     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon121.jpg $ESC \ $ESC [27;80m $SI F L                        
+        #321     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon321.jpg $ESC \ $ESC [21;80m $SI J 0                        
+#when notes are empty
+        128     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon128.jpg $ESC \                        
+        328     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon328.jpg $ESC \                        
+        134     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon134.jpg $ESC \                        
+        334     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon334.jpg $ESC \                       
+	133     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon133.jpg $ESC \
+	333	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon333.jpg $ESC \
+        135     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon135.jpg $ESC \ 
+        335     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon335.jpg $ESC \ 
+#when per transcation limit exceeds
+	 144     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon144.jpg $ESC \
+	 344     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon344.jpg $ESC \
+#Transaction Request                                                                           
+        028     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon028.jpg $ESC \                                
+        228     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon228.jpg $ESC \                                
+#PIN Change - New PIN                                                                          
+        021     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon021.jpg $ESC \ $ESC [27;80m  $SI F L              
+        221     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon221.jpg $ESC \ $ESC [27;80m $SI F L              
+#PIN Change - Confirm PIN                                                                      
+        022     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon022.jpg $ESC \ $ESC [27;80m $SI F L              
+        222     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon222.jpg $ESC \ $ESC [27;80m $SI F L              
+
+#Deposit selection
+
+	044     $FF $SI @ @ $ESC PEC:\S4PICT\ICON044.pcx $ESC \
+
+# Fund Transfer
+        030     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon030.jpg $ESC \                                
+        031     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon031.jpg $ESC \                                
+        032     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon032.jpg $ESC \                                
+        036     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon036.jpg $ESC \ $ESC [27;80m  $SI F L                               
+        037     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon037.jpg $ESC \                             
+        #038     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon038.jpg $ESC \ [27;80m $SI F L                
+        040     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon040.jpg $ESC \ [27;80m $SI F L                                
+	034     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon034.jpg $ESC \ $ESC [27;80m $SI F L
+
+	230     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon230.jpg $ESC \ 
+	231     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon231.jpg $ESC \ 
+	232     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon232.jpg $ESC \ 
+	236     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon236.jpg $ESC \ [27;80m $SI F L
+	237     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon237.jpg $ESC \
+	#238     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon238.jpg $ESC \ [27;80m $SI F L
+	240     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon240.jpg $ESC \ [27;80m $SI F L
+	234     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon234.jpg $ESC \ $ESC [27;80m $SI F L
+
+# Name Enquiry
+	035     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon035.jpg $ESC \ [27;80m  $SI F L
+	235     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon235.jpg $ESC \ [27;80m  $SI F L
+#OTP
+        033     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon033.jpg $ESC \ [27;80m  $SI F L                                
+        233     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon233.jpg $ESC \ [27;80m  $SI F L                                
+
+#Close Screen for Good Response
+        060     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon060.jpg $ESC \
+        061     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon061.jpg $ESC \ 
+        062     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon062.jpg $ESC \
+        063     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon063.jpg $ESC \ 
+        064     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon064.jpg $ESC \
+        065     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon065.jpg $ESC \ 
+        066     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon066.jpg $ESC \
+        067     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon067.jpg $ESC \ 
+        068     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon068.jpg $ESC \
+        069     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon069.jpg $ESC \
+        070     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon070.jpg $ESC \
+        071     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon071.jpg $ESC \
+        072     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon072.jpg $ESC \
+        073     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon073.jpg $ESC \
+        074     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon074.jpg $ESC \
+        075     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon075.jpg $ESC \
+        260     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon260.jpg $ESC \
+        261     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon261.jpg $ESC \ 
+        262     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon262.jpg $ESC \
+        263     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon263.jpg $ESC \ 
+        264     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon264.jpg $ESC \
+        265     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon265.jpg $ESC \ 
+        266     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon266.jpg $ESC \
+        267     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon267.jpg $ESC \ 
+        268     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon268.jpg $ESC \
+        269     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon269.jpg $ESC \
+        270     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon270.jpg $ESC \
+        271     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon271.jpg $ESC \
+        272     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon272.jpg $ESC \
+        273     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon273.jpg $ESC \
+        274     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon274.jpg $ESC \
+        275     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon275.jpg $ESC \
+#Close Screen for Bad Response
+        081     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon081.jpg $ESC \
+        082     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon082.jpg $ESC \
+        083     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon083.jpg $ESC \
+        084     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon084.jpg $ESC \
+        085     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon085.jpg $ESC \
+        086     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon086.jpg $ESC \
+        087     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon087.jpg $ESC \
+        088     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon088.jpg $ESC \
+        089     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon089.jpg $ESC \
+        090     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon090.jpg $ESC \
+        091     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon091.jpg $ESC \
+        092     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon092.jpg $ESC \
+        093     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon093.jpg $ESC \
+        094     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon094.jpg $ESC \
+        095     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon095.jpg $ESC \
+        096     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon096.jpg $ESC \
+        097     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon097.jpg $ESC \
+        098     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon098.jpg $ESC \
+        099     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon099.jpg $ESC \
+        100     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon100.jpg $ESC \
+        101     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon101.jpg $ESC \
+        102     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon102.jpg $ESC \
+        103     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon103.jpg $ESC \
+        104     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon104.jpg $ESC \
+        105     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon105.jpg $ESC \
+        106     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon106.jpg $ESC \
+        107     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon107.jpg $ESC \
+        108     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon108.jpg $ESC \
+        109     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon109.jpg $ESC \
+        110     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon110.jpg $ESC \
+	111     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon111.jpg $ESC \
+	112     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon112.jpg $ESC \
+	113     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon113.jpg $ESC \
+	114     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon114.jpg $ESC \
+	115     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon115.jpg $ESC \
+	116     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon116.jpg $ESC \
+	117     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon117.jpg $ESC \
+	118     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon118.jpg $ESC \
+	119     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon119.jpg $ESC \
+	120     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon120.jpg $ESC \
+	122     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon122.jpg $ESC \
+	123     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon123.jpg $ESC \
+	124     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon124.jpg $ESC \
+	125     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon125.jpg $ESC \
+	126     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon126.jpg $ESC \
+	127     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon127.jpg $ESC \
+	129     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon129.jpg $ESC \
+	130     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon130.jpg $ESC \
+	131     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon131.jpg $ESC \
+	132     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon132.jpg $ESC \
+	136     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon136.jpg $ESC \
+	137     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon137.jpg $ESC \
+	138     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon138.jpg $ESC \
+	139     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon139.jpg $ESC \
+	141     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon141.jpg $ESC \
+	142     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon142.jpg $ESC \
+	143     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon143.jpg $ESC \
+	
+	282     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon282.jpg $ESC \	
+	283     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon283.jpg $ESC \	
+	284     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon284.jpg $ESC \	
+	285	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon285.jpg $ESC \	
+	287	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon287.jpg $ESC \	
+	288	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon288.jpg $ESC \	
+	289	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon289.jpg $ESC \	
+	290	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon290.jpg $ESC \	
+	291	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon291.jpg $ESC \	
+	292	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon292.jpg $ESC \	
+	293	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon293.jpg $ESC \	
+	294	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon294.jpg $ESC \	
+	295	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon295.jpg $ESC \	
+	296	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon296.jpg $ESC \	
+	297	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon297.jpg $ESC \	
+	298	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon298.jpg $ESC \	
+	299	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon299.jpg $ESC \	
+	300	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon300.jpg $ESC \	
+	301	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon301.jpg $ESC \	
+	302	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon302.jpg $ESC \	
+	303	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon303.jpg $ESC \	
+	304	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon304.jpg $ESC \	
+	305	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon305.jpg $ESC \	
+	306	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon306.jpg $ESC \	
+	307	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon307.jpg $ESC \	
+	308	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon308.jpg $ESC \	
+	309	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon309.jpg $ESC \	
+	310	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon310.jpg $ESC \	
+	311	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon311.jpg $ESC \	
+	312	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon312.jpg $ESC \	
+	313	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon313.jpg $ESC \	
+	314	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon314.jpg $ESC \	
+	315	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon315.jpg $ESC \	
+	316	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon316.jpg $ESC \	
+	317	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon317.jpg $ESC \	
+	318	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon318.jpg $ESC \	
+	319	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon319.jpg $ESC \	
+	320	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon320.jpg $ESC \	
+	321	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon321.jpg $ESC \	
+	322	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon322.jpg $ESC \	
+	323	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon323.jpg $ESC \	
+	324	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon324.jpg $ESC \	
+	325	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon325.jpg $ESC \	
+	326	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon326.jpg $ESC \	
+	327	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon327.jpg $ESC \	
+	328	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon328.jpg $ESC \	
+	329	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon329.jpg $ESC \	
+	330	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon330.jpg $ESC \	
+	331	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon331.jpg $ESC \	
+	333	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon333.jpg $ESC \	
+	334	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon334.jpg $ESC \	
+	335	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon335.jpg $ESC \	
+	336	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon336.jpg $ESC \	
+	337	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon337.jpg $ESC \	
+	338	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon338.jpg $ESC \	
+	339	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon339.jpg $ESC \	
+	341	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon341.jpg $ESC \	
+	342	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon342.jpg $ESC \	
+	344	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon344.jpg $ESC \	
+	361	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon361.jpg $ESC \	
+	380	$FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon380.jpg $ESC \	
+	
+	#Supervisior Screens
+	155     $FF $SI @ @ $ESC PEC:\S4PICT\ICON155.pcx $ESC \ $ESC [21;80m $SI F L
+	156     $FF $SI @ @ $ESC PEC:\S4PICT\ICON156.pcx $ESC \
+	157     $FF $SI @ @ $ESC PEC:\S4PICT\ICON157.pcx $ESC \
+	158     $FF $SI @ @ $ESC PEC:\S4PICT\ICON158.pcx $ESC \
+	159     $FF $SI @ @ $ESC PEC:\S4PICT\ICON159.pcx $ESC \ $ESC [21;80m $SI F L
+	160     $FF $SI @ @ $ESC PEC:\S4PICT\ICON160.pcx $ESC \
+	161     $FF $SI @ @ $ESC PEC:\S4PICT\ICON161.pcx $ESC \ $ESC [21;80m $SI F L
+	162     $FF $SI @ @ $ESC PEC:\S4PICT\ICON162.pcx $ESC \ $ESC [21;80m $SI F L
+	163     $FF $SI @ @ $ESC PEC:\S4PICT\ICON163.pcx $ESC \
+	164     $FF $SI @ @ $ESC PEC:\S4PICT\ICON164.pcx $ESC \
+	165     $FF $SI @ @ $ESC PEC:\S4PICT\ICON165.pcx $ESC \
+	166     $FF $SI @ @ $ESC PEC:\S4PICT\ICON166.pcx $ESC \
+	167     $FF $SI @ @ $ESC PEC:\S4PICT\ICON167.pcx $ESC \
+	171     $FF $SI @ @ $ESC PEC:\S4PICT\ICON171.pcx $ESC \
+	172     $FF $SI @ @ $ESC PEC:\S4PICT\ICON172.pcx $ESC \
+	173     $FF $SI @ @ $ESC PEC:\S4PICT\ICON173.pcx $ESC \
+	174     $FF $SI @ @ $ESC PEC:\S4PICT\ICON174.pcx $ESC \
+	175     $FF $SI @ @ $ESC PEC:\S4PICT\ICON175.pcx $ESC \
+	176     $FF $SI @ @ $ESC PEC:\S4PICT\ICON176.pcx $ESC \
+	177     $FF $SI @ @ $ESC PEC:\S4PICT\ICON177.pcx $ESC \
+	178     $FF $SI @ @ $ESC PEC:\S4PICT\ICON178.pcx $ESC \
+	179     $FF $SI @ @ $ESC PEC:\S4PICT\ICON179.pcx $ESC \
+        
+        281     $FF $SI @ @ $ESC PEC:\S4PICT\ICON281.pcx $ESC \
+        282     $FF $SI @ @ $ESC PEC:\S4PICT\ICON282.pcx $ESC \
+        283     $FF $SI @ @ $ESC PEC:\S4PICT\ICON283.pcx $ESC \
+        284     $FF $SI @ @ $ESC PEC:\S4PICT\ICON284.pcx $ESC \
+        285     $FF $SI @ @ $ESC PEC:\S4PICT\ICON285.pcx $ESC \
+        286     $FF $SI @ @ $ESC PEC:\S4PICT\ICON286.pcx $ESC \
+        287     $FF $SI @ @ $ESC PEC:\S4PICT\ICON287.pcx $ESC \
+        288     $FF $SI @ @ $ESC PEC:\S4PICT\ICON288.pcx $ESC \
+        289     $FF $SI @ @ $ESC PEC:\S4PICT\ICON289.pcx $ESC \
+        290     $FF $SI @ @ $ESC PEC:\S4PICT\ICON290.pcx $ESC \
+        291     $FF $SI @ @ $ESC PEC:\S4PICT\ICON291.pcx $ESC \
+        292     $FF $SI @ @ $ESC PEC:\S4PICT\ICON292.pcx $ESC \
+        293     $FF $SI @ @ $ESC PEC:\S4PICT\ICON293.pcx $ESC \
+        294     $FF $SI @ @ $ESC PEC:\S4PICT\ICON294.pcx $ESC \
+        295     $FF $SI @ @ $ESC PEC:\S4PICT\ICON295.pcx $ESC \
+        296     $FF $SI @ @ $ESC PEC:\S4PICT\ICON296.pcx $ESC \
+        297     $FF $SI @ @ $ESC PEC:\S4PICT\ICON297.pcx $ESC \
+        298     $FF $SI @ @ $ESC PEC:\S4PICT\ICON298.pcx $ESC \
+        299     $FF $SI @ @ $ESC PEC:\S4PICT\ICON299.pcx $ESC \
+        300     $FF $SI @ @ $ESC PEC:\S4PICT\ICON300.pcx $ESC \
+        301     $FF $SI @ @ $ESC PEC:\S4PICT\ICON301.pcx $ESC \
+        302     $FF $SI @ @ $ESC PEC:\S4PICT\ICON302.pcx $ESC \
+        303     $FF $SI @ @ $ESC PEC:\S4PICT\ICON303.pcx $ESC \
+        304     $FF $SI @ @ $ESC PEC:\S4PICT\ICON304.pcx $ESC \
+        305     $FF $SI @ @ $ESC PEC:\S4PICT\ICON305.pcx $ESC \
+        306     $FF $SI @ @ $ESC PEC:\S4PICT\ICON306.pcx $ESC \
+        307     $FF $SI @ @ $ESC PEC:\S4PICT\ICON307.pcx $ESC \
+        308     $FF $SI @ @ $ESC PEC:\S4PICT\ICON308.pcx $ESC \
+        309     $FF $SI @ @ $ESC PEC:\S4PICT\ICON309.pcx $ESC \
+        310     $FF $SI @ @ $ESC PEC:\S4PICT\ICON310.pcx $ESC \
+	311     $FF $SI @ @ $ESC PEC:\S4PICT\ICON311.pcx $ESC \
+	312     $FF $SI @ @ $ESC PEC:\S4PICT\ICON312.pcx $ESC \
+	313     $FF $SI @ @ $ESC PEC:\S4PICT\ICON313.pcx $ESC \
+	314     $FF $SI @ @ $ESC PEC:\S4PICT\ICON314.pcx $ESC \
+	315     $FF $SI @ @ $ESC PEC:\S4PICT\ICON315.pcx $ESC \
+	316     $FF $SI @ @ $ESC PEC:\S4PICT\ICON316.pcx $ESC \
+	317     $FF $SI @ @ $ESC PEC:\S4PICT\ICON317.pcx $ESC \
+	318     $FF $SI @ @ $ESC PEC:\S4PICT\ICON318.pcx $ESC \
+	319     $FF $SI @ @ $ESC PEC:\S4PICT\ICON319.pcx $ESC \
+	320     $FF $SI @ @ $ESC PEC:\S4PICT\ICON320.pcx $ESC \
+	322     $FF $SI @ @ $ESC PEC:\S4PICT\ICON322.pcx $ESC \
+	323     $FF $SI @ @ $ESC PEC:\S4PICT\ICON323.pcx $ESC \
+	324     $FF $SI @ @ $ESC PEC:\S4PICT\ICON324.pcx $ESC \
+	325     $FF $SI @ @ $ESC PEC:\S4PICT\ICON325.pcx $ESC \
+	326     $FF $SI @ @ $ESC PEC:\S4PICT\ICON326.pcx $ESC \
+	327     $FF $SI @ @ $ESC PEC:\S4PICT\ICON327.pcx $ESC \
+	329     $FF $SI @ @ $ESC PEC:\S4PICT\ICON329.pcx $ESC \
+	330     $FF $SI @ @ $ESC PEC:\S4PICT\ICON330.pcx $ESC \
+	331     $FF $SI @ @ $ESC PEC:\S4PICT\ICON331.pcx $ESC \
+	332     $FF $SI @ @ $ESC PEC:\S4PICT\ICON332.pcx $ESC \
+	333     $FF $SI @ @ $ESC PEC:\S4PICT\ICON333.pcx $ESC \
+	334     $FF $SI @ @ $ESC PEC:\S4PICT\ICON334.pcx $ESC \
+	336     $FF $SI @ @ $ESC PEC:\S4PICT\ICON336.pcx $ESC \
+	337     $FF $SI @ @ $ESC PEC:\S4PICT\ICON337.pcx $ESC \
+	338     $FF $SI @ @ $ESC PEC:\S4PICT\ICON338.pcx $ESC \
+	339     $FF $SI @ @ $ESC PEC:\S4PICT\ICON339.pcx $ESC \
+#OAR Account Display Screen
+        038     $FF $ESC PEC:\PROTOPAS\bitmaps_test\icon038.jpg $ESC \
+        238     $FF $ESC PEC:\PROTOPAS\bitmaps_test\icon238.jpg $ESC \
+#Default Good Response screen	
+        801     $FF $ESC PEC:\PROTOPAS\bitmaps_test\icon801.jpg $ESC \
+        802     $FF $ESC PEC:\PROTOPAS\bitmaps_test\icon802.jpg $ESC \
+	
+
+#Welcome Screen Squence Screen number 102 to 106 Total 5 Screens only.
+#        011     $FF $ESC PEC:\S4PICT\ g\ICON010.pcx $ESC \
+ #       012     $FF $ESC PEC:\S4PICT\ g\ICON011.pcx $ESC \
+  #      013     $FF $ESC PEC:\S4PICT\ g\ICON012.pcx $ESC \
+
+#Empty Screen
+#	017     $FF $SI @ @ $ESC PEC:\PROTOPAS\bitmaps_test\icon017.jpg $ESC \
+END_DEF
+
+ATM_RESERVEDSCREEN_START_DEF
+        OAR             038
+        EMPTYSCR        017
+END_DEF
+

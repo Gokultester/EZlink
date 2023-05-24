@@ -1,0 +1,442 @@
+ATM_SCREEN_START_DEF
+#Reversed Screen
+        000     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC144.jpg $ESC \
+        C00     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC144.jpg $ESC \
+        001     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC099.jpg $ESC \
+        C01     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC099.jpg $ESC \
+        002     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC088.jpg $ESC \
+        C02     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC088.jpg $ESC \
+        003     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC096.jpg $ESC \
+        C03     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC096.jpg $ESC \
+        004     $FF $SI H M UGX ********0.00
+        C06     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC099.jpg $ESC \
+        006     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC099.jpg $ESC \
+
+
+#Welcome
+        010    $FF $SO 011 $ESC [015z $SO 012 $ESC [015z $SO 013 $ESC [015z $SO 700 $ESC [015z $SO 701 $ESC [015z $SO 702 $ESC [015z $SO 014 $ESC [015z
+        011    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC075.jpg $ESC \
+        012    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC750.jpg $ESC \
+        013    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC751.jpg $ESC \
+        700    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC070.jpg $ESC \
+        701    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC077.jpg $ESC \
+        702    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC191.jpg $ESC \
+        014    $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC106.jpg $ESC \ $SO 010
+#Muli Language
+        016     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC074.jpg $ESC \
+
+#Empty Screen
+        018
+
+#PIN Entry
+        #ON-US
+        025     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC135.jpg $ESC \ $ESC [21;80m $SI H L
+        358     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC468.jpg $ESC \ $ESC [21;80m $SI H L
+        625     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC735.jpg $ESC \ $ESC [21;80m $SI H L
+#Add Screen
+        #OFF-US
+        180     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC119.jpg $ESC \ $ESC [21;80m $SI H L
+        452     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC452.jpg $ESC \ $ESC [21;80m $SI H L
+        719     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC719.jpg $ESC \ $ESC [21;80m $SI H L
+
+#ICC Application Selction
+        045 $FF 045 EN $SI B A PLEASE SELECT PRODUCT / ACCOUNT:
+        046 $SI F N &&S&&RJ**************** &&E
+        047 $SI I N &&S&&RJ**************** &&E
+        048 $SI L N &&S&&RJ**************** &&E
+        049 $SI O N &&S&&RJ**************** &&E
+        050 $SI O : MORE
+        051 $SI O @ BACK
+        052 $FF 052 EN $SI E K TIMED OUT! $SI G H PLEASE TAKE CARD
+        053 && S && C D ****************&&E
+        054 $FF 054 EN $SI A D SORRY CANNOT ACCESS YOUR $SI B E CHOSEN PRODUCT/ACCOUNT $SI D B PLEASE SELECT AN ALTERNATIVE
+        055 && S && C D ****************&&E
+
+#ON-US Main Txn Selection
+        024     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC136.jpg $ESC \
+        357     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC469.jpg $ESC \
+        624     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC736.jpg $ESC \
+
+#OFF-US Main Txn Selection
+        181     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC120.jpg $ESC \
+
+#Fast Cash Selection
+        029     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC014.jpg $ESC \
+        361     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC347.jpg $ESC \
+        629     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC614.jpg $ESC \
+
+#Account Selection						
+        023     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC137.jpg $ESC \
+        356     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC370.jpg $ESC \
+        623     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC737.jpg $ESC \
+							
+        192     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC137.jpg $ESC \
+        193     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC193.jpg $ESC \
+        194     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC194.jpg $ESC \
+						
+#Printer Selection			
+        026     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC019.jpg $ESC \
+        359     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC352.jpg $ESC \
+        626     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC619.jpg $ESC \
+				
+        019     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC019.jpg $ESC \ \ $SI H A YOU $SPACE WILL $SPACE BE $SPACE CHARGED $SPACE 330.00 $SPACE UGX $SPACE $SPACE $SPACE $SPACE FOR $SPACE PRINTING $SPACE SLIP
+        037     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC019.jpg $ESC \
+			
+#Amount Entry	
+        027     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC020.jpg $ESC \ $ESC [21;80m $SI F L
+        360     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC353.jpg $ESC \ $ESC [21;80m $SI F L
+        627     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC620.jpg $ESC \ $ESC [21;80m $SI F L
+				
+#Transaction Request	
+        028     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC076.jpg $ESC \
+        361     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC409.jpg $ESC \
+        628     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC676.jpg $ESC \
+		
+        015     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC076.jpg $ESC \
+
+
+
+#PIN Change - New PIN
+        021     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC027.jpg $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+        354     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC360.jpg $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+        621     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC627.jpg $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+							
+#PIN Change - Confirm PIN					
+        022     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC028.jpg $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI J N
+        355     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC361.jpg $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+        622     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC628.jpg $ESC \ $ESC [21;80m $ESC (1 $ESC [20m $SI J N
+
+#PIN Change - Confirm PIN Failed Re-Enter
+        060     $FF  $SI @@ $ESC P2029.jpg $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI M L
+        393     $FF  $SI @@ $ESC P2362.jpg $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI M L
+        660     $FF  $SI @@ $ESC P2629.jpg $ESC \ $ESC [80m $ESC (1 $ESC [20m $SI M L
+				      
+#ENA Deposit Screens
+
+	184     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC168.jpg $ESC \
+	182     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC169.jpg $ESC \
+	183	$FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC170.jpg $ESC \
+
+        #056 $FF  $ESC P2033.jpg $ESC \
+        #389 $FF  $ESC P2366.jpg $ESC \
+        #656 $FF  $ESC P2633.jpg $ESC \
+        #057 $FF  $ESC P2010.jpg $ESC \
+        #390 $FF  $ESC P2343.jpg $ESC \
+        #657 $FF  $ESC P2610.jpg $ESC \
+
+        #058 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC P2036.jpg $ESC \ $SI G H
+        #391 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC P2369.jpg $ESC \ $SI G H
+        #658 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC P2636.jpg $ESC \ $SI G H
+#New Screens
+        #Main Screen
+        120     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC025.jpg $ESC \
+        #Fast Cash Screen									       
+        121     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC107.jpg $ESC \
+        #Amount Entry Screen									       
+        122     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC150.jpg $ESC \
+        #Select Currency Screen
+        #123     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC109.jpg $ESC \
+        #Multiples Of 10K Below 1750000
+        124     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC1480.jpg $ESC \
+        #Multiples Of 10K Below 350000
+        125     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC147.jpg $ESC \
+        #Multiples Of 20K Below 1750000
+        126     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC145.jpg $ESC \
+        #Multiples Of 20K Below 400000
+        127     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC132.jpg $ESC \
+        #Multiples Of 50K Below 1750000
+        128     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC131.jpg $ESC \
+        #Enter Bill Number Screen
+        129     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC130.jpg $ESC \
+        #Confirm Bill Details
+        134     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC129.jpg $ESC \
+        #Multiples Of 5K Below 1750000
+        135     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC128.jpg $ESC \
+        #Select Currency UGX/USD
+        140     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC127.jpg $ESC \
+        #Bill Payment Main Screen
+        141     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC122.jpg $ESC \
+        #Bill Payment Successful Screen
+        146     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC123.jpg $ESC \
+#BNA Deposit Related Screens
+       	#056 	$FF 056 EN $SI B A PLEASE $SPACE ENTER $SPACE NOTES:
+        #056     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC056.jpg $ESC \
+        #057 	$FF 057 EN $SI B A PLEASE $SPACE REMOVE $SPACE NOTES:
+        #057     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC057.jpg $ESC \
+        #058 	$FF 058 EN $SI B A CONFIRM $SPACE NOTES:
+        #058     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC058.jpg $ESC \
+        #059 	$FF 059 EN $SI B A HARDWARE $SPACE ERROR
+
+        056 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC033.jpg $ESC \
+        389 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC366.jpg $ESC \
+        656 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC633.jpg $ESC \
+
+        057 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC010.jpg $ESC \
+        390 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC343.jpg $ESC \
+        657 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC610.jpg $ESC \
+
+        058	$FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC020.jpg $ESC \ $ESC [21;80m $SI F L
+        #058 $FF  $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC036.jpg $ESC \ $ESC [21;80m $SI F L
+        #058 $FF  $ESC (1 $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC036.jpg $ESC \ $SI G H
+        391 	$FF  $ESC (1 $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC369.jpg $ESC \ $SI G H
+        658 	$FF  $ESC (1 $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC636.jpg $ESC \ $SI G H
+
+# Fund Transfer
+        031     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC031.jpg $ESC \
+        231     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC231.jpg $ESC \
+        032     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC032.jpg $ESC \
+        232     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC232.jpg $ESC \
+        039     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC039.jpg $ESC \
+        239     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC239.jpg $ESC \
+        040     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC040.jpg $ESC \
+        240     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC240.jpg $ESC \
+
+#Bill Pay & Mobile Topup
+        033     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC033.jpg $ESC \
+
+#Enter Mobile Screen
+        041     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC046.jpg $ESC \ $ESC [21;80m  $SI F L
+        042     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC047.jpg $ESC \ $ESC [21;80m  $SI F L
+        043     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC048.jpg $ESC \ $ESC [21;80m  $SI F L
+
+        188     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC188.jpg $ESC \ $ESC [21;80m  $SI F L
+
+#Dynamic Dispense and Amount Failure
+        #All Cassets are empty
+        111     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC081.jpg $ESC \ $SI D C LOW $SPACE CASH $SPACE IN $SPACE ATM
+
+        #Per Transcation Limit Exceeds & Invalid Amount
+        #112     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC023.jpg $ESC \
+        112     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC150.jpg $ESC \ $SI C B INVALID $SPACE AMOUNT $SPACE ENTERED $SPACE $SPACE $SPACE ENTER $SPACE VALID $SPACE AMOUNT $SPACE
+
+        #InValid AMOUNT Entered
+
+        #B & C - Empty-302
+        113     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC150.jpg $ESC \ $SI E B ENTER $SPACE MULTIPLE $SPACE OF $SPACE 20000 $SPACE UGX
+        #A - Empty-303
+        114     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC020.jpg $ESC \ $SI D A ENTER $SPACE BELOW $SPACE 400000 $SPACE UGX $SPACE MULTIPLE $SPACE OF $SPACE 10000 $SPACE UGX
+        #A & C - Empty-304
+        115     $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC P2150.jpg $ESC \ $SI E B ENTER $SPACE MULTIPLE $SPACE OF $SPACE 10000 $SPACE UGX
+        #A & B - Empty - 305
+        116     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC020.jpg $ESC \ $SI E B ENTER $SPACE BELOW $SPACE 200000 $SPACE UGX $SPACE MULTIPLE $SPACE OF $SPACE 5000 $SPACE UGX
+        A,B&C Empty
+        020     $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC150.jpg $ESC \ $SI E B ENTER $SPACE MULTIPLE $SPACE OF $SPACE 50000 $SPACE UGX
+        #B & D - Empty
+        030     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC150.jpg $ESC \ $SI D A ENTER $SPACE BELOW $SPACE 800000 $SPACE UGX $SPACE MULTIPLE $SPACE OF $SPACE 20000 $SPACE UGX
+#Unable To Dispense
+        395     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC020.jpg $ESC \ $SI E B LOW $SPACE CASH $SPACE IN $SPACE ATM
+
+
+#Close Screen for Good Response
+        061     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \
+        394     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC438.jpg $ESC \
+        661     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC605.jpg $ESC \
+        062     $FF $SO 064 $ESC [020z $SO 065 $ESC [020z $SO 061
+        063     $SO 064 $SO 065
+        064     $FF $SI @@ $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC073.jpg $ESC \
+        065     $FF $ESC [80m $ESC [20m $SI @@ $ESC (1 $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC104.jpg $ESC \
+        066     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC031.jpg $ESC \
+        067     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC067.jpg $ESC \
+        068     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC068.jpg $ESC \
+        069     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC069.jpg $ESC \
+        070     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC070.jpg $ESC \
+
+#Good Response Continue
+        071     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC143.jpg $ESC \ $SO 030
+        404     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC476.jpg $ESC \ $SO 030
+        671     $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC643.jpg $ESC \ $SO 030
+        072     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC065.jpg $ESC \
+        405     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC398.jpg $ESC \
+        672     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC665.jpg $ESC \
+        073     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC073.jpg $ESC \
+        406     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC406.jpg $ESC \
+        673     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC673.jpg $ESC \
+        074     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC074.jpg $ESC \
+        407     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC407.jpg $ESC \
+        674     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC674.jpg $ESC \
+        075     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC075.jpg $ESC \
+        408     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC408.jpg $ESC \
+        675     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC675.jpg $ESC \
+        076     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC076.jpg $ESC \
+        409     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC409.jpg $ESC \
+        676     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC676.jpg $ESC \
+        077     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC144.jpg $ESC \
+        410     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC477.jpg $ESC \
+        677     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC644.jpg $ESC \
+
+#Close Screen for Bad Response
+        080     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC080.jpg $ESC \
+        081     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC081.jpg $ESC \
+        082     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC082.jpg $ESC \
+        083     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC083.jpg $ESC \
+        084     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC084.jpg $ESC \
+        085     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC085.jpg $ESC \
+        086     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC086.jpg $ESC \
+        087     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC087.jpg $ESC \
+        088     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC088.jpg $ESC \
+        089     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC089.jpg $ESC \
+        090     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC090.jpg $ESC \
+        091     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC091.jpg $ESC \
+        092     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC092.jpg $ESC \
+        093     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC093.jpg $ESC \
+        094     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC094.jpg $ESC \
+        095     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC095.jpg $ESC \
+        096     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC096.jpg $ESC \
+        097     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC097.jpg $ESC \
+        098     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC098.jpg $ESC \
+        099     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC099.jpg $ESC \
+        100     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC100.jpg $ESC \
+        102     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC102.jpg $ESC \
+        103     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC103.jpg $ESC \
+        104     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC104.jpg $ESC \
+        105     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \
+#Individual card frequency  limit exceeded
+        106     $FF  $SI @@ $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC102.jpg $ESC \ $SI BCYOUR $SPACE WITHDRAWAL $SPACE FREQUENCY $SI CILIMIT $SPACE EXCEEDED
+#Individual card transaction limit exceeded
+        107     $FF  $SI @@ $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC102.jpg $ESC \ $SI BGYOUR $SPACE PER $SPACE DAY $SPACE TRANSACTION $SI CILIMIT $SPACE EXCEEDED
+#Old Pin & New Pin Are Same
+        108     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \ $SI D D OLD $SPACE PIN $SPACE & $SPACE  PIN $SPACE ARE $SPACE SAME
+#Invalid Card
+        109     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC078.jpg $ESC \
+        442     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC411.jpg $ESC \
+        709     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC678.jpg $ESC \
+#Expired Card
+        110     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC083.jpg $ESC \
+        443     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC416.jpg $ESC \
+        710     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC683.jpg $ESC \
+
+#Card Maintenance Bad Response
+        130     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \ $SI D A YOUR $SPACE CARD $SPACE UNDER $SPACE  MAINTENANCE
+        131     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \ $SI D A YOUR $SPACE CARD $SPACE HAS $SPACE BEEN $SPACE CANCELLED
+        132     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC097.jpg $ESC \
+        465     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC430.jpg $ESC \
+        732     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC697.jpg $ESC \
+        133     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \ $SI D C YOUR $SPACE CARD $SPACE NOT $SPACE ACTIVATED
+        136     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC091.jpg $ESC \
+        469     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC424.jpg $ESC \
+        736     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC691.jpg $ESC \
+        137     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC090.jpg $ESC \
+        470     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC423.jpg $ESC \
+        737     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC690.jpg $ESC \
+        138     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC138.jpg $ESC \
+        471     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC471.jpg $ESC \
+        738     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC738.jpg $ESC \
+        139     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC139.jpg $ESC \
+        472     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC472.jpg $ESC \
+        739     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC739.jpg $ESC \
+        142     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC112.jpg $ESC \
+        475     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC445.jpg $ESC \
+        742     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC712.jpg $ESC \
+        143     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC088.jpg $ESC \
+        476     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC421.jpg $ESC \
+        743     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC688.jpg $ESC \
+        144     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC018.jpg $ESC \
+        477     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC351.jpg $ESC \
+        744     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC618.jpg $ESC \
+        145     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC015.jpg $ESC \
+        478     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC348.jpg $ESC \
+        745     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC615.jpg $ESC \
+
+
+#Supervisior Screens
+	#155 $FF  $SI @@ $ESC [80m $ESC [20m $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC102.jpg $ESC \ $SI A D SELECT STD CASH FUNCTION $SI I J PRINT HOST TOTALS $SI L J START NEW CYCLE  $SI O J STOP CYCLE
+        156 $ESC [80m $ESC (1 $ESC [27m $SI C@TO VOID TRANSACTION PRESS CANCEL
+        155     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC501.jpg $ESC \
+        157     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC157.jpg $ESC \
+        158     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC158.jpg $ESC \
+        159     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC159.jpg $ESC \ $ESC [21;80m $SI F L
+        160     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC160.jpg $ESC \
+        161     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC161.jpg $ESC \ $ESC [21;80m $SI F L
+        162     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC162.jpg $ESC \ $ESC [21;80m $SI F L
+        163     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC163.jpg $ESC \
+        164     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC164.jpg $ESC \
+        165     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC165.jpg $ESC \
+        166     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC166.jpg $ESC \
+        167     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC167.jpg $ESC \
+        171     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC171.jpg $ESC \
+        172     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC172.jpg $ESC \
+        173     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC173.jpg $ESC \
+        174     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC174.jpg $ESC \
+        175     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC175.jpg $ESC \
+        176     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC176.jpg $ESC \
+        177     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC177.jpg $ESC \
+        188     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC188.jpg $ESC \
+        189     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC189.jpg $ESC \
+        190     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC190.jpg $ESC \
+        178     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC178.jpg $ESC \
+        179     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC179.jpg $ESC \
+
+        281     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC281.jpg $ESC \
+        282     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC282.jpg $ESC \
+        283     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC283.jpg $ESC \
+        284     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC284.jpg $ESC \
+        285     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC285.jpg $ESC \
+        286     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC286.jpg $ESC \
+        287     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC287.jpg $ESC \
+        288     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC288.jpg $ESC \
+        289     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC289.jpg $ESC \
+        290     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC290.jpg $ESC \
+        291     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC291.jpg $ESC \
+        292     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC292.jpg $ESC \
+        293     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC293.jpg $ESC \
+        294     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC294.jpg $ESC \
+        295     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC295.jpg $ESC \
+        296     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC296.jpg $ESC \
+        297     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC297.jpg $ESC \
+        298     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC298.jpg $ESC \
+        299     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC299.jpg $ESC \
+        300     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC300.jpg $ESC \
+        301     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC301.jpg $ESC \
+        302     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC302.jpg $ESC \
+        303     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC303.jpg $ESC \
+        304     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC304.jpg $ESC \
+        305     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC305.jpg $ESC \
+        306     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC306.jpg $ESC \
+        307     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC307.jpg $ESC \
+        308     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC308.jpg $ESC \
+        309     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC309.jpg $ESC \
+        310     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC310.jpg $ESC \
+        311     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC311.jpg $ESC \
+        312     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC312.jpg $ESC \
+        313     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC313.jpg $ESC \
+        314     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC314.jpg $ESC \
+        315     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC315.jpg $ESC \
+        316     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC316.jpg $ESC \
+        317     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC317.jpg $ESC \
+        318     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC318.jpg $ESC \
+        319     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC319.jpg $ESC \
+        320     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC320.jpg $ESC \
+        322     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC322.jpg $ESC \
+        323     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC323.jpg $ESC \
+        324     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC324.jpg $ESC \
+        325     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC325.jpg $ESC \
+        326     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC326.jpg $ESC \
+        327     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC327.jpg $ESC \
+        329     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC329.jpg $ESC \
+        330     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC330.jpg $ESC \
+        331     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC331.jpg $ESC \
+        332     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC332.jpg $ESC \
+        333     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC333.jpg $ESC \
+        334     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC334.jpg $ESC \
+        336     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC336.jpg $ESC \
+        337     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC337.jpg $ESC \
+        338     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC338.jpg $ESC \
+        339     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC339.jpg $ESC \
+#OAR Account Display Screen
+        038     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC038.jpg $ESC \
+        371     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC371.jpg $ESC \
+        638     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC638.jpg $ESC \
+#Default Good Response screen
+        801     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC105.jpg $ESC \
+        802     $FF $ESC PEC:\Program $SPACE Files\Diebold\Agilis $SPACE EmPower\Screens\Images\PIC081.jpg $ESC \
+
+
+#Empty Screen
+
+END_DEF
+
+ATM_RESERVEDSCREEN_START_DEF
+        OAR             038
+        EMPTYSCR        030
+END_DEF
+

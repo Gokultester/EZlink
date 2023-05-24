@@ -1,0 +1,11 @@
+100
+$FF
+$SI @ @ $ESC O 013 $ESC P 013 0
+$A	$SI I 3
+$B	$SI L 3
+$C	$SI O 3
+$D	$SI R 3
+$F	$SI R @ 
+$G	$SI O @
+$H	$SI L @
+$I	$SI I @

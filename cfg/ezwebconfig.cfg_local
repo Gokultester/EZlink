@@ -1,0 +1,4 @@
+#Local
+http://10.207.129.41:9090/EZ_WEB_AGENT/webAgentLink.do?
+#UAT
+http://10.207.160.169:8080/EZ_WEB_AGENT/webAgentLink.do?

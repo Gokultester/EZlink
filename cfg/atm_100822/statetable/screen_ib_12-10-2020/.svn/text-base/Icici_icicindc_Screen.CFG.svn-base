@@ -1,0 +1,19 @@
+ATM_SCREEN_START_DEF
+	010	 $FF $ESC PEC:\S4PICT\ICON 010.pcx $ESC \ 								
+
+	025	$FF $ESC PEC:\S4PICT\ICON 025.pcx $ESC \ 								
+
+	034	$FF $ESC PEC:\S4PICT\ICON 034.pcx $ESC \ 								
+
+	037	$FF $ESC PEC:\S4PICT\ICON 037.pcx $ESC \ 								
+
+	045	$FF $ESC PEC:\S4PICT\ICON 045.pcx $ESC \ 								
+
+	072	$FF $ESC PEC:\S4PICT\ICON 012.pcx $ESC \ $ESC [ 21;80m $SI @ @ $SI H M 								
+
+	073	$FF $ESC PEC:\S4PICT\ICON 073.pcx $ESC \ 								
+
+	300	$FF $ESC PEC:\S4PICT\ICON 300.pcx $ESC \ 								
+
+	
+END_DEF

@@ -1,0 +1,7 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	$LF
+	MESSAGE $SPACE FORMAT $SPACE ERROR 
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

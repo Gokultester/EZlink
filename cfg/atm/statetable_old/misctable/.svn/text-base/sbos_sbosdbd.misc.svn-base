@@ -1,0 +1,32 @@
+ATM_PARAM_START_DEF
+	camera_control	1
+	reserved1	000
+	reserved2	000
+	reserved3	000
+	reserved4	000
+	misc1		000
+	reserved5	000
+	misc2		064
+	reserved6	000
+	reserved7	000
+	misc3		016
+	misc4		000
+	luno		001
+	timer0		010
+	timer1		010
+	timer2		020
+	timer3		060
+	timer4		000
+	timer5		020
+	timer6		005
+	timer7		005
+	timer8		030
+	timer9		030
+	timer10		030
+	timer11		000
+	timer12		000
+	timer13		000
+	timer14		000
+	timer15		000
+	timer16		000
+END_DEF

@@ -1,0 +1,11 @@
+	RESPONSE $SPACE CODE $SPACE : $SPACE
+        $RESP_CODE
+        $LF
+        $LF
+        THANK $SPACE YOU $SPACE FOR
+        $LF
+        USING
+        $LF
+        HPSCB $SPACE ATM
+        $LF
+

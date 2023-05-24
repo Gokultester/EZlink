@@ -1,0 +1,504 @@
+DRIVER_START_DEF
+	KCUBDBD_001_1
+	KCUBNDC_002_1
+	KCUBNDC_003_1
+	TEST1DBD_001_1
+	TEST1NDC_002_1
+	TEST2DBD_001_1
+	TEST2NDC_002_1
+	TEST3DBD_001_1
+	TEST3NDC_002_1
+	TEST4DBD_001_1
+	TEST4NDC_002_1
+	TEST5DBD_001_1
+	TEST5NDC_002_1
+	KCUB_TBA001
+	KCUB_TBA002
+	KCUB_TBA003
+	TEST1_TBA001
+	TEST1_TBA002
+	TEST1_TBA003
+	TEST1_TBA004
+	TEST1_TBA005
+	TEST4_TBA001
+	TEST4_TBA002
+	TEST4_TBA003
+	TEST4_TBA004
+	TEST4_TBA005
+	TEST2_CBS
+	TEST3_CBS
+	TEST5_CBS	
+	RATNAKARCBS	
+	BANCS
+	NFS	
+	KCUB_HO
+	TEST1_HO
+	TEST4_HO
+	GUI001
+	MYCARD_TBA001
+	MYCARDCBS_HOST
+	MYCARDTBA_HO
+END_DEF
+
+KCUBDBD_001_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6001	
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+KCUBNDC_002_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6002	
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+KCUBNDC_003_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6003	
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+TEST1DBD_001_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6004	
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST1NDC_002_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6005	
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+TEST2DBD_001_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6006	
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST2NDC_002_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6007	
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST3DBD_001_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6008	
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST3NDC_002_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6009	
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+TEST4DBD_001_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6010	
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST4NDC_002_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6011
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+TEST5DBD_001_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6012	
+	DestChannel	EzD912Driver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST5NDC_002_1_START_DEF
+	Protocol	TCPIP
+	ConnectionType	accept
+	IpAddress	140.0.0.144	
+	PortNo		6013
+	DestChannel	EzNDCDriver
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+
+KCUB_TBA001_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7001
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+KCUB_TBA002_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7002
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+KCUB_TBA003_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7003
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST1_TBA001_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7004
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST1_TBA002_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7005
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST1_TBA003_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7006
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST1_TBA004_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7007
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST1_TBA005_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7008
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST2_CBS_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7009
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST3_CBS_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7010
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST4_TBA001_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7011
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+
+TEST4_TBA002_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7012
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST4_TBA003_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7013
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST4_TBA004_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7014
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST4_TBA005_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7015
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST5_CBS_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7016
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+KCUB_HO_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7017
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST1_HO_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7018
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+TEST4_HO_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo		7019
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	ascii
+	HeaderLen	4
+	EnableKeepalive	Yes
+END_DEF
+
+BANCS_START_DEF
+	Protocol  TCPIP
+	ConnectionType	accept
+	IpAddress 140.0.0.123
+	PortNo		5113
+	DestChannel	EzBANCS8583	
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	yes
+END_DEF
+
+NFS_START_DEF
+	Protocol  TCPIP
+	ConnectionType	make
+	IpAddress 	140.0.0.123
+	PortNo		4580
+	DestChannel	EzNFS8583	
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	yes
+END_DEF
+
+GUI001_START_DEF
+        Protocol  TCPIP
+        ConnectionType  accept
+        IpAddress       140.0.0.144
+        PortNo          9001 
+        DestChannel     EzGUIController
+        NConnections    1
+        HeaderType      ascii
+        HeaderLen       4
+        EnableKeepalive yes
+END_DEF
+MYCARD_TBA001_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo	7020
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+MYCARDCBS_HOST_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo	7021
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF
+MYCARDTBA_HO_START_DEF
+	Protocol	TCPIP
+	ConnectionType	make
+	IpAddress	140.0.0.144
+	PortNo	7122
+	DestChannel	EzHost8583
+	NConnections	1
+	HeaderType	hex
+	HeaderLen	2
+	EnableKeepalive	Yes
+END_DEF

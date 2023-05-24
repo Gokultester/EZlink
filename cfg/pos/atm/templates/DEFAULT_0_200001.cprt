@@ -1,0 +1,8 @@
+	$INCLUDE-hpscb_header.prt
+	$LF
+	AMOUNT $SPACE TZS: $AMOUNT $SPACE DEPOSITED
+	$LF
+	AVAIL $SPACE BAL: $AVAIL_BALANCE
+	$LF
+	$LF
+	$INCLUDE-hpscb_tailer.prt

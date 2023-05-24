@@ -1,0 +1,9 @@
+
+	$INCLUDE-D912ATM_header.prt
+	$LF
+	$LF
+	 LOW $SPACE CASH $SPACE IN $SPACE ATM
+	$LF
+	$LF
+	$INCLUDE-D912ATM_tailer.prt
+
